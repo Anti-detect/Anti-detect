@@ -1,0 +1,28 @@
+{
+  "description": "Anti-detect browser fingerprinting, Multilogin X automation, and stealth Playwright/Selenium templates by ADBLogin.",
+  "homepage": "https://adblogin.com",
+  "has_wiki": false,
+  "has_discussions": true,
+  "topics": [
+    "anti-detect",
+    "browser-fingerprinting",
+    "browser-automation",
+    "multilogin",
+    "playwright",
+    "selenium",
+    "python",
+    "stealth",
+    "anti-bot",
+    "web-scraping",
+    "automation",
+    "fingerprint",
+    "headless-browser",
+    "mmo",
+    "profile-management",
+    "postman",
+    "api",
+    "devtools",
+    "testing",
+    "adblogin"
+  ]
+}

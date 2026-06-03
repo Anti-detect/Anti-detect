@@ -11,6 +11,8 @@ author: ADBLogin.com
 **Enterprise anti-detect browser fingerprinting, Multilogin X automation, and open-source dev kits** — by [ADBLogin.com](https://adblogin.com) and [@multilogin-automation](https://github.com/multilogin-automation).
 
 <p align="left">
+  <img src="https://github.com/Anti-detect/Anti-detect/actions/workflows/docs-ci.yml/badge.svg" alt="Docs CI status">
+  <img src="https://github.com/Anti-detect/Anti-detect/actions/workflows/sync-repo-settings.yml/badge.svg" alt="Sync repo settings status">
   <a href="README.vi.md"><img src="https://img.shields.io/badge/Tiếng_Việt-README.vi-red?style=flat-square" alt="Vietnamese README"></a>
   <a href="https://adblogin.com"><img src="https://img.shields.io/badge/ADBLogin-Anti--detect%20Browser-0ea5e9?style=flat-square" alt="ADBLogin anti-detect browser"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="MIT License"></a>
@@ -170,24 +172,16 @@ Code **`ADBNEW50`** — **50% off** first purchase:
 
 ## Repository settings (SEO)
 
-GitHub **About** is still weak on the remote (`description: "Anti-detect"` only). Fix manually or run:
+Metadata is defined in [`.github/repo-metadata.json`](.github/repo-metadata.json) and **applied automatically** on every push to `main` by the [Sync repository settings](.github/workflows/sync-repo-settings.yml) workflow (`administration: write`).
+
+Manual override (optional):
 
 ```powershell
 $env:GITHUB_TOKEN = "ghp_YOUR_TOKEN"
 .\scripts\set-github-about.ps1
 ```
 
-**Description:**
-
-```text
-Anti-detect browser fingerprinting, Multilogin X automation SDKs, and stealth Playwright/Selenium templates by ADBLogin.
-```
-
-**Website:** `https://adblogin.com`
-
-**Topics:** see [docs/seo-checklist.md](docs/seo-checklist.md)
-
-**Also:** [docs/github-profile-setup.md](docs/github-profile-setup.md) (social preview, pinned repos)
+**Also do once on GitHub UI:** [social preview + pinned repos](docs/github-profile-setup.md)
 
 ---
 

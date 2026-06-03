@@ -9,7 +9,29 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: docs-ci-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
+  verify-github-repos:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Verify multilogin-automation repo links
+        run: |
+          set -euo pipefail
+          mapfile -t URLS < <(grep -oE 'https://github.com/multilogin-automation/[A-Za-z0-9_.-]+' docs/open-source-catalog.md README.md README.vi.md docs/getting-started.md | sort -u)
+          for url in "${URLS[@]}"; do
+            code=$(curl -sS -o /dev/null -w "%{http_code}" -L --max-time 20 "$url")
+            if [ "$code" != "200" ]; then
+              echo "::error::Broken repo link ($code): $url"
+              exit 1
+            fi
+            echo "OK $url"
+          done
+
   markdown-link-check:
     runs-on: ubuntu-latest
     steps:
@@ -31,6 +53,7 @@ jobs:
       - name: Markdown lint
         uses: DavidAnson/markdownlint-cli2-action@v19
         with:
+          config: .markdownlint-cli2.jsonc
           globs: |
             **/*.md
             !.git/**

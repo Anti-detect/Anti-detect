@@ -1,6 +1,8 @@
 # Open-source catalog
 
-Verified index of [@multilogin-automation](https://github.com/multilogin-automation) repositories (updated from the public GitHub API). Use this hub to pick the right **Multilogin X**, **anti-detect**, or **stealth automation** project.
+Verified index of [@multilogin-automation](https://github.com/multilogin-automation) repositories. CI verifies every `github.com/multilogin-automation/*` link on push to `main`.
+
+_Last reviewed: 2026-06-03_
 
 ## Start here (recommended)
 

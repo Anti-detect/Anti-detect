@@ -17,11 +17,17 @@ if (-not $token) {
     exit 1
 }
 
+$metaPath = Join-Path $PSScriptRoot "..\.github\repo-metadata.json"
+if (-not (Test-Path $metaPath)) {
+    Write-Error "Missing $metaPath"
+}
+$meta = Get-Content $metaPath -Raw | ConvertFrom-Json
+
 $body = @{
-    description = "Anti-detect browser fingerprinting, Multilogin X automation, and stealth Playwright/Selenium templates by ADBLogin."
-    homepage    = "https://adblogin.com"
-    has_wiki    = $false
-    has_discussions = $true
+    description     = $meta.description
+    homepage        = $meta.homepage
+    has_wiki        = $meta.has_wiki
+    has_discussions = $meta.has_discussions
 } | ConvertTo-Json
 
 $headers = @{
@@ -33,15 +39,8 @@ $headers = @{
 Write-Host "Patching repository metadata..."
 Invoke-RestMethod -Method Patch -Uri "https://api.github.com/repos/$owner/$repo" -Headers $headers -Body $body -ContentType "application/json"
 
-$topics = @(
-    "anti-detect", "browser-fingerprinting", "browser-automation", "multilogin",
-    "playwright", "selenium", "python", "stealth", "anti-bot", "web-scraping",
-    "automation", "fingerprint", "headless-browser", "mmo", "profile-management",
-    "api", "devtools", "testing", "adblogin"
-)
-
-$topicBody = @{ names = $topics } | ConvertTo-Json
-Write-Host "Applying $($topics.Count) topics..."
+$topicBody = @{ names = @($meta.topics) } | ConvertTo-Json
+Write-Host "Applying $($meta.topics.Count) topics..."
 Invoke-RestMethod -Method Put -Uri "https://api.github.com/repos/$owner/$repo/topics" -Headers $headers -Body $topicBody -ContentType "application/json"
 
 Write-Host "Done. Verify at https://github.com/$owner/$repo" -ForegroundColor Green

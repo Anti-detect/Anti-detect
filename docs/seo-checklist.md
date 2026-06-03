@@ -4,10 +4,12 @@ Use after every doc or catalog update.
 
 ## GitHub metadata
 
+Source of truth: [`.github/repo-metadata.json`](../.github/repo-metadata.json) (synced by `sync-repo-settings.yml` on push to `main`).
+
 - [ ] About description ≤ 350 chars, starts with **anti-detect** or **browser fingerprinting**
 - [ ] Website = `https://adblogin.com`
 - [ ] 15–20 topics applied (no spam tags like `2027`, `draft`)
-- [ ] Social preview image uploaded
+- [ ] Social preview image uploaded (UI only — not automatable without image asset)
 
 ## README.md
 
