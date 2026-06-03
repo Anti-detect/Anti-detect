@@ -11,6 +11,7 @@ Hub for **Anti-detect** profile repository documentation.
 | [comparison-anti-detect-vs-chrome.md](comparison-anti-detect-vs-chrome.md) | Product comparison |
 | [faq.md](faq.md) | FAQ (English + Tiếng Việt) |
 | [github-profile-setup.md](github-profile-setup.md) | Pin repos, social preview, metadata |
+| [setup-github-metadata.md](setup-github-metadata.md) | PAT secret / auto-sync About & topics |
 | [seo-checklist.md](seo-checklist.md) | Maintainer SEO checklist |
 
 [← Back to main README](../README.md) · [Tiếng Việt](../README.vi.md)

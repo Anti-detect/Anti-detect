@@ -6,6 +6,18 @@ Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [1.1.1] - 2026-06-03
+
+### Fixed
+
+- `sync-repo-settings`: invalid `administration` permission (use `GH_METADATA_TOKEN` + drift checks)
+- `labels.yml` format for EndBug/label-sync
+- Markdown lint rules (MD051/MD060); link-check ignores for CI badges
+
+### Added
+
+- [docs/setup-github-metadata.md](docs/setup-github-metadata.md) — one-time PAT setup
+
 ## [1.1.0] - 2026-06-03
 
 ### Added
@@ -40,6 +52,7 @@ Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - docs: getting-started, open-source-catalog, faq
 - GitHub issue/PR templates
 
-[Unreleased]: https://github.com/Anti-detect/Anti-detect/compare/v1.1.0...HEAD
+[Unreleased]: https://github.com/Anti-detect/Anti-detect/compare/v1.1.1...HEAD
+[1.1.1]: https://github.com/Anti-detect/Anti-detect/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/Anti-detect/Anti-detect/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/Anti-detect/Anti-detect/releases/tag/v1.0.0

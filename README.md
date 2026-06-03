@@ -172,9 +172,9 @@ Code **`ADBNEW50`** — **50% off** first purchase:
 
 ## Repository settings (SEO)
 
-Metadata is defined in [`.github/repo-metadata.json`](.github/repo-metadata.json) and **applied automatically** on every push to `main` by the [Sync repository settings](.github/workflows/sync-repo-settings.yml) workflow (`administration: write`).
+Metadata lives in [`.github/repo-metadata.json`](.github/repo-metadata.json). After you add the **`GH_METADATA_TOKEN`** secret (one-time), [Sync repository settings](.github/workflows/sync-repo-settings.yml) applies it on each push. Setup: [docs/setup-github-metadata.md](docs/setup-github-metadata.md).
 
-Manual override (optional):
+Manual override:
 
 ```powershell
 $env:GITHUB_TOKEN = "ghp_YOUR_TOKEN"
