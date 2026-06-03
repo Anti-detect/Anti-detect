@@ -1,0 +1,36 @@
+name: Support request
+description: Questions about kits, MLX setup, or ADBLogin (not security)
+title: "[support]: "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For **kit bugs**, prefer opening an issue on the specific [multilogin-automation](https://github.com/multilogin-automation) repo.
+        See [SUPPORT.md](../../SUPPORT.md).
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Multilogin X setup
+        - Python / API automation
+        - Playwright / Selenium
+        - ADBLogin / billing
+        - Documentation on this profile repo
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: What do you need help with?
+    validations:
+      required: true
+  - type: textarea
+    id: tried
+    attributes:
+      label: What have you tried?
+      placeholder: Links to repos/docs, error messages (redact tokens)
+    validations:
+      required: false

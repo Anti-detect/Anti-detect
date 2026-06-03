@@ -1,36 +1,57 @@
 # Getting started
 
-Onboarding paths for **anti-detect browser automation** and **Multilogin X** workflows linked from this profile.
+Onboarding for **anti-detect browser automation** and **Multilogin X** — with links to real repositories under [@multilogin-automation](https://github.com/multilogin-automation).
 
-## Choose your stack
+## Path A — New to Multilogin X
 
-| If you use… | Start here |
-|-------------|------------|
-| Python + API | [multilogin-x-python-automation-sdk](https://github.com/multilogin-automation/multilogin-x-python-automation-sdk) |
-| Playwright or Selenium | [multilogin-x-playwright-selenium-templates](https://github.com/multilogin-automation/multilogin-x-playwright-selenium-templates) |
-| API exploration (no code) | [multilogin-x-postman-api-collection](https://github.com/multilogin-automation/multilogin-x-postman-api-collection) |
+1. Open [multilogin-x-getting-started](https://github.com/multilogin-automation/multilogin-x-getting-started) and follow install + first profile launch.
+2. Use [multilogin-x-id-token-retrieval-tools](https://github.com/multilogin-automation/multilogin-x-id-token-retrieval-tools) to obtain tokens, profile IDs, and workspace IDs.
+3. Clone [multilogin-automation](https://github.com/multilogin-automation/multilogin-automation) and copy from [`templates/`](https://github.com/multilogin-automation/multilogin-automation/tree/main/templates).
 
-## Typical workflow
+## Path B — Python API automation
 
-1. **Create or import a browser profile** in your anti-detect / Multilogin X environment.
-2. **Attach proxy and timezone** settings so fingerprint and network signals stay consistent.
-3. **Launch the profile** via API or template script (each kit documents the exact call).
-4. **Attach Playwright/Selenium** to the launched browser endpoint when using UI automation.
-5. **Run pilot traffic** on a staging target before scaling session count.
+1. Start with [`templates/mlx_config_template.py`](https://github.com/multilogin-automation/multilogin-automation/blob/main/templates/mlx_config_template.py).
+2. Store credentials in environment variables (never commit `.env` with secrets).
+3. Confirm Local API / MLX endpoint (commonly port **35000** — verify in your environment docs).
+4. Pilot one profile before scaling fleet size.
+
+## Path C — Playwright / Selenium UI automation
+
+1. Launch a profile via MLX API (Path A or B).
+2. Integrate [`templates/playwright_stealth.py`](https://github.com/multilogin-automation/multilogin-automation/blob/main/templates/playwright_stealth.py) for stealth hooks.
+3. Attach Playwright or Selenium to the browser debugger endpoint returned by the launcher.
+4. Run against a staging URL first; watch for Cloudflare/Akamai challenge patterns.
+
+## Path D — Cookie warming
+
+1. [multilogin_x_auto_cookie_collector](https://github.com/multilogin-automation/multilogin_x_auto_cookie_collector) — visit configured sites per profile.
+2. [mlx_cookie_robot](https://github.com/multilogin-automation/mlx_cookie_robot) — MLX-focused cookie robot.
 
 ## Environment checklist
 
-- API token or credentials stored in env vars (never committed to Git)
-- Python 3.10+ or Node LTS per kit requirements
-- Firewall rules allowing API and browser debug ports
-- Separate profiles per account or tenant
+- [ ] Python 3.10+ or Node LTS (per target repo README)
+- [ ] API token / MLX credentials in env vars only
+- [ ] Proxy + timezone aligned with profile fingerprint
+- [ ] Firewall allows API and browser debug ports
+- [ ] One profile per account/tenant where isolation matters
 
-## Infrastructure
+## Managed infrastructure
 
-For managed **anti-detect browser** capacity and partner pricing, see [ADBLogin.com](https://adblogin.com) and the [partner offer](../README.md#partner-offer) in the main README.
+Partner pricing and **anti-detect browser** capacity: [ADBLogin.com](https://adblogin.com) — code **`ADBNEW50`** ([details](../README.md#partner-offer)).
+
+## Troubleshooting
+
+| Symptom | Check |
+|---------|--------|
+| 401 / invalid token | Re-run id-token tools; rotate credentials |
+| Profile won't start | Proxy health, disk space, MLX agent logs |
+| Instant bot block | Fingerprint mismatch (Canvas/WebGL), IP reputation, rate limits |
+| Playwright can't connect | Correct CDP/WebSocket URL from launcher |
+
+More: [FAQ](faq.md) · [Glossary](glossary.md) · [Architecture](architecture.md)
 
 ## Next steps
 
-- [Open-source catalog](open-source-catalog.md)
-- [FAQ](faq.md)
+- [Open-source catalog](open-source-catalog.md) — full repo list
+- [Comparison: anti-detect vs Chrome](comparison-anti-detect-vs-chrome.md)
 - [Main README](../README.md)

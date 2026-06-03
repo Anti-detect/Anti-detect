@@ -26,6 +26,17 @@ We update when new kits ship or when API surfaces change. Star/watch individual 
 
 Yes, subject to each kit's license (typically permissive open source). Keep attribution where required.
 
+### Where are the Python SDK / Postman repos?
+
+The canonical hub is **[multilogin-automation](https://github.com/multilogin-automation/multilogin-automation)** with `/templates` (e.g. `mlx_config_template.py`, `playwright_stealth.py`). Older README links to separate `multilogin-x-python-automation-sdk` repos were removed—they are not published on GitHub.
+
+### What promo codes work?
+
+| Code | Typical use |
+|------|-------------|
+| `ADBNEW50` | 50% off first Multilogin X purchase via ADBLogin |
+| `SAVE50` | Partner/cloud offers (see individual kit READMEs) |
+
 ---
 
 ## Tiếng Việt

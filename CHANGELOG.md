@@ -1,0 +1,31 @@
+# Changelog
+
+All notable documentation and hub changes for [Anti-detect/Anti-detect](https://github.com/Anti-detect/Anti-detect).
+
+Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
+
+## [Unreleased]
+
+### Added
+
+- Vietnamese profile README ([README.vi.md](README.vi.md))
+- Expanded docs: architecture, glossary, comparison, SEO checklist, GitHub profile setup
+- GitHub Actions: markdown link check, labeler
+- Scripts to update repo About/topics via API
+- Verified open-source catalog (real @multilogin-automation repos)
+
+### Fixed
+
+- Removed broken links to non-existent `multilogin-x-python-automation-sdk`, `playwright-selenium-templates`, and `postman-api-collection` repos
+- Pointed quick start to `multilogin-automation` `/templates` and official MLX repos
+
+## [1.0.0] - 2026-06-03
+
+### Added
+
+- SEO-structured README, LICENSE (MIT), SECURITY, CODE_OF_CONDUCT, CONTRIBUTING
+- docs: getting-started, open-source-catalog, faq
+- GitHub issue/PR templates
+
+[Unreleased]: https://github.com/Anti-detect/Anti-detect/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/Anti-detect/Anti-detect/releases/tag/v1.0.0

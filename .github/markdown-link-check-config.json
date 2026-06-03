@@ -1,0 +1,11 @@
+{
+  "aliveStatusCodes": [200, 206, 403],
+  "ignorePatterns": [
+    { "pattern": "^mailto:" },
+    { "pattern": "t\\.me" },
+    { "pattern": "github\\.com/.*/(issues|pull)" }
+  ],
+  "timeout": "20s",
+  "retryOn429": true,
+  "retryCount": 3
+}

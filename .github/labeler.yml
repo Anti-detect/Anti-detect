@@ -1,0 +1,11 @@
+documentation:
+  - changed-files:
+      - any-glob-to-any-file: '**/*.md'
+
+github-actions:
+  - changed-files:
+      - any-glob-to-any-file: '.github/workflows/**'
+
+scripts:
+  - changed-files:
+      - any-glob-to-any-file: 'scripts/**'

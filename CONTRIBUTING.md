@@ -22,9 +22,13 @@ Executable automation code should go to the appropriate kit repo under **multilo
    - What changed and why
    - Screenshots if UI/markdown layout changed
 
+## SEO / docs maintainers
+
+After catalog changes, follow [docs/seo-checklist.md](docs/seo-checklist.md) and update [CHANGELOG.md](CHANGELOG.md).
+
 ## Pull request checklist
 
-- [ ] Links use `https://` and point to live destinations
+- [ ] Links use `https://` and point to live destinations (catalog: existing repos only)
 - [ ] Headings follow logical order (one H1 in README; H2 for sections)
 - [ ] New images include descriptive `alt` text
 - [ ] No secrets, API keys, or personal data in commits
