@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: multilogin-automation kits
+    url: https://github.com/multilogin-automation
+    about: Bugs in Python SDK, Playwright/Selenium templates, or Postman collection
+  - name: ADBLogin website
+    url: https://adblogin.com
+    about: Product, billing, or infrastructure questions
+  - name: Security report
+    url: https://github.com/Anti-detect/Anti-detect/blob/main/SECURITY.md
+    about: Report vulnerabilities privately (do not use public issues)

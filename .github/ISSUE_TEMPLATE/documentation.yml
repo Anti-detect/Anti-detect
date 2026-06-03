@@ -1,0 +1,33 @@
+name: Documentation improvement
+description: Suggest README, FAQ, or docs changes for SEO and clarity
+title: "[docs]: "
+labels: ["documentation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve discoverability and accuracy. See [CONTRIBUTING.md](../../CONTRIBUTING.md).
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is unclear or missing?
+      placeholder: e.g. missing Playwright install step, broken link, SEO keyword gap
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: Outline text, links, or section headings you suggest
+    validations:
+      required: true
+  - type: dropdown
+    id: language
+    attributes:
+      label: Language
+      options:
+        - English
+        - Tiếng Việt
+        - Both
+    validations:
+      required: true
