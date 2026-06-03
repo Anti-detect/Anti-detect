@@ -5,8 +5,7 @@ on:
     branches: [main]
   workflow_dispatch:
 
-# GITHUB_TOKEN cannot change repo About/topics on user-owned repos.
-# Add repository secret: GH_METADATA_TOKEN (classic PAT, scope: repo).
+# Default GITHUB_TOKEN cannot update About/topics. Optional secret: GH_METADATA_TOKEN (PAT, repo scope).
 
 permissions:
   contents: read
@@ -16,7 +15,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  metadata-drift:
+  repository-settings:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -25,33 +24,27 @@ jobs:
         run: |
           set -euo pipefail
           EXPECTED=$(jq -r '.description' .github/repo-metadata.json)
-          ACTUAL=$(curl -fsSL https://api.github.com/repos/${GITHUB_REPOSITORY} | jq -r '.description // empty')
+          ACTUAL=$(curl -fsSL "https://api.github.com/repos/${GITHUB_REPOSITORY}" | jq -r '.description // empty')
           if [ "$EXPECTED" = "$ACTUAL" ]; then
             echo "Description OK"
           else
             echo "::warning title=Metadata drift::Expected: $EXPECTED | Actual: $ACTUAL"
-            echo "Add secret GH_METADATA_TOKEN or run scripts/set-github-about.ps1"
           fi
 
       - name: Check topics drift
         run: |
           set -euo pipefail
-          COUNT=$(curl -fsSL https://api.github.com/repos/${GITHUB_REPOSITORY}/topics \
+          COUNT=$(curl -fsSL "https://api.github.com/repos/${GITHUB_REPOSITORY}/topics" \
             -H "Accept: application/vnd.github.mercy-preview+json" | jq '.names | length')
           WANT=$(jq '.topics | length' .github/repo-metadata.json)
           if [ "$COUNT" -ge 10 ]; then
-            echo "Topics count OK ($COUNT)"
+            echo "Topics OK ($COUNT)"
           else
-            echo "::warning title=Topics missing::Found $COUNT topics, want ~$WANT. Sync metadata via PAT secret."
+            echo "::warning title=Topics missing::Found $COUNT topics, expected ~$WANT"
           fi
 
-  sync:
-    if: ${{ secrets.GH_METADATA_TOKEN != '' }}
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Apply description, homepage, and features
+      - name: Sync About and topics (requires GH_METADATA_TOKEN secret)
+        if: ${{ secrets.GH_METADATA_TOKEN != '' }}
         env:
           GH_TOKEN: ${{ secrets.GH_METADATA_TOKEN }}
         run: |
@@ -65,18 +58,11 @@ jobs:
             -f homepage="$HOME" \
             -F has_wiki=$WIKI \
             -F has_discussions=$DISC
-
-      - name: Apply repository topics
-        env:
-          GH_TOKEN: ${{ secrets.GH_METADATA_TOKEN }}
-        run: |
-          set -euo pipefail
           jq '{names: .topics}' .github/repo-metadata.json > /tmp/topics.json
           gh api --method PUT "repos/${GITHUB_REPOSITORY}/topics" --input /tmp/topics.json
+          echo "Metadata synced."
 
-  remind:
-    if: ${{ secrets.GH_METADATA_TOKEN == '' }}
-    runs-on: ubuntu-latest
-    steps:
-      - run: |
-          echo "::notice::Optional: add repository secret GH_METADATA_TOKEN (PAT, repo scope) to auto-sync About, homepage, and topics from .github/repo-metadata.json"
+      - name: Remind to add PAT secret
+        if: ${{ secrets.GH_METADATA_TOKEN == '' }}
+        run: |
+          echo "::notice::Add repository secret GH_METADATA_TOKEN to auto-apply .github/repo-metadata.json (see docs/setup-github-metadata.md)"
