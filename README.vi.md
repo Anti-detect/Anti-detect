@@ -14,6 +14,8 @@ lang: vi
   <a href="README.md"><img src="https://img.shields.io/badge/English-README-blue?style=flat-square" alt="English"></a>
   <a href="README.zh-CN.md"><img src="https://img.shields.io/badge/中文-README.zh--CN-red?style=flat-square" alt="Chinese"></a>
   <a href="README.ru.md"><img src="https://img.shields.io/badge/Русский-README.ru-blue?style=flat-square" alt="Russian"></a>
+  <a href="README.ko.md"><img src="https://img.shields.io/badge/한국어-README.ko-purple?style=flat-square" alt="Korean"></a>
+  <a href="README.ja.md"><img src="https://img.shields.io/badge/日本語-README.ja-orange?style=flat-square" alt="Japanese"></a>
 </p>
 
 ## Mục lục
@@ -77,6 +79,10 @@ Mỗi **profile** có fingerprint, storage và proxy riêng — giảm liên k�
 [@multilogin-automation](https://github.com/multilogin-automation). Repo này là **hub tài liệu**.
 
 Xem thêm: [docs/faq.md](docs/faq.md)
+
+### So sánh thị trường (trung lập)
+
+[docs/browser-landscape.md](docs/browser-landscape.md) — Multilogin X, GoLogin, Dolphin Anty, AdsPower, v.v.
 
 ---
 

@@ -41,7 +41,7 @@ an individual is officially representing the community in public spaces.
 
 ## Enforcement
 
-Report unacceptable behavior via [GitHub private vulnerability reporting](https://github.com/Anti-detect/Anti-detect/security/advisories/new) or a **private** issue labeled `conduct` (do not include personal details of others in public threads). Maintainers will review promptly and fairly.
+Report unacceptable behavior by opening a **private** communication channel with maintainers (e.g. GitHub **Discussions** DM where enabled, or a minimal private issue without naming victims in public). Do not include personal details of others in public threads. Maintainers will review promptly and fairly.
 
 ## Attribution
 

@@ -24,10 +24,16 @@ body:
   - type: dropdown
     id: language
     attributes:
-      label: Language
+      label: Language / locale
       options:
         - English
         - Tiếng Việt
-        - Both
+        - 中文
+        - Русский
+        - Bahasa Indonesia
+        - Português (BR)
+        - 한국어
+        - 日本語
+        - Multiple locales
     validations:
       required: true

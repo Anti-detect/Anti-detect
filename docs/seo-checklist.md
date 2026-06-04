@@ -8,7 +8,7 @@ Source of truth: [`.github/repo-metadata.json`](../.github/repo-metadata.json) (
 
 - [ ] About description ≤ 350 chars, starts with **anti-detect** or **browser fingerprinting**
 - [ ] Website = Multilogin pricing URL (see `repo-metadata.json` → `homepage`)
-- [ ] 18–21 topics applied (no spam tags like `2027`, `draft`)
+- [ ] **Exactly ≤ 20** GitHub topics (API limit); see `repo-metadata.json`
 - [ ] Social preview image uploaded (UI only — not automatable without image asset)
 
 ## README.md
@@ -19,7 +19,8 @@ Source of truth: [`.github/repo-metadata.json`](../.github/repo-metadata.json) (
 - [ ] All external links return 200 (CI workflow)
 - [ ] Images have `alt` text
 - [ ] FAQ uses question-style headings
-- [ ] Localized READMEs linked: VI, ZH, RU, ID, PT-BR
+- [ ] Localized READMEs linked: VI, ZH, RU, ID, PT-BR, KO, JA
+- [ ] [browser-landscape.md](browser-landscape.md) uses neutral competitor keywords (no disparagement)
 
 ## Topics (copy-paste)
 
@@ -38,8 +39,6 @@ python
 stealth
 anti-bot
 web-scraping
-automation
-fingerprint
 headless-browser
 browser-profiles
 profile-management

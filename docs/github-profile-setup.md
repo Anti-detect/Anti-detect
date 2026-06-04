@@ -52,6 +52,8 @@ Link localized audiences:
 - [README.ru.md](../README.ru.md)
 - [README.id.md](../README.id.md)
 - [README.pt-BR.md](../README.pt-BR.md)
+- [README.ko.md](../README.ko.md)
+- [README.ja.md](../README.ja.md)
 
 ## 6. Automate metadata (optional)
 

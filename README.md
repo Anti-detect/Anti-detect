@@ -1,7 +1,7 @@
 <!--
 title: Anti-detect Browser Automation & Multilogin X Documentation
 description: Anti-detect browser, browser fingerprinting, Multilogin X automation, stealth Playwright and Selenium templates — open documentation hub.
-keywords: anti-detect browser, antidetect browser, fingerprint browser, Multilogin X, browser profile manager, stealth automation, Playwright, Selenium, MMO
+keywords: anti-detect browser, antidetect browser, fingerprint browser, Multilogin X, GoLogin, Dolphin Anty, AdsPower, browser profile manager, stealth automation, Playwright, Selenium, MMO
 homepage: https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549
 author: Anti-detect
 -->
@@ -18,6 +18,8 @@ author: Anti-detect
   <a href="README.ru.md"><img src="https://img.shields.io/badge/Русский-README.ru-blue?style=flat-square" alt="Russian"></a>
   <a href="README.id.md"><img src="https://img.shields.io/badge/Bahasa_ID-README.id-green?style=flat-square" alt="Indonesian"></a>
   <a href="README.pt-BR.md"><img src="https://img.shields.io/badge/Português-README.pt--BR-yellow?style=flat-square" alt="Portuguese"></a>
+  <a href="README.ko.md"><img src="https://img.shields.io/badge/한국어-README.ko-purple?style=flat-square" alt="Korean"></a>
+  <a href="README.ja.md"><img src="https://img.shields.io/badge/日本語-README.ja-orange?style=flat-square" alt="Japanese"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="MIT License"></a>
   <a href="SECURITY.md"><img src="https://img.shields.io/badge/Security-Policy-blue?style=flat-square" alt="Security policy"></a>
   <a href="https://github.com/multilogin-automation/multilogin-automation"><img src="https://img.shields.io/github/stars/multilogin-automation/multilogin-automation?style=flat-square" alt="Stars multilogin-automation"></a>
@@ -38,6 +40,7 @@ author: Anti-detect
 - [Quick start](#quick-start)
 - [Open-source dev kits](#open-source-dev-kits)
 - [Why browser fingerprinting matters](#why-browser-fingerprinting-matters)
+- [Anti-detect browser landscape](#anti-detect-browser-landscape)
 - [FAQ](#frequently-asked-questions)
 - [Multilogin pricing reference](#multilogin-pricing-reference)
 - [Repository settings (SEO)](#repository-settings-seo)
@@ -135,6 +138,14 @@ Sites combine **TLS**, **IP reputation**, **JS challenges**, and **browser finge
 
 ---
 
+## Anti-detect browser landscape
+
+Neutral overview of how **Multilogin X** fits next to other common search terms (**GoLogin**, **Dolphin Anty**, **AdsPower**, **Incogniton**, OSS profile managers):
+
+**[docs/browser-landscape.md](docs/browser-landscape.md)**
+
+---
+
 ## Frequently asked questions
 
 ### What is an anti-detect browser?
@@ -192,6 +203,7 @@ Target keywords: `anti-detect`, `browser-fingerprinting`, `multilogin-x`, `finge
 | [docs/open-source-catalog.md](docs/open-source-catalog.md) | All verified repos |
 | [docs/architecture.md](docs/architecture.md) | System design |
 | [docs/glossary.md](docs/glossary.md) | Terminology (EN + more) |
+| [docs/browser-landscape.md](docs/browser-landscape.md) | Neutral market / keyword map |
 | [docs/seo-checklist.md](docs/seo-checklist.md) | Maintainer SEO |
 | [SUPPORT.md](SUPPORT.md) | Support routing |
 | [CHANGELOG.md](CHANGELOG.md) | Change history |

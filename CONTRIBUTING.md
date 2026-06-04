@@ -8,10 +8,26 @@ This profile repository welcomes:
 
 - README and `docs/` improvements (clarity, SEO, accuracy)
 - Fixed or new links to [@multilogin-automation](https://github.com/multilogin-automation) kits
-- FAQ additions (English or Vietnamese)
-- Typos, broken badges, and accessibility (alt text on images)
+- FAQ additions in any supported locale (see below)
+- Typos, broken badges, and accessibility (`alt` text on images)
+- Neutral updates to [docs/browser-landscape.md](docs/browser-landscape.md) (factual, no disparagement)
 
 Executable automation code should go to the appropriate kit repo under **multilogin-automation**, not here.
+
+## Supported README locales
+
+| File | Language |
+|------|----------|
+| [README.md](README.md) | English |
+| [README.vi.md](README.vi.md) | Tiếng Việt |
+| [README.zh-CN.md](README.zh-CN.md) | 中文 |
+| [README.ru.md](README.ru.md) | Русский |
+| [README.id.md](README.id.md) | Bahasa Indonesia |
+| [README.pt-BR.md](README.pt-BR.md) | Português (BR) |
+| [README.ko.md](README.ko.md) | 한국어 |
+| [README.ja.md](README.ja.md) | 日本語 |
+
+Keep promo codes **`SAAS50`** / **`MIN50`** and the Multilogin pricing URL in sync across locales.
 
 ## How to contribute
 
@@ -24,7 +40,12 @@ Executable automation code should go to the appropriate kit repo under **multilo
 
 ## SEO / docs maintainers
 
-After catalog changes, follow [docs/seo-checklist.md](docs/seo-checklist.md) and update [CHANGELOG.md](CHANGELOG.md).
+After catalog changes:
+
+1. Follow [docs/seo-checklist.md](docs/seo-checklist.md)
+2. Update [CHANGELOG.md](CHANGELOG.md)
+3. Verify links (CI runs on push)
+4. Keep GitHub topics ≤ **20** in [`.github/repo-metadata.json`](.github/repo-metadata.json)
 
 ## Pull request checklist
 
@@ -32,6 +53,7 @@ After catalog changes, follow [docs/seo-checklist.md](docs/seo-checklist.md) and
 - [ ] Headings follow logical order (one H1 in README; H2 for sections)
 - [ ] New images include descriptive `alt` text
 - [ ] No secrets, API keys, or personal data in commits
+- [ ] No legacy partner branding (`adblogin`, old promo codes, Telegram funnels)
 
 ## Issues
 

@@ -8,7 +8,8 @@ Hub for **Anti-detect** profile repository documentation.
 | [open-source-catalog.md](open-source-catalog.md) | Verified @multilogin-automation repos |
 | [architecture.md](architecture.md) | System diagram and layers |
 | [glossary.md](glossary.md) | Terms for SEO and learning (EN, VI, ZH, RU) |
-| [comparison-anti-detect-vs-chrome.md](comparison-anti-detect-vs-chrome.md) | Product comparison |
+| [comparison-anti-detect-vs-chrome.md](comparison-anti-detect-vs-chrome.md) | Chrome vs anti-detect |
+| [browser-landscape.md](browser-landscape.md) | Neutral anti-detect market overview |
 | [faq.md](faq.md) | FAQ (EN, VI, ZH, RU) |
 | [github-profile-setup.md](github-profile-setup.md) | Pin repos, social preview, metadata |
 | [setup-github-metadata.md](setup-github-metadata.md) | PAT secret / auto-sync About & topics |
@@ -24,5 +25,7 @@ Hub for **Anti-detect** profile repository documentation.
 | Русский | [README.ru.md](../README.ru.md) |
 | Bahasa Indonesia | [README.id.md](../README.id.md) |
 | Português (BR) | [README.pt-BR.md](../README.pt-BR.md) |
+| 한국어 | [README.ko.md](../README.ko.md) |
+| 日本語 | [README.ja.md](../README.ja.md) |
 
 [← Back to main README](../README.md)

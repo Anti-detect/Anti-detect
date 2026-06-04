@@ -12,7 +12,7 @@ Laws and site terms vary by jurisdiction and platform. You are responsible for c
 
 ### Which keywords describe this ecosystem?
 
-Common search terms: **anti-detect browser**, **antidetect browser**, **fingerprint browser**, **browser fingerprinting**, **Multilogin X**, **browser profile manager**, **stealth automation**, **Playwright anti-bot**, **Selenium fingerprint**, **profile isolation**, **MMO account management**, **undetectable browser**.
+Common search terms: **anti-detect browser**, **antidetect browser**, **fingerprint browser**, **browser fingerprinting**, **Multilogin X**, **GoLogin**, **Dolphin Anty**, **AdsPower**, **browser profile manager**, **stealth automation**, **Playwright anti-bot**, **Selenium fingerprint**, **profile isolation**, **MMO account management**, **undetectable browser**. See [browser-landscape.md](browser-landscape.md) for a neutral category overview.
 
 ### Why are kits split across multiple repositories?
 

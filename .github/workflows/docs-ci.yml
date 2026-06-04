@@ -14,6 +14,22 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  branding-guard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Block legacy partner branding
+        run: |
+          set -euo pipefail
+          shopt -s globstar
+          if grep -riE 'adblogin\.com|toolskiemtrieudo|ADBNEW50|SAVE50|business@adblogin' \
+            README.md README.*.md docs .github --include='*.md' --include='*.yml' --include='*.json' 2>/dev/null; then
+            echo "::error::Legacy branding or promo codes found. Use SAAS50/MIN50 and Multilogin pricing URL only."
+            exit 1
+          fi
+          echo "Branding guard OK"
+
   verify-github-repos:
     runs-on: ubuntu-latest
     steps:

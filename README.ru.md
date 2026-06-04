@@ -80,6 +80,10 @@ lang: ru
 
 Ещё: [docs/faq.md](docs/faq.md)
 
+### Обзор рынка (нейтрально)
+
+[docs/browser-landscape.md](docs/browser-landscape.md)
+
 ---
 
 ## Цены Multilogin
