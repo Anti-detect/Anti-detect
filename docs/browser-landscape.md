@@ -26,6 +26,9 @@ Teams often evaluate several vendors in the same budget conversation:
 | **AdsPower** | Strong in CN/TW/SEA multi-account marketing searches |
 | **Incogniton** | Profile manager positioning |
 | **Kameleo** | Automation-oriented anti-detect |
+| **Octo Browser** | Common in CIS / EU affiliate searches |
+| **MoreLogin** | Often grouped with SEA multi-account tooling |
+| **BitBrowser** | Budget segment; frequent comparison searches in CN |
 
 **This repository does not ship or support those products.** If you use MLX, start at [getting-started.md](getting-started.md).
 

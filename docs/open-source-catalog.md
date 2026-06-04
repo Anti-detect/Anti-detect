@@ -33,6 +33,7 @@ Verified index of [@multilogin-automation](https://github.com/multilogin-automat
 | quick_profile_proxy | Launch quick MLX profile with proxy | [repo](https://github.com/multilogin-automation/quick_profile_proxy) |
 | mlx_proxy_details | Script to read proxy details for automation | [repo](https://github.com/multilogin-automation/mlx_proxy_details) |
 | MultiLogin | Modernized MultiLogin fork, MLX API automation | [repo](https://github.com/multilogin-automation/MultiLogin) |
+| SessionBox | Multi-login session utility (check README) | [repo](https://github.com/multilogin-automation/SessionBox) |
 
 ---
 

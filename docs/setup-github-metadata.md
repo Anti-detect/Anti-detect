@@ -20,7 +20,7 @@ $env:GITHUB_TOKEN = "ghp_YOUR_PAT"
 
 ## Option C — GitHub UI (manual)
 
-Copy from [seo-checklist.md](seo-checklist.md) and [repo-metadata.json](../.github/repo-metadata.json):
+Copy from [seo-checklist.md](seo-checklist.md), [urls.md](urls.md), and [repo-metadata.json](../.github/repo-metadata.json):
 
 - **Description:** Anti-detect browser fingerprinting hub: Multilogin X guides, stealth Playwright/Selenium templates, and browser profile automation docs.
 - **Website:** Multilogin pricing URL in `homepage` field

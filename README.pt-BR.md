@@ -1,7 +1,7 @@
 <!--
 title: Navegador anti-detect · Impressão digital · Multilogin X
 description: Navegador anti-detect, browser fingerprinting, Multilogin X, automação stealth Playwright/Selenium — hub de documentação aberta.
-keywords: navegador anti-detect, fingerprint browser, Multilogin X, perfis de navegador, Playwright, Selenium, MMO
+keywords: navegador anti-detect, fingerprint browser, Multilogin X, GoLogin, Dolphin Anty, perfis de navegador, Playwright, Selenium, MMO
 homepage: https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549
 lang: pt-BR
 -->
@@ -13,40 +13,30 @@ lang: pt-BR
 <p align="left">
   <a href="README.md"><img src="https://img.shields.io/badge/English-README-blue?style=flat-square" alt="English"></a>
   <a href="README.vi.md"><img src="https://img.shields.io/badge/Tiếng_Việt-README.vi-red?style=flat-square" alt="Vietnamese"></a>
+  <a href="README.zh-CN.md"><img src="https://img.shields.io/badge/中文-README.zh--CN-red?style=flat-square" alt="Chinese"></a>
 </p>
 
 ## Índice
 
 - [Sobre o repositório](#sobre-o-repositório)
-- [Público](#público)
 - [Início rápido](#início-rápido)
-- [Kits open source](#kits-open-source)
+- [Panorama do mercado](#panorama-do-mercado)
 - [Preços Multilogin](#preços-multilogin)
 
 ---
 
 ## Sobre o repositório
 
-README oficial do perfil [@Anti-detect](https://github.com/Anti-detect): **somente documentação** (MIT). Ideal para **MMO**, marketing multi-conta e **gerenciador de perfis de navegador**.
-
-## Público
-
-| Público | Uso |
-|---------|-----|
-| Engenheiros de automação | Playwright/Selenium com fingerprints isolados |
-| Times MMO / growth | Várias contas sem correlação |
-| Desenvolvedores | Avaliar kits antes do produção |
-
----
+README oficial [@Anti-detect](https://github.com/Anti-detect): **somente documentação** (MIT). Ideal para **MMO**, marketing multi-conta e **gerenciador de perfis de navegador**.
 
 ## Início rápido
 
 1. MLX iniciante → [multilogin-x-getting-started](https://github.com/multilogin-automation/multilogin-x-getting-started)
 2. Tokens → [multilogin-x-id-token-retrieval-tools](https://github.com/multilogin-automation/multilogin-x-id-token-retrieval-tools)
 3. Templates → [multilogin-automation/templates](https://github.com/multilogin-automation/multilogin-automation/tree/main/templates)
-4. Planos → [Multilogin pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · códigos **`SAAS50`** / **`MIN50`**
+4. Planos → [Multilogin pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · **`SAAS50`** / **`MIN50`**
 
----
+Checklist de fingerprint: [docs/fingerprint-checklist.md](docs/fingerprint-checklist.md)
 
 ## Kits open source
 
@@ -55,7 +45,13 @@ README oficial do perfil [@Anti-detect](https://github.com/Anti-detect): **somen
 | [multilogin-automation](https://github.com/multilogin-automation/multilogin-automation) | Hub + templates |
 | [undetectable-fingerprint-browser](https://github.com/multilogin-automation/undetectable-fingerprint-browser) | Anti-detect OSS |
 
-[Catálogo](docs/open-source-catalog.md) · [README.md](README.md) (English)
+[Catálogo](docs/open-source-catalog.md) · [FAQ](docs/faq.md)
+
+---
+
+## Panorama do mercado
+
+Visão neutra (Multilogin X, GoLogin, Dolphin Anty, AdsPower): [docs/browser-landscape.md](docs/browser-landscape.md)
 
 ---
 

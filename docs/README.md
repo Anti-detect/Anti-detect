@@ -10,6 +10,9 @@ Hub for **Anti-detect** profile repository documentation.
 | [glossary.md](glossary.md) | Terms for SEO and learning (EN, VI, ZH, RU) |
 | [comparison-anti-detect-vs-chrome.md](comparison-anti-detect-vs-chrome.md) | Chrome vs anti-detect |
 | [browser-landscape.md](browser-landscape.md) | Neutral anti-detect market overview |
+| [fingerprint-checklist.md](fingerprint-checklist.md) | Fleet fingerprint QA |
+| [locales.md](locales.md) | Localized README index |
+| [urls.md](urls.md) | Canonical pricing URL & promo codes |
 | [faq.md](faq.md) | FAQ (EN, VI, ZH, RU) |
 | [github-profile-setup.md](github-profile-setup.md) | Pin repos, social preview, metadata |
 | [setup-github-metadata.md](setup-github-metadata.md) | PAT secret / auto-sync About & topics |
@@ -27,5 +30,6 @@ Hub for **Anti-detect** profile repository documentation.
 | Português (BR) | [README.pt-BR.md](../README.pt-BR.md) |
 | 한국어 | [README.ko.md](../README.ko.md) |
 | 日本語 | [README.ja.md](../README.ja.md) |
+| ไทย | [README.th.md](../README.th.md) |
 
 [← Back to main README](../README.md)

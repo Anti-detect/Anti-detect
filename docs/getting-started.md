@@ -27,6 +27,10 @@ Onboarding for **anti-detect browser automation** and **Multilogin X** — with 
 1. [multilogin_x_auto_cookie_collector](https://github.com/multilogin-automation/multilogin_x_auto_cookie_collector) — visit configured sites per profile.
 2. [mlx_cookie_robot](https://github.com/multilogin-automation/mlx_cookie_robot) — MLX-focused cookie robot.
 
+## Fingerprint pre-flight
+
+Before scaling profiles, run through [fingerprint-checklist.md](fingerprint-checklist.md) (timezone, WebRTC, Canvas/WebGL, proxy alignment).
+
 ## Environment checklist
 
 - [ ] Python 3.10+ or Node LTS (per target repo README)

@@ -34,6 +34,7 @@ body:
         - Português (BR)
         - 한국어
         - 日本語
+        - ไทย
         - Multiple locales
     validations:
       required: true

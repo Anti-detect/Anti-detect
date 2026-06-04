@@ -6,7 +6,7 @@
 - [Open-source catalog](docs/open-source-catalog.md)
 - [FAQ](docs/faq.md) — English, Tiếng Việt, 中文, Русский
 - [Browser landscape](docs/browser-landscape.md) — neutral anti-detect keyword map
-- Localized READMEs: [VI](README.vi.md) · [ZH](README.zh-CN.md) · [RU](README.ru.md) · [ID](README.id.md) · [PT-BR](README.pt-BR.md) · [KO](README.ko.md) · [JA](README.ja.md)
+- Localized READMEs: [index](docs/locales.md) · [VI](README.vi.md) · [ZH](README.zh-CN.md) · [RU](README.ru.md) · [ID](README.id.md) · [PT-BR](README.pt-BR.md) · [KO](README.ko.md) · [JA](README.ja.md) · [TH](README.th.md)
 
 ## Multilogin X pricing
 

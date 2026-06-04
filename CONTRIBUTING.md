@@ -26,8 +26,9 @@ Executable automation code should go to the appropriate kit repo under **multilo
 | [README.pt-BR.md](README.pt-BR.md) | Português (BR) |
 | [README.ko.md](README.ko.md) | 한국어 |
 | [README.ja.md](README.ja.md) | 日本語 |
+| [README.th.md](README.th.md) | ไทย |
 
-Keep promo codes **`SAAS50`** / **`MIN50`** and the Multilogin pricing URL in sync across locales.
+Keep promo codes **`SAAS50`** / **`MIN50`** and the Multilogin pricing URL in sync across locales ([docs/urls.md](docs/urls.md)).
 
 ## How to contribute
 

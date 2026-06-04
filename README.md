@@ -20,6 +20,7 @@ author: Anti-detect
   <a href="README.pt-BR.md"><img src="https://img.shields.io/badge/Português-README.pt--BR-yellow?style=flat-square" alt="Portuguese"></a>
   <a href="README.ko.md"><img src="https://img.shields.io/badge/한국어-README.ko-purple?style=flat-square" alt="Korean"></a>
   <a href="README.ja.md"><img src="https://img.shields.io/badge/日本語-README.ja-orange?style=flat-square" alt="Japanese"></a>
+  <a href="README.th.md"><img src="https://img.shields.io/badge/ไทย-README.th-teal?style=flat-square" alt="Thai"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="MIT License"></a>
   <a href="SECURITY.md"><img src="https://img.shields.io/badge/Security-Policy-blue?style=flat-square" alt="Security policy"></a>
   <a href="https://github.com/multilogin-automation/multilogin-automation"><img src="https://img.shields.io/github/stars/multilogin-automation/multilogin-automation?style=flat-square" alt="Stars multilogin-automation"></a>
@@ -43,6 +44,7 @@ author: Anti-detect
 - [Anti-detect browser landscape](#anti-detect-browser-landscape)
 - [FAQ](#frequently-asked-questions)
 - [Multilogin pricing reference](#multilogin-pricing-reference)
+- [Languages](#languages)
 - [Repository settings (SEO)](#repository-settings-seo)
 - [Documentation](#documentation)
 
@@ -106,6 +108,7 @@ Details: [docs/architecture.md](docs/architecture.md) · [docs/comparison-anti-d
 | 2 | Tokens & IDs → [multilogin-x-id-token-retrieval-tools](https://github.com/multilogin-automation/multilogin-x-id-token-retrieval-tools) |
 | 3 | Code templates → [`multilogin-automation/templates`](https://github.com/multilogin-automation/multilogin-automation/tree/main/templates) |
 | 4 | Commercial MLX plans → [Multilogin pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · codes **`SAAS50`** / **`MIN50`** |
+| 5 | Fingerprint QA → [fingerprint-checklist.md](docs/fingerprint-checklist.md) |
 
 Full paths: [docs/getting-started.md](docs/getting-started.md)
 
@@ -177,6 +180,26 @@ More: [docs/faq.md](docs/faq.md) · localized READMEs linked above.
 
 **Checkout:** [multilogin.com/pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549)
 
+Maintainers: canonical URL in [docs/urls.md](docs/urls.md).
+
+---
+
+## Languages
+
+| Locale | README |
+|--------|--------|
+| English | You are here |
+| Tiếng Việt | [README.vi.md](README.vi.md) |
+| 中文 | [README.zh-CN.md](README.zh-CN.md) |
+| Русский | [README.ru.md](README.ru.md) |
+| Indonesia | [README.id.md](README.id.md) |
+| Português (BR) | [README.pt-BR.md](README.pt-BR.md) |
+| 한국어 | [README.ko.md](README.ko.md) |
+| 日本語 | [README.ja.md](README.ja.md) |
+| ไทย | [README.th.md](README.th.md) |
+
+Full index: [docs/locales.md](docs/locales.md)
+
 ---
 
 ## Repository settings (SEO)
@@ -204,6 +227,9 @@ Target keywords: `anti-detect`, `browser-fingerprinting`, `multilogin-x`, `finge
 | [docs/architecture.md](docs/architecture.md) | System design |
 | [docs/glossary.md](docs/glossary.md) | Terminology (EN + more) |
 | [docs/browser-landscape.md](docs/browser-landscape.md) | Neutral market / keyword map |
+| [docs/fingerprint-checklist.md](docs/fingerprint-checklist.md) | Pre-flight fingerprint QA |
+| [docs/locales.md](docs/locales.md) | Localized README index |
+| [docs/urls.md](docs/urls.md) | Canonical pricing URL & codes |
 | [docs/seo-checklist.md](docs/seo-checklist.md) | Maintainer SEO |
 | [SUPPORT.md](SUPPORT.md) | Support routing |
 | [CHANGELOG.md](CHANGELOG.md) | Change history |

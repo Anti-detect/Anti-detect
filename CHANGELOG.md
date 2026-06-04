@@ -8,9 +8,15 @@ Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 
+- [docs/urls.md](docs/urls.md), [docs/locales.md](docs/locales.md), [docs/fingerprint-checklist.md](docs/fingerprint-checklist.md)
+- [README.th.md](README.th.md) (Thai)
+- [scripts/verify-docs.ps1](scripts/verify-docs.ps1) — local link/branding checks
+- Catalog: [SessionBox](https://github.com/multilogin-automation/SessionBox)
 - [docs/browser-landscape.md](docs/browser-landscape.md) — neutral anti-detect market / competitor keyword overview
 - Localized profile READMEs: [README.zh-CN.md](README.zh-CN.md), [README.ru.md](README.ru.md), [README.id.md](README.id.md), [README.pt-BR.md](README.pt-BR.md), [README.ko.md](README.ko.md), [README.ja.md](README.ja.md)
-- Docs CI **branding guard** — blocks legacy `adblogin` / old promo codes in README and docs
+- Docs CI **branding guard** — blocks legacy `adblogin` / old promo codes in README and docs (excludes workflow self-reference)
+- Sync workflow: homepage drift warning
+- GitHub topic `account-management` (20 topics total)
 - Expanded SEO topics in [`.github/repo-metadata.json`](.github/repo-metadata.json) (`antidetect-browser`, `fingerprint-browser`, `multilogin-x`, …)
 
 ### Changed

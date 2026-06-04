@@ -87,8 +87,45 @@ Xem [SECURITY.md](../SECURITY.md).
 
 ---
 
+## Bahasa Indonesia
+
+### Apa itu browser anti-detect?
+
+Profil terpisah untuk fingerprint, cookie, dan proxy — mengurangi korelasi akun.
+
+### Mulai dari mana?
+
+[Katalog](open-source-catalog.md) → [Multilogin pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) (**SAAS50** / **MIN50**).
+
+---
+
+## Português (BR)
+
+### O que é navegador anti-detect?
+
+Isolamento de fingerprint, armazenamento e proxy por perfil.
+
+### Por onde começar?
+
+[Catálogo](open-source-catalog.md) · códigos **SAAS50** / **MIN50** no checkout Multilogin.
+
+---
+
+## ไทย
+
+### เบราว์เซอร์ anti-detect คืออะไร?
+
+แยก fingerprint และ proxy ต่อโปรไฟล์ — เหมาะกับ MMO / หลายบัญชี
+
+### เริ่มที่ไหน?
+
+[README.th.md](../README.th.md) · [browser-landscape.md](browser-landscape.md)
+
+---
+
 ## Related
 
 - [Getting started](getting-started.md)
+- [Fingerprint checklist](fingerprint-checklist.md)
+- [Locales index](locales.md)
 - [Main README](../README.md)
-- [README.zh-CN.md](../README.zh-CN.md) · [README.ru.md](../README.ru.md)

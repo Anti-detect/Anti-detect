@@ -31,6 +31,17 @@ jobs:
             echo "::warning title=Metadata drift::Expected: $EXPECTED | Actual: $ACTUAL"
           fi
 
+      - name: Check homepage drift
+        run: |
+          set -euo pipefail
+          EXPECTED=$(jq -r '.homepage' .github/repo-metadata.json)
+          ACTUAL=$(curl -fsSL "https://api.github.com/repos/${GITHUB_REPOSITORY}" | jq -r '.homepage // empty')
+          if [ "$EXPECTED" = "$ACTUAL" ]; then
+            echo "Homepage OK"
+          else
+            echo "::warning title=Homepage drift::Expected: $EXPECTED | Actual: $ACTUAL"
+          fi
+
       - name: Check topics drift
         run: |
           set -euo pipefail
