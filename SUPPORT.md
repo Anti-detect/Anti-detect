@@ -4,18 +4,13 @@
 
 - [Getting started](docs/getting-started.md)
 - [Open-source catalog](docs/open-source-catalog.md)
-- [FAQ](docs/faq.md) (English + Tiếng Việt)
-- [Tiếng Việt README](README.vi.md)
+- [FAQ](docs/faq.md) — English, Tiếng Việt, 中文, Русский
+- Localized READMEs: [README.vi.md](README.vi.md) · [README.zh-CN.md](README.zh-CN.md) · [README.ru.md](README.ru.md) · [README.id.md](README.id.md) · [README.pt-BR.md](README.pt-BR.md)
 
-## Community
+## Multilogin X pricing
 
-- Telegram group: https://t.me/ToolsKiemTrieuDoGroup
-- Telegram: https://t.me/ToolsKiemTrieuDo
-
-## Product & infrastructure
-
-- Website: https://adblogin.com
-- Partner offer: code `ADBNEW50` at https://adblogin.com/go/multilogin
+- [Multilogin pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549)
+- Promo codes: **`SAAS50`**, **`MIN50`** (see [README](README.md#multilogin-pricing-reference))
 
 ## Kit-specific bugs
 
@@ -23,12 +18,12 @@ Open issues on the relevant [@multilogin-automation](https://github.com/multilog
 
 ## Documentation issues
 
-Use the [documentation issue template](.github/ISSUE_TEMPLATE/documentation.yml) in this repo.
+Use the [documentation issue template](.github/ISSUE_TEMPLATE/documentation.yml) in this profile repo.
 
 ## Security
 
 See [SECURITY.md](SECURITY.md) — do not file public issues for vulnerabilities.
 
-## Email
+## GitHub Discussions
 
-business@adblogin.com
+Optional community Q&A: enable **Discussions** on this repository and ask under the Q&A category.

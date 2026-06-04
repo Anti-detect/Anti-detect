@@ -35,9 +35,9 @@ Onboarding for **anti-detect browser automation** and **Multilogin X** — with 
 - [ ] Firewall allows API and browser debug ports
 - [ ] One profile per account/tenant where isolation matters
 
-## Managed infrastructure
+## Multilogin X plans
 
-Partner pricing and **anti-detect browser** capacity: [ADBLogin.com](https://adblogin.com) — code **`ADBNEW50`** ([details](../README.md#partner-offer)).
+Commercial **anti-detect browser** capacity: [Multilogin pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) — codes **`SAAS50`** / **`MIN50`** ([details](../README.md#multilogin-pricing-reference)).
 
 ## Troubleshooting
 

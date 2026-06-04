@@ -29,7 +29,7 @@ Quick comparison for teams evaluating **browser fingerprinting** and **profile i
 
 | Approach | Example in ecosystem |
 |----------|----------------------|
-| Commercial MLX + partner infra | [ADBLogin](https://adblogin.com), code `ADBNEW50` |
+| Commercial MLX | [Multilogin pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549), codes `SAAS50` / `MIN50` |
 | OSS fingerprint browser | [undetectable-fingerprint-browser](https://github.com/multilogin-automation/undetectable-fingerprint-browser) |
 | Self-hosted manager | [CloakBrowser-Manager](https://github.com/multilogin-automation/CloakBrowser-Manager) |
 

@@ -1,5 +1,5 @@
 name: Support request
-description: Questions about kits, MLX setup, or ADBLogin (not security)
+description: Questions about kits, MLX setup, or documentation (not security)
 title: "[support]: "
 labels: ["question"]
 body:
@@ -16,7 +16,7 @@ body:
         - Multilogin X setup
         - Python / API automation
         - Playwright / Selenium
-        - ADBLogin / billing
+        - Multilogin pricing / licensing
         - Documentation on this profile repo
         - Other
     validations:

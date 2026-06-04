@@ -22,7 +22,7 @@ jobs:
       - name: Verify multilogin-automation repo links
         run: |
           set -euo pipefail
-          mapfile -t URLS < <(grep -oE 'https://github.com/multilogin-automation/[A-Za-z0-9_.-]+' docs/open-source-catalog.md README.md README.vi.md docs/getting-started.md | sort -u)
+          mapfile -t URLS < <(grep -oE 'https://github.com/multilogin-automation/[A-Za-z0-9_.-]+' docs/open-source-catalog.md README.md README.*.md docs/getting-started.md | sort -u)
           for url in "${URLS[@]}"; do
             code=$(curl -sS -o /dev/null -w "%{http_code}" -L --max-time 20 "$url")
             if [ "$code" != "200" ]; then

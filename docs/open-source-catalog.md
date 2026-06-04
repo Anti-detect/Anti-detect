@@ -2,12 +2,14 @@
 
 Verified index of [@multilogin-automation](https://github.com/multilogin-automation) repositories. CI verifies every `github.com/multilogin-automation/*` link on push to `main`.
 
-_Last reviewed: 2026-06-03_
+**Last reviewed:** 2026-06-04
 
-## Start here (recommended)
+---
 
-| Repository | Stars | Best for | Link |
-|------------|------:|----------|------|
+## Core MLX automation
+
+| Repository | Stars (approx.) | Focus | Link |
+|------------|-----------------|-------|------|
 | **multilogin-automation** | 10 | Master hub: MLX API, fingerprinting, `/templates` (Playwright stealth, config boilerplate) | [repo](https://github.com/multilogin-automation/multilogin-automation) |
 | **multilogin-x-getting-started** | 4 | First-time setup, install, first profile launch | [repo](https://github.com/multilogin-automation/multilogin-x-getting-started) |
 | **multilogin-x-id-token-retrieval-tools** | 3 | Access tokens, Profile IDs, Workspace IDs | [repo](https://github.com/multilogin-automation/multilogin-x-id-token-retrieval-tools) |
@@ -22,7 +24,7 @@ _Last reviewed: 2026-06-03_
 
 ---
 
-## Automation & profiles
+## Cookie & proxy utilities
 
 | Repository | Focus | Link |
 |------------|-------|------|
@@ -34,7 +36,7 @@ _Last reviewed: 2026-06-03_
 
 ---
 
-## Anti-detect & alternatives
+## Fingerprint & profile managers (OSS)
 
 | Repository | Focus | Link |
 |------------|-------|------|
@@ -44,7 +46,7 @@ _Last reviewed: 2026-06-03_
 
 ---
 
-## SDKs & utilities
+## Integrations & utilities
 
 | Repository | Focus | Link |
 |------------|-------|------|
@@ -53,34 +55,34 @@ _Last reviewed: 2026-06-03_
 
 ---
 
-## How to choose
+## Pick by goal
 
-| Goal | Repository |
+| Goal | Start here |
 |------|------------|
 | Learn MLX from zero | multilogin-x-getting-started |
 | Production templates (Python/Playwright) | multilogin-automation → `/templates` |
 | API auth / IDs | multilogin-x-id-token-retrieval-tools |
 | Cookie warming | multilogin_x_auto_cookie_collector or mlx_cookie_robot |
-| OSS anti-detect stack | undetectable-fingerprint-browser |
-| Self-hosted profile UI | CloakBrowser-Manager |
 
 ---
 
-## SEO keywords by repo
+## SEO keywords per repo (maintainers)
 
 - **multilogin-automation:** `multilogin x api`, `browser fingerprinting`, `stealth scraper`, `playwright stealth`
 - **multilogin-x-getting-started:** `multilogin tutorial`, `browser automation setup`
-- **undetectable-fingerprint-browser:** `anti-detect browser open source`, `canvas webgl spoofing`
-- **CloakBrowser-Manager:** `multilogin alternative`, `browser profile manager`
+- **undetectable-fingerprint-browser:** `fingerprint browser`, `anti-detect browser open source`
+- **CloakBrowser-Manager:** `browser profile manager`, `multilogin alternative self-hosted`
 
 ---
 
-## Promo codes (partner)
+## Promo codes
 
 | Code | Use |
 |------|-----|
-| `ADBNEW50` | 50% off first Multilogin X purchase via [ADBLogin](https://adblogin.com/go/multilogin) |
-| `SAVE50` | Cloud phone / partner offers (see kit READMEs) |
+| `SAAS50` | First-time / SaaS partner discount on Multilogin X |
+| `MIN50` | Minimum-tier or follow-up checkout offers |
+
+Checkout: [Multilogin pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549)
 
 ---
 

@@ -12,7 +12,7 @@ Laws and site terms vary by jurisdiction and platform. You are responsible for c
 
 ### Which keywords describe this ecosystem?
 
-Common search terms: **anti-detect browser**, **browser fingerprinting**, **Multilogin X**, **stealth automation**, **Playwright anti-bot**, **Selenium fingerprint**, **profile isolation**, **MMO account management**.
+Common search terms: **anti-detect browser**, **antidetect browser**, **fingerprint browser**, **browser fingerprinting**, **Multilogin X**, **browser profile manager**, **stealth automation**, **Playwright anti-bot**, **Selenium fingerprint**, **profile isolation**, **MMO account management**, **undetectable browser**.
 
 ### Why are kits split across multiple repositories?
 
@@ -34,8 +34,14 @@ The canonical hub is **[multilogin-automation](https://github.com/multilogin-aut
 
 | Code | Typical use |
 |------|-------------|
-| `ADBNEW50` | 50% off first Multilogin X purchase via ADBLogin |
-| `SAVE50` | Partner/cloud offers (see individual kit READMEs) |
+| `SAAS50` | First-time / SaaS partner discount on Multilogin X |
+| `MIN50` | Minimum-tier or follow-up offers at checkout |
+
+Apply on [Multilogin pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549).
+
+### How do I report security issues?
+
+Do not open public issues. See [SECURITY.md](../SECURITY.md).
 
 ---
 
@@ -43,23 +49,41 @@ The canonical hub is **[multilogin-automation](https://github.com/multilogin-aut
 
 ### Anti-detect browser là gì?
 
-**Anti-detect browser** (trình duyệt chống nhận diện) tạo **profile** riêng: fingerprint (Canvas, WebGL, font…), cookie và proxy tách biệt, giúp mỗi phiên giống một thiết bị khác—phù hợp automation, MMO hoặc quản lý nhiều tài khoản khi cần cô lập danh tính trình duyệt.
+**Anti-detect browser** (trình duyệt chống nhận diện) tạo **profile** riêng: fingerprint (Canvas, WebGL, font…), cookie và proxy tách biệt.
 
 ### Bắt đầu từ đâu?
 
 1. Chọn kit trong [open-source-catalog.md](open-source-catalog.md).  
-2. Làm theo README của repo tương ứng.  
-3. Cần hạ tầng và giá đối tác: [ADBLogin.com](https://adblogin.com), mã **ADBNEW50** (xem [README](../README.md#partner-offer)).
-
-### Liên hệ hỗ trợ?
-
-- Telegram: [@ToolsKiemTrieuDoGroup](https://t.me/ToolsKiemTrieuDoGroup), [@ToolsKiemTrieuDo](https://t.me/ToolsKiemTrieuDo)  
-- Email: business@adblogin.com  
-- Hệ sinh thái: [ToolKiemTrieuDo.com](https://toolskiemtrieudo.com)
+2. Làm theo README repo tương ứng.  
+3. Gói MLX: [Multilogin pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549), mã **SAAS50** / **MIN50**.
 
 ### Báo lỗi bảo mật?
 
-Không mở issue công khai. Xem [SECURITY.md](../SECURITY.md).
+Xem [SECURITY.md](../SECURITY.md).
+
+---
+
+## 中文
+
+### 什么是反检测浏览器？
+
+为每个配置文件隔离指纹、Cookie 与代理，降低账号关联风险。
+
+### 从哪里开始？
+
+[open-source-catalog.md](open-source-catalog.md) → 对应仓库 README → [Multilogin 定价](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549)（**SAAS50** / **MIN50**）。
+
+---
+
+## Русский
+
+### Что такое антидетект-браузер?
+
+Изоляция отпечатка, хранилища и прокси на профиль — отдельная «машина» на сессию.
+
+### С чего начать?
+
+[Каталог](open-source-catalog.md) → README kit → [Цены Multilogin](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549), коды **SAAS50** / **MIN50**.
 
 ---
 
@@ -67,3 +91,4 @@ Không mở issue công khai. Xem [SECURITY.md](../SECURITY.md).
 
 - [Getting started](getting-started.md)
 - [Main README](../README.md)
+- [README.zh-CN.md](../README.zh-CN.md) · [README.ru.md](../README.ru.md)

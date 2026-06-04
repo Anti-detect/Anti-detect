@@ -7,8 +7,8 @@ Use after every doc or catalog update.
 Source of truth: [`.github/repo-metadata.json`](../.github/repo-metadata.json) (synced by `sync-repo-settings.yml` on push to `main`).
 
 - [ ] About description ≤ 350 chars, starts with **anti-detect** or **browser fingerprinting**
-- [ ] Website = `https://adblogin.com`
-- [ ] 15–20 topics applied (no spam tags like `2027`, `draft`)
+- [ ] Website = Multilogin pricing URL (see `repo-metadata.json` → `homepage`)
+- [ ] 18–21 topics applied (no spam tags like `2027`, `draft`)
 - [ ] Social preview image uploaded (UI only — not automatable without image asset)
 
 ## README.md
@@ -19,17 +19,21 @@ Source of truth: [`.github/repo-metadata.json`](../.github/repo-metadata.json) (
 - [ ] All external links return 200 (CI workflow)
 - [ ] Images have `alt` text
 - [ ] FAQ uses question-style headings
-- [ ] [README.vi.md](../README.vi.md) linked for Vietnamese SEO
+- [ ] Localized READMEs linked: VI, ZH, RU, ID, PT-BR
 
 ## Topics (copy-paste)
 
 ```
 anti-detect
+antidetect-browser
 browser-fingerprinting
+fingerprint-browser
 browser-automation
 multilogin
+multilogin-x
 playwright
 selenium
+puppeteer
 python
 stealth
 anti-bot
@@ -37,13 +41,10 @@ web-scraping
 automation
 fingerprint
 headless-browser
-mmo
+browser-profiles
 profile-management
-postman
-api
-devtools
-testing
-adblogin
+undetectable-browser
+mmo
 ```
 
 ## Internal linking
@@ -60,9 +61,9 @@ adblogin
 ## Off-GitHub promotion (optional)
 
 - Dev.to / Medium article linking to this profile
-- Telegram pin with `github.com/Anti-detect`
 - Consistent anchor text: "Multilogin X automation", not "click here"
 
 ## Related
 
 - [github-profile-setup.md](github-profile-setup.md)
+- [Main README](../README.md)

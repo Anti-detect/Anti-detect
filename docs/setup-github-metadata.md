@@ -20,11 +20,11 @@ $env:GITHUB_TOKEN = "ghp_YOUR_PAT"
 
 ## Option C — GitHub UI (manual)
 
-Copy from [seo-checklist.md](seo-checklist.md):
+Copy from [seo-checklist.md](seo-checklist.md) and [repo-metadata.json](../.github/repo-metadata.json):
 
-- **Description:** Anti-detect browser fingerprinting, Multilogin X automation, and stealth Playwright/Selenium templates by ADBLogin.
-- **Website:** https://adblogin.com
-- **Topics:** 20 tags listed in seo-checklist
+- **Description:** Anti-detect browser fingerprinting hub: Multilogin X guides, stealth Playwright/Selenium templates, and browser profile automation docs.
+- **Website:** Multilogin pricing URL in `homepage` field
+- **Topics:** list in seo-checklist
 
 ## Verify
 
@@ -36,3 +36,4 @@ Copy from [seo-checklist.md](seo-checklist.md):
 ## Related
 
 - [github-profile-setup.md](github-profile-setup.md) — social preview, pinned repos
+- [Main README](../README.md)

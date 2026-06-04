@@ -8,8 +8,8 @@ Steps to maximize visibility for **Anti-detect** user profile and this special r
 
 | Field | Value |
 |-------|-------|
-| Description | `Anti-detect browser fingerprinting, Multilogin X automation SDKs, and stealth Playwright/Selenium templates by ADBLogin.` |
-| Website | `https://adblogin.com` |
+| Description | `Anti-detect browser fingerprinting hub: Multilogin X guides, stealth Playwright/Selenium templates, and browser profile automation docs.` |
+| Website | `https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549` |
 | Topics | See [seo-checklist.md](seo-checklist.md) |
 
 ## 2. Social preview image
@@ -19,8 +19,8 @@ Steps to maximize visibility for **Anti-detect** user profile and this special r
 Upload 1280×640 image with:
 
 - Title: Anti-detect Browser Automation
-- Subtitle: Multilogin X · ADBLogin.com
-- Logo/branding colors matching [ADBLogin](https://adblogin.com)
+- Subtitle: Multilogin X · Browser fingerprinting
+- Neutral tech aesthetic (no third-party logos you do not own)
 
 Improves click-through when the repo is shared on X, LinkedIn, Slack.
 
@@ -29,7 +29,7 @@ Improves click-through when the repo is shared on X, LinkedIn, Slack.
 On https://github.com/Anti-detect?tab=repositories → **Customize your pins**:
 
 1. [multilogin-automation/multilogin-automation](https://github.com/multilogin-automation/multilogin-automation)
-2. [multilogin-automation/multilogin-x-getting-started](https://github.com/multilogin-automation/multilogin-x-getting-started)
+2. [multilogin-x-getting-started](https://github.com/multilogin-automation/multilogin-x-getting-started)
 3. This repo (Anti-detect/Anti-detect) if you want the hub visible
 
 ## 4. Enable features
@@ -45,7 +45,13 @@ On https://github.com/Anti-detect?tab=repositories → **Customize your pins**:
 
 This repo **must** be named `Anti-detect` under user `Anti-detect` — already correct.
 
-Link Vietnamese audience: [README.vi.md](../README.vi.md).
+Link localized audiences:
+
+- [README.vi.md](../README.vi.md)
+- [README.zh-CN.md](../README.zh-CN.md)
+- [README.ru.md](../README.ru.md)
+- [README.id.md](../README.id.md)
+- [README.pt-BR.md](../README.pt-BR.md)
 
 ## 6. Automate metadata (optional)
 

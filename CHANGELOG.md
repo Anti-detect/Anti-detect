@@ -6,6 +6,24 @@ Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Added
+
+- Localized profile READMEs: [README.zh-CN.md](README.zh-CN.md), [README.ru.md](README.ru.md), [README.id.md](README.id.md), [README.pt-BR.md](README.pt-BR.md)
+- Expanded SEO topics in [`.github/repo-metadata.json`](.github/repo-metadata.json) (`antidetect-browser`, `fingerprint-browser`, `multilogin-x`, …)
+
+### Changed
+
+- Rebranded hub as neutral **documentation-only** profile (MIT); removed third-party contact blocks
+- Promo codes: **`SAAS50`**, **`MIN50`**; affiliate URL → Multilogin pricing with UTM params
+- Homepage / FUNDING / issue templates point to official Multilogin pricing
+- FAQ and glossary: EN + VI + ZH + RU sections
+- Security reporting via GitHub advisories (no public email)
+
+### Removed
+
+- Telegram, legacy partner email/website/ecosystem links
+- `adblogin` topic and ADBLogin branding across docs
+
 ## [1.1.1] - 2026-06-03
 
 ### Fixed

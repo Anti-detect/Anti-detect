@@ -1,20 +1,23 @@
 <!--
-title: Anti-detect Browser Automation & Multilogin X Solutions
-description: Enterprise anti-detect browser fingerprinting, stealth automation SDKs, and Multilogin X integration by ADBLogin.com.
-keywords: anti-detect browser, browser fingerprinting, Multilogin X, Playwright, Selenium, browser automation, anti-bot, stealth
-homepage: https://adblogin.com
-author: ADBLogin.com
+title: Anti-detect Browser Automation & Multilogin X Documentation
+description: Anti-detect browser, browser fingerprinting, Multilogin X automation, stealth Playwright and Selenium templates — open documentation hub.
+keywords: anti-detect browser, antidetect browser, fingerprint browser, Multilogin X, browser profile manager, stealth automation, Playwright, Selenium, MMO
+homepage: https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549
+author: Anti-detect
 -->
 
-# Anti-detect Browser Automation & Stealth Solutions
+# Anti-detect Browser · Fingerprinting · Multilogin X Automation
 
-**Enterprise anti-detect browser fingerprinting, Multilogin X automation, and open-source dev kits** — by [ADBLogin.com](https://adblogin.com) and [@multilogin-automation](https://github.com/multilogin-automation).
+**Open documentation hub** for **anti-detect browser** engineering, **browser fingerprinting**, **Multilogin X (MLX)** workflows, and **stealth automation** (Playwright, Selenium, Python). Curated links to verified kits under [@multilogin-automation](https://github.com/multilogin-automation).
 
 <p align="left">
   <img src="https://github.com/Anti-detect/Anti-detect/actions/workflows/docs-ci.yml/badge.svg" alt="Docs CI status">
   <img src="https://github.com/Anti-detect/Anti-detect/actions/workflows/sync-repo-settings.yml/badge.svg" alt="Sync repo settings status">
-  <a href="README.vi.md"><img src="https://img.shields.io/badge/Tiếng_Việt-README.vi-red?style=flat-square" alt="Vietnamese README"></a>
-  <a href="https://adblogin.com"><img src="https://img.shields.io/badge/ADBLogin-Anti--detect%20Browser-0ea5e9?style=flat-square" alt="ADBLogin anti-detect browser"></a>
+  <a href="README.vi.md"><img src="https://img.shields.io/badge/Tiếng_Việt-README.vi-red?style=flat-square" alt="Vietnamese"></a>
+  <a href="README.zh-CN.md"><img src="https://img.shields.io/badge/中文-README.zh--CN-red?style=flat-square" alt="Chinese"></a>
+  <a href="README.ru.md"><img src="https://img.shields.io/badge/Русский-README.ru-blue?style=flat-square" alt="Russian"></a>
+  <a href="README.id.md"><img src="https://img.shields.io/badge/Bahasa_ID-README.id-green?style=flat-square" alt="Indonesian"></a>
+  <a href="README.pt-BR.md"><img src="https://img.shields.io/badge/Português-README.pt--BR-yellow?style=flat-square" alt="Portuguese"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="MIT License"></a>
   <a href="SECURITY.md"><img src="https://img.shields.io/badge/Security-Policy-blue?style=flat-square" alt="Security policy"></a>
   <a href="https://github.com/multilogin-automation/multilogin-automation"><img src="https://img.shields.io/github/stars/multilogin-automation/multilogin-automation?style=flat-square" alt="Stars multilogin-automation"></a>
@@ -23,6 +26,7 @@ author: ADBLogin.com
 <p align="left">
   <img src="https://img.shields.io/badge/Stack-Python%20%7C%20Playwright%20%7C%20Selenium-3670A0?style=flat-square&logo=python&logoColor=white" alt="Python Playwright Selenium">
   <img src="https://img.shields.io/badge/MLX-Multilogin%20X-6366f1?style=flat-square" alt="Multilogin X">
+  <img src="https://img.shields.io/badge/Topic-Anti--detect%20Browser-0ea5e9?style=flat-square" alt="Anti-detect browser">
 </p>
 
 ## Table of contents
@@ -33,10 +37,9 @@ author: ADBLogin.com
 - [Architecture](#architecture)
 - [Quick start](#quick-start)
 - [Open-source dev kits](#open-source-dev-kits)
-- [Why anti-detect fingerprinting matters](#why-anti-detect-fingerprinting-matters)
+- [Why browser fingerprinting matters](#why-browser-fingerprinting-matters)
 - [FAQ](#frequently-asked-questions)
-- [Partner offer](#partner-offer)
-- [Contact & ecosystem](#contact--ecosystem)
+- [Multilogin pricing reference](#multilogin-pricing-reference)
 - [Repository settings (SEO)](#repository-settings-seo)
 - [Documentation](#documentation)
 
@@ -44,17 +47,23 @@ author: ADBLogin.com
 
 ## What is this repository?
 
-Official **GitHub profile README** for [Anti-detect](https://github.com/Anti-detect): discovery hub for **anti-detect browser** engineering, **Multilogin X** workflows, and **stealth automation** (Playwright, Selenium, Python).
+Official **GitHub profile README** for [@Anti-detect](https://github.com/Anti-detect): a neutral **discovery hub** for:
 
-Senior automation practice (10+ years): **digital twins**—scripts that match real user behavior on MLX-class infrastructure, including Cloudflare/Akamai-heavy targets.
+- **Anti-detect browser** / **antidetect browser** patterns  
+- **Fingerprint browser** isolation (Canvas, WebGL, fonts, AudioContext)  
+- **Multilogin X** API and local launcher integration  
+- **Browser profile manager** workflows for multi-account automation  
+- **Stealth Playwright** and **Selenium fingerprint** templates  
+
+Implementation code lives in separate open-source repositories; **this repo is documentation only** (MIT), which keeps installs small and issues focused.
 
 ## Who is this for?
 
 | Audience | Use case |
 |----------|----------|
 | Automation engineers | Scale UI jobs with isolated fingerprints |
-| MMO & growth teams | Multi-account ops without profile linkage |
-| Agencies | Custom MLX / anti-detect delivery |
+| MMO & growth teams | Multi-account ops with profile separation |
+| Agencies | MLX / anti-detect delivery playbooks |
 | Developers | Evaluate kits before production spend |
 
 ---
@@ -67,7 +76,7 @@ Senior automation practice (10+ years): **digital twins**—scripts that match r
 | **Human-like behavior** | Mouse curves, typing variance, session timing |
 | **Multilogin X** | API + local launcher patterns, token/profile tooling |
 | **Open source** | Verified repos + `/templates` in `multilogin-automation` |
-| **Custom builds** | End-to-end automation for high-friction sites |
+| **Education** | Architecture, glossary, Chrome vs anti-detect comparison |
 
 ---
 
@@ -93,7 +102,7 @@ Details: [docs/architecture.md](docs/architecture.md) · [docs/comparison-anti-d
 | 1 | New to MLX → [multilogin-x-getting-started](https://github.com/multilogin-automation/multilogin-x-getting-started) |
 | 2 | Tokens & IDs → [multilogin-x-id-token-retrieval-tools](https://github.com/multilogin-automation/multilogin-x-id-token-retrieval-tools) |
 | 3 | Code templates → [`multilogin-automation/templates`](https://github.com/multilogin-automation/multilogin-automation/tree/main/templates) |
-| 4 | Infrastructure → [ADBLogin.com](https://adblogin.com) · code **`ADBNEW50`** |
+| 4 | Commercial MLX plans → [Multilogin pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · codes **`SAAS50`** / **`MIN50`** |
 
 Full paths: [docs/getting-started.md](docs/getting-started.md)
 
@@ -109,7 +118,7 @@ Verified repositories (see [docs/open-source-catalog.md](docs/open-source-catalo
 | 🚀 | [multilogin-x-getting-started](https://github.com/multilogin-automation/multilogin-x-getting-started) | MLX onboarding |
 | 🔑 | [multilogin-x-id-token-retrieval-tools](https://github.com/multilogin-automation/multilogin-x-id-token-retrieval-tools) | Tokens, profile & workspace IDs |
 | 🍪 | [multilogin_x_auto_cookie_collector](https://github.com/multilogin-automation/multilogin_x_auto_cookie_collector) | Cookie warming |
-| 🛡️ | [undetectable-fingerprint-browser](https://github.com/multilogin-automation/undetectable-fingerprint-browser) | OSS anti-detect / fingerprint spoofing |
+| 🛡️ | [undetectable-fingerprint-browser](https://github.com/multilogin-automation/undetectable-fingerprint-browser) | OSS fingerprint / anti-detect patterns |
 
 **Templates (in-repo):**
 
@@ -118,11 +127,11 @@ Verified repositories (see [docs/open-source-catalog.md](docs/open-source-catalo
 
 ---
 
-## Why anti-detect fingerprinting matters
+## Why browser fingerprinting matters
 
-Sites fuse **TLS**, **IP reputation**, **JS challenges**, and **browser fingerprint** clusters. One shared Canvas hash or WebGL renderer across accounts can flag an entire fleet.
+Sites combine **TLS**, **IP reputation**, **JS challenges**, and **browser fingerprint** clusters. One shared Canvas hash or WebGL renderer across accounts can flag an entire fleet.
 
-**ADBLogin** ships coherent **anti-detect profiles**: fingerprint, behavior, and network context aligned per session on **Multilogin X**-class stacks.
+**Anti-detect profiles** align fingerprint, behavior, and network context per session—especially on **Multilogin X**-class **undetectable browser** stacks.
 
 ---
 
@@ -130,58 +139,47 @@ Sites fuse **TLS**, **IP reputation**, **JS challenges**, and **browser fingerpr
 
 ### What is an anti-detect browser?
 
-Software that isolates fingerprints, storage, and proxies so each profile resembles a separate device—used for QA, automation, and multi-account workflows.
+Software that isolates fingerprints, storage, and proxies so each profile resembles a separate device—common for QA, **stealth automation**, and **multi-account browser** workflows.
 
 ### Where is the Playwright / Python / Selenium code?
 
-In [@multilogin-automation](https://github.com/multilogin-automation), especially [`multilogin-automation/templates`](https://github.com/multilogin-automation/multilogin-automation/tree/main/templates). This profile repo is documentation-only.
+In [@multilogin-automation](https://github.com/multilogin-automation), especially [`multilogin-automation/templates`](https://github.com/multilogin-automation/multilogin-automation/tree/main/templates).
 
-### How do I get 50% off Multilogin X?
+### How do I get a discount on Multilogin X?
 
-Use **`ADBNEW50`** at [ADBLogin.com/go/multilogin](https://adblogin.com/go/multilogin). Cloud phone promos may use **`SAVE50`** (see kit READMEs).
+Use **`SAAS50`** or **`MIN50`** on [Multilogin pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) (see [pricing reference](#multilogin-pricing-reference)).
 
 ### How do I report security issues?
 
-[SECURITY.md](SECURITY.md) — no public issues for sensitive reports.
+[SECURITY.md](SECURITY.md) — use private reporting; no public issues for sensitive reports.
 
-More: [docs/faq.md](docs/faq.md) · [README.vi.md](README.vi.md)
-
----
-
-## Partner offer
-
-Code **`ADBNEW50`** — **50% off** first purchase:
-
-**[ADBLogin.com/go/multilogin](https://adblogin.com/go/multilogin)**
+More: [docs/faq.md](docs/faq.md) · localized READMEs linked above.
 
 ---
 
-## Contact & ecosystem
+## Multilogin pricing reference
 
-| Channel | Link |
-|---------|------|
-| Telegram (group) | [@ToolsKiemTrieuDoGroup](https://t.me/ToolsKiemTrieuDoGroup) |
-| Telegram | [@ToolsKiemTrieuDo](https://t.me/ToolsKiemTrieuDo) |
-| Email | [business@adblogin.com](mailto:business@adblogin.com) |
-| Website | [ADBLogin.com](https://adblogin.com) |
-| Ecosystem | [ToolKiemTrieuDo.com](https://toolskiemtrieudo.com) |
+| Code | Typical use |
+|------|-------------|
+| **`SAAS50`** | First-time / SaaS partner discount on Multilogin X |
+| **`MIN50`** | Minimum-tier or follow-up offers (see checkout) |
 
-**Tiếng Việt:** [README.vi.md](README.vi.md) · [docs/faq.md](docs/faq.md)
+**Checkout:** [multilogin.com/pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549)
 
 ---
 
 ## Repository settings (SEO)
 
-Metadata lives in [`.github/repo-metadata.json`](.github/repo-metadata.json). After you add the **`GH_METADATA_TOKEN`** secret (one-time), [Sync repository settings](.github/workflows/sync-repo-settings.yml) applies it on each push. Setup: [docs/setup-github-metadata.md](docs/setup-github-metadata.md).
-
-Manual override:
+Metadata: [`.github/repo-metadata.json`](.github/repo-metadata.json). After adding **`GH_METADATA_TOKEN`**, [Sync repository settings](.github/workflows/sync-repo-settings.yml) applies topics on push. Setup: [docs/setup-github-metadata.md](docs/setup-github-metadata.md).
 
 ```powershell
 $env:GITHUB_TOKEN = "ghp_YOUR_TOKEN"
 .\scripts\set-github-about.ps1
 ```
 
-**Also do once on GitHub UI:** [social preview + pinned repos](docs/github-profile-setup.md)
+**Once in GitHub UI:** [social preview + pinned repos](docs/github-profile-setup.md)
+
+Target keywords: `anti-detect`, `browser-fingerprinting`, `multilogin-x`, `fingerprint-browser`, `browser-profiles`, `stealth`, `playwright`, `selenium`, `mmo`.
 
 ---
 
@@ -193,7 +191,7 @@ $env:GITHUB_TOKEN = "ghp_YOUR_TOKEN"
 | [docs/getting-started.md](docs/getting-started.md) | Onboarding |
 | [docs/open-source-catalog.md](docs/open-source-catalog.md) | All verified repos |
 | [docs/architecture.md](docs/architecture.md) | System design |
-| [docs/glossary.md](docs/glossary.md) | Terminology |
+| [docs/glossary.md](docs/glossary.md) | Terminology (EN + more) |
 | [docs/seo-checklist.md](docs/seo-checklist.md) | Maintainer SEO |
 | [SUPPORT.md](SUPPORT.md) | Support routing |
 | [CHANGELOG.md](CHANGELOG.md) | Change history |
@@ -209,5 +207,5 @@ $env:GITHUB_TOKEN = "ghp_YOUR_TOKEN"
 </p>
 
 <p align="center">
-  <sub>Anti-detect browser · Multilogin X · Playwright · Selenium · ADBLogin.com</sub>
+  <sub>Anti-detect browser · Browser fingerprinting · Multilogin X · Playwright · Selenium</sub>
 </p>

@@ -1,18 +1,19 @@
 <!--
-title: Giải pháp Anti-detect Browser & Tự động hóa Multilogin X
-description: Trình duyệt chống nhận diện, browser fingerprinting, SDK Multilogin X và template Playwright/Selenium bởi ADBLogin.com.
-keywords: anti-detect browser, trình duyệt chống nhận diện, multilogin x, playwright, selenium, automation
-homepage: https://adblogin.com
+title: Anti-detect Browser & Multilogin X — Tài liệu tiếng Việt
+description: Trình duyệt chống nhận diện, browser fingerprinting, Multilogin X, Playwright/Selenium stealth — hub tài liệu mã nguồn mở.
+keywords: anti-detect browser, trình duyệt chống nhận diện, multilogin x, fingerprint, playwright, selenium, mmo
+homepage: https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549
 lang: vi
 -->
 
-# Giải pháp Anti-detect Browser & Automation Ẩn danh
+# Anti-detect Browser · Fingerprint · Multilogin X
 
-**Trình duyệt anti-detect, browser fingerprinting, tự động hóa Multilogin X và bộ dev kit mã nguồn mở** — bởi [ADBLogin.com](https://adblogin.com) và [@multilogin-automation](https://github.com/multilogin-automation).
+**Hub tài liệu** về **trình duyệt anti-detect**, **browser fingerprinting**, **Multilogin X** và **stealth automation** — liên kết tới [@multilogin-automation](https://github.com/multilogin-automation).
 
 <p align="left">
-  <a href="README.md"><img src="https://img.shields.io/badge/English-README-blue?style=flat-square" alt="English README"></a>
-  <a href="https://adblogin.com"><img src="https://img.shields.io/badge/ADBLogin-Anti--detect-0ea5e9?style=flat-square" alt="ADBLogin"></a>
+  <a href="README.md"><img src="https://img.shields.io/badge/English-README-blue?style=flat-square" alt="English"></a>
+  <a href="README.zh-CN.md"><img src="https://img.shields.io/badge/中文-README.zh--CN-red?style=flat-square" alt="Chinese"></a>
+  <a href="README.ru.md"><img src="https://img.shields.io/badge/Русский-README.ru-blue?style=flat-square" alt="Russian"></a>
 </p>
 
 ## Mục lục
@@ -22,17 +23,14 @@ lang: vi
 - [Bắt đầu nhanh](#bắt-đầu-nhanh)
 - [Kho mã nguồn mở](#kho-mã-nguồn-mở)
 - [FAQ](#faq)
-- [Ưu đãi đối tác](#ưu-đãi-đối-tác)
-- [Liên hệ](#liên-hệ)
+- [Giá Multilogin](#giá-multilogin)
 - [Tài liệu](#tài-liệu)
 
 ---
 
 ## Repo này là gì?
 
-Đây là **profile GitHub chính thức** của [Anti-detect](https://github.com/Anti-detect): điểm khám phá về **anti-detect browser**, **Multilogin X** và template **stealth automation** (Playwright, Python).
-
-Chúng tôi hỗ trợ team chạy workflow giống người dùng thật, giảm rủi ro **anti-bot** và lộ **fingerprint** thiết bị.
+**Profile README** của [@Anti-detect](https://github.com/Anti-detect): điểm khám phá **anti-detect browser**, **Multilogin X**, template **Playwright/Selenium**. Repo chỉ chứa **tài liệu** (MIT), code nằm ở các repo kit riêng.
 
 ## Dành cho ai?
 
@@ -40,19 +38,19 @@ Chúng tôi hỗ trợ team chạy workflow giống người dùng thật, giả
 |-----------|---------|
 | Kỹ sư automation | Scale Playwright/Selenium với profile ổn định |
 | Team MMO / growth | Nhiều tài khoản, fingerprint tách biệt |
-| Agency | Triển khai workflow MLX cho khách |
-| Developer | So sánh kit trước khi production |
+| Agency | Triển khai workflow MLX |
+| Developer | Đánh giá kit trước production |
 
 ---
 
 ## Bắt đầu nhanh
 
 1. Mới dùng MLX → [multilogin-x-getting-started](https://github.com/multilogin-automation/multilogin-x-getting-started)
-2. Lấy token / ID → [multilogin-x-id-token-retrieval-tools](https://github.com/multilogin-automation/multilogin-x-id-token-retrieval-tools)
-3. Template Python & Playwright → [multilogin-automation/templates](https://github.com/multilogin-automation/multilogin-automation/tree/main/templates)
-4. Hạ tầng thương mại → [ADBLogin.com](https://adblogin.com), mã **`ADBNEW50`** (giảm 50% lần đầu)
+2. Token / ID → [multilogin-x-id-token-retrieval-tools](https://github.com/multilogin-automation/multilogin-x-id-token-retrieval-tools)
+3. Template → [multilogin-automation/templates](https://github.com/multilogin-automation/multilogin-automation/tree/main/templates)
+4. Gói MLX → [Multilogin pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · mã **`SAAS50`** / **`MIN50`**
 
-Chi tiết: [docs/getting-started.md](docs/getting-started.md) · [docs/faq.md](docs/faq.md) (mục Tiếng Việt)
+Chi tiết: [docs/getting-started.md](docs/getting-started.md) · [docs/faq.md](docs/faq.md)
 
 ---
 
@@ -60,42 +58,36 @@ Chi tiết: [docs/getting-started.md](docs/getting-started.md) · [docs/faq.md](
 
 | Repo | Mô tả |
 |------|--------|
-| [multilogin-automation](https://github.com/multilogin-automation/multilogin-automation) | Hub chính + thư mục `/templates` |
-| [multilogin-x-getting-started](https://github.com/multilogin-automation/multilogin-x-getting-started) | Hướng dẫn cài đặt & profile đầu tiên |
-| [undetectable-fingerprint-browser](https://github.com/multilogin-automation/undetectable-fingerprint-browser) | Anti-detect mã nguồn mở |
+| [multilogin-automation](https://github.com/multilogin-automation/multilogin-automation) | Hub + `/templates` |
+| [multilogin-x-getting-started](https://github.com/multilogin-automation/multilogin-x-getting-started) | Cài đặt & profile đầu |
+| [undetectable-fingerprint-browser](https://github.com/multilogin-automation/undetectable-fingerprint-browser) | Anti-detect OSS |
 
-Danh sách đầy đủ: [docs/open-source-catalog.md](docs/open-source-catalog.md)
+Danh sách: [docs/open-source-catalog.md](docs/open-source-catalog.md)
 
 ---
 
 ## FAQ
 
-### Anti-detect browser khác Chrome thường thế nào?
+### Anti-detect khác Chrome thường?
 
-Mỗi **profile** có fingerprint, storage và proxy riêng; Chrome thường chia sẻ tín hiệu nhận diện giữa các profile trên cùng máy.
+Mỗi **profile** có fingerprint, storage và proxy riêng — giảm liên kết tài khoản.
 
-### Code chạy ở đâu?
+### Code ở đâu?
 
-Code nằm tại [@multilogin-automation](https://github.com/multilogin-automation). Repo này là **tài liệu & SEO hub**.
+[@multilogin-automation](https://github.com/multilogin-automation). Repo này là **hub tài liệu**.
 
 Xem thêm: [docs/faq.md](docs/faq.md)
 
 ---
 
-## Ưu đãi đối tác
+## Giá Multilogin
 
-Mã **`ADBNEW50`** — giảm **50%** lần mua đầu: [adblogin.com/go/multilogin](https://adblogin.com/go/multilogin)
+| Mã | Ghi chú |
+|----|---------|
+| **`SAAS50`** | Giảm giá lần đầu / đối tác SaaS |
+| **`MIN50`** | Gói tối thiểu / ưu đãi bổ sung |
 
----
-
-## Liên hệ
-
-| Kênh | Link |
-|------|------|
-| Telegram nhóm | [@ToolsKiemTrieuDoGroup](https://t.me/ToolsKiemTrieuDoGroup) |
-| Telegram | [@ToolsKiemTrieuDo](https://t.me/ToolsKiemTrieuDo) |
-| Email | business@adblogin.com |
-| Web | [ADBLogin.com](https://adblogin.com) · [ToolKiemTrieuDo.com](https://toolskiemtrieudo.com) |
+[multilogin.com/pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549)
 
 ---
 
@@ -103,10 +95,9 @@ Mã **`ADBNEW50`** — giảm **50%** lần mua đầu: [adblogin.com/go/multilo
 
 | Tài liệu | Nội dung |
 |----------|----------|
-| [docs/README.md](docs/README.md) | Mục lục tài liệu |
-| [docs/architecture.md](docs/architecture.md) | Sơ đồ kiến trúc |
-| [docs/glossary.md](docs/glossary.md) | Thuật ngữ EN/VI |
-| [docs/seo-checklist.md](docs/seo-checklist.md) | Checklist SEO |
-| [README.md](README.md) | English version |
+| [docs/README.md](docs/README.md) | Mục lục |
+| [docs/architecture.md](docs/architecture.md) | Kiến trúc |
+| [docs/glossary.md](docs/glossary.md) | Thuật ngữ |
+| [README.md](README.md) | English |
 
-<p align="center"><sub>Anti-detect · Multilogin X · ADBLogin.com</sub></p>
+<p align="center"><sub>Anti-detect · Multilogin X · Browser fingerprinting</sub></p>

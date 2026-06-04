@@ -1,6 +1,6 @@
 # Architecture overview
 
-How **anti-detect browser automation** pieces fit together in the ADBLogin / Multilogin X ecosystem.
+How **anti-detect browser automation** pieces fit together in the **Multilogin X** open-source ecosystem.
 
 ## High-level flow
 
