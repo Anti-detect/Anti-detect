@@ -84,6 +84,10 @@ Xem thêm: [docs/faq.md](docs/faq.md)
 
 [docs/browser-landscape.md](docs/browser-landscape.md) — Multilogin X, GoLogin, Dolphin Anty, AdsPower, v.v.
 
+### MMO / multi-account
+
+[docs/mmo-automation-guide.md](docs/mmo-automation-guide.md) · [docs/fingerprint-checklist.md](docs/fingerprint-checklist.md)
+
 ---
 
 ## Giá Multilogin

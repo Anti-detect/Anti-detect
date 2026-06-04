@@ -8,7 +8,7 @@ lang: ja
 
 # アンチディテクトブラウザ · フィンガープリント · Multilogin X
 
-**オープンドキュメントハブ**: **アンチディテクトブラウザ**、**browser fingerprinting**、**Multilogin X**、**stealth automation** — 検証済み [@multilogin-automation](https://github.com/multilogin-automation) へのリンク。
+**オープンドキュメントハブ**: **アンチディテクトブラウザ**、**browser fingerprinting**、**Multilogin X**、**stealth automation** — [@multilogin-automation](https://github.com/multilogin-automation)。
 
 <p align="left">
   <a href="README.md"><img src="https://img.shields.io/badge/English-README-blue?style=flat-square" alt="English"></a>
@@ -23,12 +23,16 @@ lang: ja
 3. テンプレート → [multilogin-automation/templates](https://github.com/multilogin-automation/multilogin-automation/tree/main/templates)
 4. 料金 → [Multilogin pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · **`SAAS50`** / **`MIN50`**
 
-## 製品カテゴリ（中立）
+## MMO / 複数アカウント
 
-Multilogin X と一般的な検索語: [docs/browser-landscape.md](docs/browser-landscape.md)
+[docs/mmo-automation-guide.md](docs/mmo-automation-guide.md) · [fingerprint-checklist.md](docs/fingerprint-checklist.md)
+
+## 製品カテゴリ
+
+[docs/browser-landscape.md](docs/browser-landscape.md)
 
 ## ドキュメント
 
-[docs/README.md](docs/README.md) · [README.md](README.md) (English)
+[docs/README.md](docs/README.md) · [playwright-mlx-integration.md](docs/playwright-mlx-integration.md) · [README.md](README.md)
 
 <p align="center"><sub>Anti-detect · Multilogin X · Browser fingerprinting</sub></p>

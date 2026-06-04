@@ -24,17 +24,29 @@ jobs:
           set -euo pipefail
           shopt -s nullglob
           FILES=(README.md README.*.md docs/*.md)
-          if grep -riE 'adblogin\.com|toolskiemtrieudo|ADBNEW50|SAVE50|business@adblogin' "${FILES[@]}"; then
+          if grep -riE 'adblogin\.com|toolskiemtrieudo|t\.me/|ADBNEW50|SAVE50|business@adblogin' "${FILES[@]}"; then
             echo "::error::Legacy branding or promo codes found. Use SAAS50/MIN50 and Multilogin pricing URL only."
             exit 1
           fi
           echo "Branding guard OK"
 
-      - name: Require SAAS50 and MIN50 in English README
+      - name: Require promo codes and UTM in all profile README locales
         run: |
           set -euo pipefail
-          grep -q 'SAAS50' README.md && grep -q 'MIN50' README.md
-          echo "Promo codes present in README.md"
+          shopt -s nullglob
+          for f in README.md README.*.md; do
+            grep -q 'SAAS50' "$f" && grep -q 'MIN50' "$f" && grep -q 'utm_source=saas' "$f" \
+              || { echo "::error::Missing SAAS50/MIN50/UTM in $f"; exit 1; }
+            echo "OK $f"
+          done
+
+      - name: Verify Multilogin pricing URL
+        run: |
+          set -euo pipefail
+          URL=$(jq -r '.homepage' .github/repo-metadata.json)
+          code=$(curl -sS -o /dev/null -w "%{http_code}" -L --max-time 30 "$URL")
+          test "$code" = "200" -o "$code" = "403" || { echo "::error::Pricing URL returned $code"; exit 1; }
+          echo "Pricing URL OK ($code)"
 
   verify-github-repos:
     runs-on: ubuntu-latest
@@ -44,7 +56,7 @@ jobs:
       - name: Verify multilogin-automation repo links
         run: |
           set -euo pipefail
-          mapfile -t URLS < <(grep -ohE 'https://github.com/multilogin-automation/[A-Za-z0-9_.-]+' README.md README.*.md docs --include='*.md' -r | sort -u)
+          mapfile -t URLS < <(grep -rohE 'https://github.com/multilogin-automation/[A-Za-z0-9_.-]+' README.md README.*.md docs/ | sort -u)
           for url in "${URLS[@]}"; do
             code=$(curl -sS -o /dev/null -w "%{http_code}" -L --max-time 20 "$url")
             if [ "$code" != "200" ]; then

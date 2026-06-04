@@ -13,6 +13,7 @@ GitHub indexes each `README*.md` in the repository root. Use this table to keep 
 | 한국어 | [README.ko.md](../README.ko.md) | 안티디텍트 브라우저 |
 | 日本語 | [README.ja.md](../README.ja.md) | アンチディテクト |
 | ไทย | [README.th.md](../README.th.md) | เบราว์เซอร์ anti-detect |
+| Español | [README.es.md](../README.es.md) | navegador anti-detect, MMO |
 
 ## Shared blocks (every locale)
 

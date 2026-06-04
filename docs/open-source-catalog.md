@@ -73,6 +73,7 @@ Verified index of [@multilogin-automation](https://github.com/multilogin-automat
 - **multilogin-x-getting-started:** `multilogin tutorial`, `browser automation setup`
 - **undetectable-fingerprint-browser:** `fingerprint browser`, `anti-detect browser open source`
 - **CloakBrowser-Manager:** `browser profile manager`, `multilogin alternative self-hosted`
+- **Hub docs:** `mmo automation`, `playwright multilogin`, `anti-detect browser github`
 
 ---
 

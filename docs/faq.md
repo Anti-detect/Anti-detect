@@ -111,6 +111,18 @@ Isolamento de fingerprint, armazenamento e proxy por perfil.
 
 ---
 
+## Español
+
+### ¿Qué es un navegador anti-detect?
+
+Perfiles aislados de fingerprint, almacenamiento y proxy por cuenta.
+
+### ¿Por dónde empezar?
+
+[Guía MMO](mmo-automation-guide.md) · [Catálogo](open-source-catalog.md) · códigos **SAAS50** / **MIN50**.
+
+---
+
 ## ไทย
 
 ### เบราว์เซอร์ anti-detect คืออะไร?

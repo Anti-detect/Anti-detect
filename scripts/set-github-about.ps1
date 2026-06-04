@@ -40,7 +40,11 @@ Write-Host "Patching repository metadata..."
 Invoke-RestMethod -Method Patch -Uri "https://api.github.com/repos/$owner/$repo" -Headers $headers -Body $body -ContentType "application/json"
 
 $topicBody = @{ names = @($meta.topics) } | ConvertTo-Json
-Write-Host "Applying $($meta.topics.Count) topics..."
+$topicCount = @($meta.topics).Count
+if ($topicCount -gt 20) {
+    Write-Warning "GitHub allows max 20 topics; repo-metadata.json has $topicCount."
+}
+Write-Host "Applying $topicCount topics..."
 Invoke-RestMethod -Method Put -Uri "https://api.github.com/repos/$owner/$repo/topics" -Headers $headers -Body $topicBody -ContentType "application/json"
 
 Write-Host "Done. Verify at https://github.com/$owner/$repo" -ForegroundColor Green

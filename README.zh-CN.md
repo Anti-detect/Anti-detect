@@ -84,6 +84,10 @@ lang: zh-CN
 
 [docs/browser-landscape.md](docs/browser-landscape.md)
 
+### MMO / 多账号
+
+[docs/mmo-automation-guide.md](docs/mmo-automation-guide.md) · [docs/fingerprint-checklist.md](docs/fingerprint-checklist.md)
+
 ---
 
 ## Multilogin 价格参考

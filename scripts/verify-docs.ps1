@@ -10,25 +10,36 @@ $mdFiles = @(
 ) + (Get-ChildItem $root -Filter "README.*.md" | ForEach-Object { $_.FullName }) `
   + (Get-ChildItem (Join-Path $root "docs") -Filter "*.md" | ForEach-Object { $_.FullName })
 
-$pattern = 'adblogin\.com|toolskiemtrieudo|ADBNEW50|SAVE50|business@adblogin'
+$pattern = 'adblogin\.com|toolskiemtrieudo|t\.me/|ADBNEW50|SAVE50|business@adblogin'
 $hits = $mdFiles | Select-String -Pattern $pattern
 if ($hits) {
     $hits | ForEach-Object { Write-Host "$($_.Path):$($_.LineNumber) $($_.Line)" }
     throw "Legacy branding found."
 }
 
-Write-Host "Checking promo codes in README.md..." -ForegroundColor Cyan
-$readme = Get-Content (Join-Path $root "README.md") -Raw
-if ($readme -notmatch 'SAAS50' -or $readme -notmatch 'MIN50') {
-    throw "README.md must include SAAS50 and MIN50."
+Write-Host "Checking promo codes and UTM in all README locales..." -ForegroundColor Cyan
+Get-ChildItem $root -Filter "README*.md" | ForEach-Object {
+    $text = Get-Content $_.FullName -Raw
+    if ($text -notmatch 'SAAS50' -or $text -notmatch 'MIN50' -or $text -notmatch 'utm_source=saas') {
+        throw "$($_.Name) must include SAAS50, MIN50, and utm_source=saas."
+    }
+    Write-Host "OK $($_.Name)" -ForegroundColor Green
 }
 
 Write-Host "Checking multilogin-automation repo URLs..." -ForegroundColor Cyan
 $urlPattern = 'https://github.com/multilogin-automation/[A-Za-z0-9_.-]+'
-$allUrls = $mdFiles | Select-String -Pattern $urlPattern -AllMatches |
-    ForEach-Object { $_.Matches } | ForEach-Object { $_.Value } | Sort-Object -Unique
+$allUrls = [System.Collections.Generic.HashSet[string]]::new()
+foreach ($file in $mdFiles) {
+    $text = Get-Content $file -Raw
+    foreach ($m in [regex]::Matches($text, $urlPattern)) {
+        [void]$allUrls.Add($m.Value)
+    }
+}
+if ($allUrls.Count -eq 0) {
+    throw "No multilogin-automation URLs found to verify."
+}
 
-foreach ($url in $allUrls) {
+foreach ($url in ($allUrls | Sort-Object)) {
     $resp = Invoke-WebRequest -Uri $url -Method Head -MaximumRedirection 5 -TimeoutSec 20 -UseBasicParsing
     Write-Host "OK $($resp.StatusCode) $url" -ForegroundColor Green
 }

@@ -14,6 +14,7 @@ lang: pt-BR
   <a href="README.md"><img src="https://img.shields.io/badge/English-README-blue?style=flat-square" alt="English"></a>
   <a href="README.vi.md"><img src="https://img.shields.io/badge/Tiếng_Việt-README.vi-red?style=flat-square" alt="Vietnamese"></a>
   <a href="README.zh-CN.md"><img src="https://img.shields.io/badge/中文-README.zh--CN-red?style=flat-square" alt="Chinese"></a>
+  <a href="README.es.md"><img src="https://img.shields.io/badge/Español-README.es-lightgrey?style=flat-square" alt="Spanish"></a>
 </p>
 
 ## Índice
@@ -52,6 +53,10 @@ Checklist de fingerprint: [docs/fingerprint-checklist.md](docs/fingerprint-check
 ## Panorama do mercado
 
 Visão neutra (Multilogin X, GoLogin, Dolphin Anty, AdsPower): [docs/browser-landscape.md](docs/browser-landscape.md)
+
+### MMO / multi-conta
+
+[docs/mmo-automation-guide.md](docs/mmo-automation-guide.md) · [docs/fingerprint-checklist.md](docs/fingerprint-checklist.md)
 
 ---
 

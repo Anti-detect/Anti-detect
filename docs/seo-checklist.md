@@ -19,7 +19,8 @@ Source of truth: [`.github/repo-metadata.json`](../.github/repo-metadata.json) (
 - [ ] All external links return 200 (CI workflow)
 - [ ] Images have `alt` text
 - [ ] FAQ uses question-style headings
-- [ ] Localized READMEs linked: VI, ZH, RU, ID, PT-BR, KO, JA, TH ([locales.md](locales.md))
+- [ ] Localized READMEs linked: VI, ZH, RU, ID, PT-BR, KO, JA, TH, ES ([locales.md](locales.md))
+- [ ] MMO guide + Playwright integration docs linked from main README
 - [ ] [urls.md](urls.md) matches all README pricing links
 - [ ] [browser-landscape.md](browser-landscape.md) uses neutral competitor keywords (no disparagement)
 

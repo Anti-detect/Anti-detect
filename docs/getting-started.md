@@ -22,6 +22,8 @@ Onboarding for **anti-detect browser automation** and **Multilogin X** — with 
 3. Attach Playwright or Selenium to the browser debugger endpoint returned by the launcher.
 4. Run against a staging URL first; watch for Cloudflare/Akamai challenge patterns.
 
+Detailed sequence: [playwright-mlx-integration.md](playwright-mlx-integration.md)
+
 ## Path D — Cookie warming
 
 1. [multilogin_x_auto_cookie_collector](https://github.com/multilogin-automation/multilogin_x_auto_cookie_collector) — visit configured sites per profile.
@@ -38,6 +40,10 @@ Before scaling profiles, run through [fingerprint-checklist.md](fingerprint-chec
 - [ ] Proxy + timezone aligned with profile fingerprint
 - [ ] Firewall allows API and browser debug ports
 - [ ] One profile per account/tenant where isolation matters
+
+## Path E — MMO / multi-account fleets
+
+See [mmo-automation-guide.md](mmo-automation-guide.md) for isolation rules, cookie warming, and keyword-focused workflows.
 
 ## Multilogin X plans
 

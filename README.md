@@ -21,6 +21,7 @@ author: Anti-detect
   <a href="README.ko.md"><img src="https://img.shields.io/badge/한국어-README.ko-purple?style=flat-square" alt="Korean"></a>
   <a href="README.ja.md"><img src="https://img.shields.io/badge/日本語-README.ja-orange?style=flat-square" alt="Japanese"></a>
   <a href="README.th.md"><img src="https://img.shields.io/badge/ไทย-README.th-teal?style=flat-square" alt="Thai"></a>
+  <a href="README.es.md"><img src="https://img.shields.io/badge/Español-README.es-lightgrey?style=flat-square" alt="Spanish"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="MIT License"></a>
   <a href="SECURITY.md"><img src="https://img.shields.io/badge/Security-Policy-blue?style=flat-square" alt="Security policy"></a>
   <a href="https://github.com/multilogin-automation/multilogin-automation"><img src="https://img.shields.io/github/stars/multilogin-automation/multilogin-automation?style=flat-square" alt="Stars multilogin-automation"></a>
@@ -42,6 +43,7 @@ author: Anti-detect
 - [Open-source dev kits](#open-source-dev-kits)
 - [Why browser fingerprinting matters](#why-browser-fingerprinting-matters)
 - [Anti-detect browser landscape](#anti-detect-browser-landscape)
+- [MMO & multi-account guide](#mmo--multi-account-guide)
 - [FAQ](#frequently-asked-questions)
 - [Multilogin pricing reference](#multilogin-pricing-reference)
 - [Languages](#languages)
@@ -149,6 +151,14 @@ Neutral overview of how **Multilogin X** fits next to other common search terms 
 
 ---
 
+## MMO & multi-account guide
+
+Playbook for **MMO automation** and **multi-account browser** isolation on MLX:
+
+**[docs/mmo-automation-guide.md](docs/mmo-automation-guide.md)** · Playwright attach flow: **[docs/playwright-mlx-integration.md](docs/playwright-mlx-integration.md)**
+
+---
+
 ## Frequently asked questions
 
 ### What is an anti-detect browser?
@@ -197,6 +207,7 @@ Maintainers: canonical URL in [docs/urls.md](docs/urls.md).
 | 한국어 | [README.ko.md](README.ko.md) |
 | 日本語 | [README.ja.md](README.ja.md) |
 | ไทย | [README.th.md](README.th.md) |
+| Español | [README.es.md](README.es.md) |
 
 Full index: [docs/locales.md](docs/locales.md)
 
@@ -228,6 +239,8 @@ Target keywords: `anti-detect`, `browser-fingerprinting`, `multilogin-x`, `finge
 | [docs/glossary.md](docs/glossary.md) | Terminology (EN + more) |
 | [docs/browser-landscape.md](docs/browser-landscape.md) | Neutral market / keyword map |
 | [docs/fingerprint-checklist.md](docs/fingerprint-checklist.md) | Pre-flight fingerprint QA |
+| [docs/mmo-automation-guide.md](docs/mmo-automation-guide.md) | MMO / multi-account patterns |
+| [docs/playwright-mlx-integration.md](docs/playwright-mlx-integration.md) | Playwright + MLX attach |
 | [docs/locales.md](docs/locales.md) | Localized README index |
 | [docs/urls.md](docs/urls.md) | Canonical pricing URL & codes |
 | [docs/seo-checklist.md](docs/seo-checklist.md) | Maintainer SEO |
