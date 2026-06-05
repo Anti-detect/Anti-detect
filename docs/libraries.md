@@ -19,7 +19,9 @@ flowchart TB
 | Library | Languages | Link |
 |---------|-----------|------|
 | **MLX API hub** | Docs | [multilogin-api/README.md](multilogin-api/README.md) |
+| **API cookbook** | Recipes | [multilogin-api/cookbook/README.md](multilogin-api/cookbook/README.md) |
 | **sdk/** | Python, C#, Java, Node, cURL | [sdk/README.md](../sdk/README.md) |
+| **python/recipes** | Real flows | [sdk/python/recipes/](../sdk/python/recipes/) |
 | **mlx_client** | Python class | [sdk/python/mlx_client.py](../sdk/python/mlx_client.py) |
 | **Postman archive** | JSON + code samples | [multilogin-api/spec/README.md](multilogin-api/spec/README.md) |
 | Playwright attach | Guide | [playwright-mlx-integration.md](playwright-mlx-integration.md) |

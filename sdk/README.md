@@ -4,11 +4,21 @@
 
 > Unofficial community documentation. For authoritative API behavior, use Multilogin support and the live Postman collection.
 
+## Cookbook — real-world recipes
+
+**Start here** if you want practical flows, not raw Postman snippets:
+
+| Guide | Python code |
+|-------|---------------|
+| [docs/multilogin-api/cookbook/](../docs/multilogin-api/cookbook/) | [`python/recipes/`](python/recipes/) |
+
+Scenarios: saved profile lifecycle, Playwright CDP attach, quick profile + proxy, multi-account rotation, headless smoke.
+
 ## What is inside
 
 | Language | Variants | Folder |
 |----------|----------|--------|
-| **Python** | `requests`, `http.client`, **`mlx_client`** | [`python/`](python/) |
+| **Python** | `requests`, `http.client`, **`mlx_client`**, **recipes** | [`python/`](python/) |
 | **C#** | `HttpClient` | [`csharp/`](csharp/) |
 | **Java** | `OkHttp` | [`java/`](java/) |
 | **Node.js** | native `fetch` (18+) | [`nodejs/`](nodejs/) |
@@ -54,6 +64,15 @@ python mlx_client.py
 | Stop | `requests/stop_profile.py` | `examples/StopProfile.cs` | `examples/StopProfile.java` | `nodejs/stop_profile.mjs` | `curl/stop_profile.sh` |
 | Quick v3 | `requests/quick_profile_v3.py` | `examples/QuickProfileV3.cs` | `examples/QuickProfileV3.java` | — | — |
 | Quick v2 | `requests/quick_profile_v2.py` | — | — | — | — |
+
+### Lifecycle recipes (multi-language)
+
+| Language | Recipe |
+|----------|--------|
+| Python | [`python/recipes/`](python/recipes/) (5 scenarios) |
+| C# | [`csharp/recipes/ProfileLifecycle.cs`](csharp/recipes/ProfileLifecycle.cs) |
+| Java | [`java/recipes/ProfileLifecycle.java`](java/recipes/ProfileLifecycle.java) |
+| Node | [`nodejs/recipes/lifecycle.mjs`](nodejs/recipes/lifecycle.mjs) |
 
 ## Related hubs
 

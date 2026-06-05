@@ -21,6 +21,7 @@ Central index for **Multilogin X REST API** automation on the Anti-detect profil
 
 | Doc | Content |
 |-----|---------|
+| **[cookbook/README.md](cookbook/README.md)** | **Real-world recipes** (lifecycle, Playwright, proxy, rotation) |
 | [authentication.md](authentication.md) | Bearer token, refresh, cloud vs launcher |
 | [launcher-endpoints.md](launcher-endpoints.md) | Start/stop/quick paths from HTML export |
 | [sdk-matrix.md](sdk-matrix.md) | Language × HTTP client matrix |

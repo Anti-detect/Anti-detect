@@ -8,6 +8,13 @@ Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 
+- [`docs/multilogin-api/cookbook/`](docs/multilogin-api/cookbook/) — real-world API recipes (lifecycle, Playwright, proxy, rotation, smoke)
+- [`sdk/python/recipes/`](sdk/python/recipes/) — runnable Python scenarios + `mlx_helpers.py`
+- Cross-language lifecycle recipes: C#, Java, Node under `sdk/*/recipes/`
+- `MlxLauncherClient.profile_session()` context manager for safe stop-on-exit
+
+### Added
+
 - [`docs/multilogin-api/spec/`](docs/multilogin-api/spec/) — professional Postman archive (JSON metadata, launcher endpoints, code samples)
 - `scripts/archive-postman-html.py` — migrate temporary `API-HTML/*.html` into `spec/`
 

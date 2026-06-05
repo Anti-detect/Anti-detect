@@ -6,7 +6,8 @@ from __future__ import annotations
 
 import json
 import os
-from typing import Any
+from contextlib import contextmanager
+from typing import Any, Iterator
 from urllib.parse import urlencode
 
 import requests
@@ -77,6 +78,26 @@ class MlxLauncherClient:
 
     def quick_profile_v3(self, payload: dict[str, Any]) -> dict[str, Any]:
         return self._request("POST", "/api/v3/profile/quick", payload)
+
+    @contextmanager
+    def profile_session(
+        self,
+        folder_id: str,
+        profile_id: str,
+        automation_type: str = "puppeteer",
+        headless_mode: bool = False,
+    ) -> Iterator[dict[str, Any]]:
+        """Start a saved profile and always stop it on exit (success or error)."""
+        result = self.start_profile(
+            folder_id,
+            profile_id,
+            automation_type=automation_type,
+            headless_mode=headless_mode,
+        )
+        try:
+            yield result
+        finally:
+            self.stop_profile(profile_id)
 
 
 if __name__ == "__main__":

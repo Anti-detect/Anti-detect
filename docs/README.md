@@ -16,6 +16,7 @@ Hub for **Anti-detect** profile repository documentation.
 | [mmo-automation-guide.md](mmo-automation-guide.md) | MMO / multi-account patterns |
 | [playwright-mlx-integration.md](playwright-mlx-integration.md) | Playwright + MLX |
 | [multilogin-api/README.md](multilogin-api/README.md) | MLX REST API reference |
+| [multilogin-api/cookbook/README.md](multilogin-api/cookbook/README.md) | API recipes for real automation flows |
 | [libraries.md](libraries.md) | Full library sky map |
 | [disclaimer.md](disclaimer.md) | Legal / affiliation disclaimer |
 | [maintenance.md](maintenance.md) | Ongoing maintenance and CI guardrails |

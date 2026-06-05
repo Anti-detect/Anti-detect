@@ -23,6 +23,10 @@ sequenceDiagram
   PW->>B: UI automation
 ```
 
+## Runnable recipe in this repo
+
+**[Recipe 02 — Playwright attach](multilogin-api/cookbook/02-playwright-attach.md)** with code at [`sdk/python/recipes/02_playwright_attach.py`](../sdk/python/recipes/02_playwright_attach.py).
+
 ## Implementation pointers
 
 1. Copy [`mlx_config_template.py`](https://github.com/multilogin-automation/multilogin-automation/blob/main/templates/mlx_config_template.py) for API auth and profile start.

@@ -167,6 +167,7 @@ Playbook for **MMO automation** and **multi-account browser** isolation on MLX:
 | Layer | Link |
 |-------|------|
 | **SDK code** | [`sdk/`](sdk/) — start/stop/quick profile |
+| **API cookbook** | [docs/multilogin-api/cookbook/](docs/multilogin-api/cookbook/) — real-world recipes |
 | **API reference** | [docs/multilogin-api/](docs/multilogin-api/) |
 | **Full map** | [docs/libraries.md](docs/libraries.md) — entire ecosystem |
 
