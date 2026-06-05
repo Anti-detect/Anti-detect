@@ -1,0 +1,47 @@
+name: Weekly docs verify
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Branding and self-contained guard
+        run: |
+          set -euo pipefail
+          shopt -s nullglob
+          FILES=(README.md README.*.md docs/*.md docs/**/*.md)
+          if grep -riE 'adblogin\.com|toolskiemtrieudo|t\.me/|ADBNEW50|SAVE50|business@adblogin' "${FILES[@]}"; then
+            exit 1
+          fi
+          if grep -ri 'multilogin-automation' "${FILES[@]}"; then
+            echo "External multilogin-automation references found"
+            exit 1
+          fi
+
+      - name: Python SDK syntax check
+        run: |
+          python -m py_compile \
+            sdk/python/mlx_client.py sdk/python/mlx_env.py sdk/python/mlx_helpers.py \
+            sdk/python/automation_patterns.py sdk/python/recipes/*.py \
+            sdk/python/requests/*.py sdk/python/http_client/*.py scripts/*.py
+          python -m unittest discover -s sdk/python/tests -v
+
+      - name: Validate API spec archive integrity
+        run: python scripts/check-spec-integrity.py
+
+      - name: Regenerate API catalog
+        run: |
+          python scripts/parse-api-html.py
+          python scripts/build-api-catalog.py
+
+      - name: Check generated catalog drift
+        run: git diff --exit-code docs/multilogin-api/endpoints.generated.md || (echo "::warning::endpoints.generated.md out of date" && exit 0)

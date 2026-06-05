@@ -1,0 +1,29 @@
+name: Broken link report
+description: Report a 404 or wrong URL in README or docs
+title: "[link]: "
+labels: ["documentation"]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: File or page
+      placeholder: e.g. docs/repository-map.md
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Broken URL
+    validations:
+      required: true
+  - type: dropdown
+    id: expected
+    attributes:
+      label: Expected fix
+      options:
+        - Update URL
+        - Remove link
+        - Point to internal path in this repo
+        - Unsure
+    validations:
+      required: true

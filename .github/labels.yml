@@ -1,0 +1,15 @@
+- name: documentation
+  color: "0075ca"
+  description: "Documentation, README, or SEO improvements"
+- name: question
+  color: "d876e3"
+  description: "Question or support request"
+- name: bug
+  color: "d73a4a"
+  description: "Something is broken"
+- name: enhancement
+  color: "a2eeef"
+  description: "New feature or request"
+- name: github-actions
+  color: "000000"
+  description: "GitHub Actions or CI changes"

@@ -1,0 +1,105 @@
+name: Docs CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: docs-ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  branding-guard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Block legacy partner branding
+        run: |
+          set -euo pipefail
+          shopt -s nullglob
+          FILES=(README.md README.*.md docs/*.md docs/**/*.md sdk/*.md sdk/**/*.md CONTRIBUTING.md SUPPORT.md SECURITY.md)
+          if grep -riE 'adblogin\.com|toolskiemtrieudo|t\.me/|ADBNEW50|SAVE50|business@adblogin' "${FILES[@]}"; then
+            echo "::error::Legacy branding or promo codes found. Use SAAS50/MIN50 and Multilogin pricing URL only."
+            exit 1
+          fi
+          if grep -ri 'multilogin-automation' "${FILES[@]}"; then
+            echo "::error::External multilogin-automation links are not allowed. Keep content in this repo."
+            exit 1
+          fi
+          echo "Branding guard OK"
+
+      - name: Require promo codes and UTM in all profile README locales
+        run: |
+          set -euo pipefail
+          shopt -s nullglob
+          for f in README.md README.*.md; do
+            grep -q 'SAAS50' "$f" && grep -q 'MIN50' "$f" && grep -q 'utm_source=saas' "$f" \
+              || { echo "::error::Missing SAAS50/MIN50/UTM in $f"; exit 1; }
+            echo "OK $f"
+          done
+
+      - name: Verify Multilogin pricing URL
+        run: |
+          set -euo pipefail
+          URL=$(jq -r '.homepage' .github/repo-metadata.json)
+          code=$(curl -sS -o /dev/null -w "%{http_code}" -L --max-time 30 "$URL")
+          test "$code" = "200" -o "$code" = "403" || { echo "::error::Pricing URL returned $code"; exit 1; }
+          echo "Pricing URL OK ($code)"
+
+  markdown-link-check:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check Markdown links
+        uses: gaurav-nelson/github-action-markdown-link-check@v1
+        with:
+          use-quiet-mode: yes
+          config-file: .github/markdown-link-check-config.json
+          folder-path: .
+          file-extension: .md
+
+  python-sdk-syntax:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Compile Python SDK
+        run: |
+          python -m py_compile \
+            sdk/python/mlx_client.py sdk/python/mlx_env.py sdk/python/mlx_helpers.py \
+            sdk/python/mlx_cli.py sdk/python/profile_catalog.py \
+            sdk/python/automation_patterns.py sdk/python/mlx_cloud_client.py \
+            sdk/python/requests/*.py sdk/python/http_client/*.py \
+            sdk/python/recipes/*.py scripts/*.py
+
+      - name: Unit test mlx_helpers
+        run: python -m unittest discover -s sdk/python/tests -v
+
+  spec-integrity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate API spec archive integrity
+        run: python scripts/check-spec-integrity.py
+
+  lint-markdown:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Markdown lint
+        uses: DavidAnson/markdownlint-cli2-action@v19
+        with:
+          config: .markdownlint-cli2.jsonc
+          globs: |
+            **/*.md
+            !.git/**

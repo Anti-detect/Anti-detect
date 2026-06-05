@@ -1,0 +1,119 @@
+[
+  {
+    "file": "Multilogin X API-Python-Request.html",
+    "language": "python",
+    "variant": "requests",
+    "endpoints": [
+      {
+        "method": "GET",
+        "name": "Start Browser Profile"
+      },
+      {
+        "method": "GET",
+        "name": "Stop Browser Profile"
+      },
+      {
+        "method": "POST",
+        "name": "Start Quick Profile"
+      },
+      {
+        "method": "POST",
+        "name": "Start Quick Profile v3"
+      }
+    ],
+    "api_paths": [],
+    "hosts": [
+      "https://api.multilogin.com",
+      "https://launcher.mlx.yt:45001"
+    ]
+  },
+  {
+    "file": "Multilogin X API-Python-Client.html",
+    "language": "python",
+    "variant": "http.client",
+    "endpoints": [
+      {
+        "method": "GET",
+        "name": "Start Browser Profile"
+      },
+      {
+        "method": "GET",
+        "name": "Stop Browser Profile"
+      },
+      {
+        "method": "POST",
+        "name": "Start Quick Profile"
+      },
+      {
+        "method": "POST",
+        "name": "Start Quick Profile v3"
+      }
+    ],
+    "api_paths": [
+      "/api/v1/profile/stop/p/{uuid}",
+      "/api/v2/profile/f/{uuid}/p/{uuid}/start?automation_type=puppeteer&headless_mode=false",
+      "/api/v2/profile/quick",
+      "/api/v3/profile/quick"
+    ],
+    "hosts": [
+      "https://api.multilogin.com",
+      "https://launcher.mlx.yt:45001"
+    ]
+  },
+  {
+    "file": "Multilogin X API-C#.html",
+    "language": "csharp",
+    "variant": "HttpClient",
+    "endpoints": [
+      {
+        "method": "GET",
+        "name": "Start Browser Profile"
+      },
+      {
+        "method": "GET",
+        "name": "Stop Browser Profile"
+      },
+      {
+        "method": "POST",
+        "name": "Start Quick Profile"
+      },
+      {
+        "method": "POST",
+        "name": "Start Quick Profile v3"
+      }
+    ],
+    "api_paths": [],
+    "hosts": [
+      "https://api.multilogin.com",
+      "https://launcher.mlx.yt:45001"
+    ]
+  },
+  {
+    "file": "Multilogin X API-JAVA.html",
+    "language": "java",
+    "variant": "OkHttp",
+    "endpoints": [
+      {
+        "method": "GET",
+        "name": "Start Browser Profile"
+      },
+      {
+        "method": "GET",
+        "name": "Stop Browser Profile"
+      },
+      {
+        "method": "POST",
+        "name": "Start Quick Profile"
+      },
+      {
+        "method": "POST",
+        "name": "Start Quick Profile v3"
+      }
+    ],
+    "api_paths": [],
+    "hosts": [
+      "https://api.multilogin.com",
+      "https://launcher.mlx.yt:45001"
+    ]
+  }
+]

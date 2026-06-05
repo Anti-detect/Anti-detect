@@ -1,0 +1,175 @@
+# Changelog
+
+All notable documentation and hub changes for [Anti-detect/Anti-detect](https://github.com/Anti-detect/Anti-detect).
+
+Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
+
+## [Unreleased]
+
+## [0.2.0] - 2026-06-05
+
+### Changed
+
+- All **9 locale READMEs** expanded to mirror [README.md](README.md) (281 lines, 12 recipes, Cloud Real Phone, comparisons)
+- [`scripts/expand-locale-readme.py`](scripts/expand-locale-readme.py) — regenerate locale README shells from English template
+
+### Added
+
+- [multilogin-cloud-real-phone.md](docs/multilogin-cloud-real-phone.md) — Cloud Real Phone + **MIN50** product guide
+- [mobile-mmo-playbook.md](docs/mobile-mmo-playbook.md) — mobile fleet patterns
+- [comparison-multilogin-vs-gologin.md](docs/comparison-multilogin-vs-gologin.md), [comparison-multilogin-vs-adspower.md](docs/comparison-multilogin-vs-adspower.md)
+- [troubleshooting.md](docs/troubleshooting.md), [use-cases.md](docs/use-cases.md), [why-this-hub.md](docs/why-this-hub.md)
+- [`06_error_handling_retry.py`](sdk/python/recipes/06_error_handling_retry.py) — runnable Recipe 06
+
+### Added
+
+- [`mlx_cli.py`](sdk/python/mlx_cli.py) — `start` / `stop` / `smoke` / `doctor` / `profiles list|export`
+- [`pyproject.toml`](sdk/python/pyproject.toml) — `pip install -e .` → global `mlx` command
+- Cookbook **11** (import cookies) and **12** (cloud export + worker sharding)
+- [`profile_catalog.py`](sdk/python/profile_catalog.py) — normalize cloud search → rotation JSON
+- `MlxCloudClient.search_profiles()` — `POST /profile/search`
+- Recipe 04: `MLX_USE_PLAYWRIGHT=1` for real Playwright attach in rotation
+- [snippets/pricing-footer.md](docs/snippets/pricing-footer.md) — reusable CTA block
+- Footer CTA on all cookbook recipes 01–12
+
+### Changed
+
+- Conversion CTAs: affiliate pricing link + **`SAAS50`** / **`MIN50`** (Cloud Real Phone) at head/mid/footer across README locales and key docs
+- [pricing-cta.md](docs/pricing-cta.md) — maintainer placement guide
+
+### Added
+
+- [`mlx_cloud_client.py`](sdk/python/mlx_cloud_client.py) — Cloud API client + token refresh
+- Cookbook **09** (cookie warm/export) and **10** (scrape snapshot)
+- [`scripts/mlx-doctor.py`](scripts/mlx-doctor.py) — local setup pre-flight
+- [cloud-api.md](docs/multilogin-api/cloud-api.md)
+
+### Changed
+
+- **Self-contained hub:** removed all external kit org links; SDK, cookbook, and guides live only in this repo
+- Replaced `open-source-catalog.md` with [repository-map.md](docs/repository-map.md)
+- Added [token-and-ids.md](docs/token-and-ids.md) for profile UUID setup
+- CI blocks external kit org references in docs/README/SDK markdown
+
+### Added
+
+- Cookbook recipes **07** (login flow template) and **08** (Selenium attach)
+- [`sdk/python/automation_patterns.py`](sdk/python/automation_patterns.py) — shared login + attach helpers
+- [`sdk/python/tests/test_mlx_helpers.py`](sdk/python/tests/test_mlx_helpers.py) — CI unit tests (no MLX agent)
+- `extract_selenium_address()` for WebDriver `debuggerAddress`
+
+### Added
+
+- [`docs/multilogin-api/cookbook/`](docs/multilogin-api/cookbook/) — real-world API recipes (lifecycle, Playwright, proxy, rotation, smoke)
+- [`sdk/python/recipes/`](sdk/python/recipes/) — runnable Python scenarios + `mlx_helpers.py`
+- Cross-language lifecycle recipes: C#, Java, Node under `sdk/*/recipes/`
+- `MlxLauncherClient.profile_session()` context manager for safe stop-on-exit
+
+### Added
+
+- [`docs/multilogin-api/spec/`](docs/multilogin-api/spec/) — professional Postman archive (JSON metadata, launcher endpoints, code samples)
+- `scripts/archive-postman-html.py` — migrate temporary `API-HTML/*.html` into `spec/`
+
+### Removed
+
+- `API-HTML/` bulky Save-Page exports (content lives in `docs/multilogin-api/spec/`)
+
+### Added
+
+- [`sdk/python/mlx_client.py`](sdk/python/mlx_client.py) — reusable Launcher HTTP client
+- [`sdk/nodejs/`](sdk/nodejs/), [`sdk/curl/`](sdk/curl/) — Node fetch + shell cURL examples
+- [`sdk/python/requests/quick_profile_v2.py`](sdk/python/requests/quick_profile_v2.py)
+- [docs/disclaimer.md](docs/disclaimer.md), [docs/multilogin-api/quick-reference.md](docs/multilogin-api/quick-reference.md)
+- `scripts/build-api-catalog.py` → `endpoints.generated.md`
+- Weekly workflow [weekly-docs-verify.yml](.github/workflows/weekly-docs-verify.yml)
+- Docs CI: Python SDK `py_compile` check
+
+### Changed
+
+- Removed duplicate raw `snippet_*` exports from `sdk/` (regenerate via `extract-api-snippets.py` → `_generated/`)
+
+### Added (prior in unreleased)
+
+- **Multilogin X SDK library:** [`sdk/`](sdk/) — Python (requests + http.client), C# (HttpClient), Java (OkHttp)
+- [docs/multilogin-api/](docs/multilogin-api/) — API reference hub (auth, launcher endpoints, SDK matrix)
+- [docs/libraries.md](docs/libraries.md) — full ecosystem “library sky” map
+- `scripts/parse-api-html.py`, `scripts/extract-api-snippets.py` (read from `spec/` by default)
+- [README.es.md](README.es.md) (Español / LATAM SEO)
+- [docs/mmo-automation-guide.md](docs/mmo-automation-guide.md), [docs/playwright-mlx-integration.md](docs/playwright-mlx-integration.md)
+- Issue template: [broken-link.yml](.github/ISSUE_TEMPLATE/broken-link.yml)
+- [docs/urls.md](docs/urls.md), [docs/locales.md](docs/locales.md), [docs/fingerprint-checklist.md](docs/fingerprint-checklist.md)
+- [README.th.md](README.th.md) (Thai)
+- [scripts/verify-docs.ps1](scripts/verify-docs.ps1) — local link/branding checks
+- Repository map and ecosystem docs expanded
+- [docs/browser-landscape.md](docs/browser-landscape.md) — neutral anti-detect market / competitor keyword overview
+- Localized profile READMEs: [README.zh-CN.md](README.zh-CN.md), [README.ru.md](README.ru.md), [README.id.md](README.id.md), [README.pt-BR.md](README.pt-BR.md), [README.ko.md](README.ko.md), [README.ja.md](README.ja.md)
+- Docs CI: UTM + promo codes in **all** `README.*.md`, Multilogin pricing URL check, `t.me` block
+- Docs CI **branding guard** — blocks legacy `adblogin` / old promo codes in README and docs (excludes workflow self-reference)
+- Sync workflow: homepage drift warning
+- GitHub topic `account-management` (20 topics total)
+- Expanded SEO topics in [`.github/repo-metadata.json`](.github/repo-metadata.json) (`antidetect-browser`, `fingerprint-browser`, `multilogin-x`, …)
+
+### Changed
+
+- Rebranded hub as neutral **documentation-only** profile (MIT); removed third-party contact blocks
+- Promo codes: **`SAAS50`**, **`MIN50`**; affiliate URL → Multilogin pricing with UTM params
+- Homepage / FUNDING / issue templates point to official Multilogin pricing
+- FAQ and glossary: EN + VI + ZH + RU sections
+- Security reporting via GitHub advisories (no public email)
+
+### Removed
+
+- Telegram, legacy partner email/website/ecosystem links
+- `adblogin` topic and ADBLogin branding across docs
+
+## [1.1.1] - 2026-06-03
+
+### Fixed
+
+- `sync-repo-settings`: invalid `administration` permission (use `GH_METADATA_TOKEN` + drift checks)
+- `labels.yml` format for EndBug/label-sync
+- Markdown lint rules (MD051/MD060); link-check ignores for CI badges
+
+### Added
+
+- [docs/setup-github-metadata.md](docs/setup-github-metadata.md) — one-time PAT setup
+
+## [1.1.0] - 2026-06-03
+
+### Added
+
+- Auto-sync GitHub About, homepage, topics via `sync-repo-settings.yml` + `repo-metadata.json`
+- Label sync workflow and default issue labels
+- Docs CI: link and branding verification on push
+
+### Changed
+
+- `scripts/set-github-about.ps1` reads from `repo-metadata.json`
+- Linguist: mark `scripts/` as documentation (avoid "PowerShell" as primary language)
+
+## [1.0.0] - 2026-06-03
+
+### Added
+
+- Vietnamese profile README ([README.vi.md](README.vi.md))
+- Expanded docs: architecture, glossary, comparison, SEO checklist, GitHub profile setup
+- GitHub Actions: markdown link check, labeler
+- Scripts to update repo About/topics via API
+- Verified documentation catalog and internal link map
+
+### Fixed
+
+- Removed broken links to non-existent `multilogin-x-python-automation-sdk`, `playwright-selenium-templates`, and `postman-api-collection` repos
+- Pointed quick start to in-repo SDK and official MLX docs
+
+### Added (hub v1.0)
+
+- SEO-structured README, LICENSE (MIT), SECURITY, CODE_OF_CONDUCT, CONTRIBUTING
+- docs: getting-started, open-source-catalog, faq
+- GitHub issue/PR templates
+
+[Unreleased]: https://github.com/Anti-detect/Anti-detect/compare/v0.2.0...HEAD
+[0.2.0]: https://github.com/Anti-detect/Anti-detect/compare/v1.1.1...v0.2.0
+[1.1.1]: https://github.com/Anti-detect/Anti-detect/compare/v1.1.0...v1.1.1
+[1.1.0]: https://github.com/Anti-detect/Anti-detect/compare/v1.0.0...v1.1.0
+[1.0.0]: https://github.com/Anti-detect/Anti-detect/releases/tag/v1.0.0

@@ -1,0 +1,12 @@
+{
+  "login_url": "https://your-app.example/login",
+  "selectors": {
+    "username": "#email",
+    "password": "#password",
+    "submit": "button[type='submit']"
+  },
+  "success_indicator": {
+    "url_contains": "/dashboard"
+  },
+  "post_login_wait_ms": 2500
+}

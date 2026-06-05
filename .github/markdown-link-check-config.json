@@ -1,0 +1,12 @@
+{
+  "aliveStatusCodes": [200, 206, 403],
+  "ignorePatterns": [
+    { "pattern": "^mailto:" },
+    { "pattern": "github\\.com/.*/(issues|pull)" },
+    { "pattern": "img\\.shields\\.io" },
+    { "pattern": "github\\.com/.*/actions/workflows" }
+  ],
+  "timeout": "20s",
+  "retryOn429": true,
+  "retryCount": 3
+}

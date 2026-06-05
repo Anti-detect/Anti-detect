@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mlx-sdk"
+version = "0.2.0"
+description = "Unofficial Multilogin X Launcher SDK (community hub)"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "requests>=2.28.0",
+]
+
+[project.optional-dependencies]
+playwright = ["playwright>=1.40.0"]
+selenium = ["selenium>=4.15.0"]
+all = ["playwright>=1.40.0", "selenium>=4.15.0"]
+
+[project.scripts]
+mlx = "mlx_cli:main"
+
+[tool.setuptools]
+py-modules = [
+  "mlx_cli",
+  "mlx_client",
+  "mlx_cloud_client",
+  "mlx_env",
+  "mlx_helpers",
+  "automation_patterns",
+  "profile_catalog",
+]

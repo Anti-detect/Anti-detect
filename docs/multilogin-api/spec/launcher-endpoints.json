@@ -1,0 +1,35 @@
+[
+  {
+    "id": "start-profile",
+    "method": "GET",
+    "path": "/api/v2/profile/f/{folder_id}/p/{profile_id}/start",
+    "name": "Start Browser Profile",
+    "query": {
+      "automation_type": "puppeteer|selenium|...",
+      "headless_mode": "true|false"
+    },
+    "surface": "launcher"
+  },
+  {
+    "id": "stop-profile",
+    "method": "GET",
+    "path": "/api/v1/profile/stop/p/{profile_id}",
+    "name": "Stop Browser Profile",
+    "surface": "launcher"
+  },
+  {
+    "id": "quick-profile-v2",
+    "method": "POST",
+    "path": "/api/v2/profile/quick",
+    "name": "Start Quick Profile",
+    "surface": "launcher"
+  },
+  {
+    "id": "quick-profile-v3",
+    "method": "POST",
+    "path": "/api/v3/profile/quick",
+    "name": "Start Quick Profile v3",
+    "surface": "launcher",
+    "notes": "proxy at root body; fingerprint under parameters"
+  }
+]

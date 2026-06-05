@@ -1,0 +1,14 @@
+{
+  "profiles": [
+    {
+      "label": "shop-account-1",
+      "folder_id": "REPLACE_FOLDER_UUID",
+      "profile_id": "REPLACE_PROFILE_UUID"
+    },
+    {
+      "label": "shop-account-2",
+      "folder_id": "REPLACE_FOLDER_UUID",
+      "profile_id": "REPLACE_PROFILE_UUID"
+    }
+  ]
+}

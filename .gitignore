@@ -1,0 +1,22 @@
+# Optional temporary Postman Save-Page folder (delete after archive-postman-html.py)
+API-HTML/
+
+# Auto-extracted raw snippets (regenerate with scripts/extract-api-snippets.py)
+sdk/_generated/
+sdk/**/examples/**/snippet_*
+sdk/**/OkHttp/
+sdk/**/HttpClient/
+
+# Python bytecode
+__pycache__/
+*.pyc
+
+# Local env
+.env
+*.env.local
+sdk/.env
+
+# Recipe outputs (local only)
+cookies_export.json
+scrape_snapshot.json
+sdk/python/recipes/profiles.json

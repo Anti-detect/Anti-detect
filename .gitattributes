@@ -1,0 +1,6 @@
+* text=auto eol=lf
+*.md linguist-documentation
+docs/** linguist-documentation
+.github/** linguist-documentation
+scripts/** linguist-documentation export-ignore
+*.ps1 linguist-documentation

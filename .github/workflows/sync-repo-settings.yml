@@ -1,0 +1,79 @@
+name: Sync repository settings
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Default GITHUB_TOKEN cannot update About/topics. Optional secret: GH_METADATA_TOKEN (PAT, repo scope).
+
+permissions:
+  contents: read
+
+concurrency:
+  group: sync-repo-settings
+  cancel-in-progress: true
+
+jobs:
+  repository-settings:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check About description drift
+        run: |
+          set -euo pipefail
+          EXPECTED=$(jq -r '.description' .github/repo-metadata.json)
+          ACTUAL=$(curl -fsSL "https://api.github.com/repos/${GITHUB_REPOSITORY}" | jq -r '.description // empty')
+          if [ "$EXPECTED" = "$ACTUAL" ]; then
+            echo "Description OK"
+          else
+            echo "::warning title=Metadata drift::Expected: $EXPECTED | Actual: $ACTUAL"
+          fi
+
+      - name: Check homepage drift
+        run: |
+          set -euo pipefail
+          EXPECTED=$(jq -r '.homepage' .github/repo-metadata.json)
+          ACTUAL=$(curl -fsSL "https://api.github.com/repos/${GITHUB_REPOSITORY}" | jq -r '.homepage // empty')
+          if [ "$EXPECTED" = "$ACTUAL" ]; then
+            echo "Homepage OK"
+          else
+            echo "::warning title=Homepage drift::Expected: $EXPECTED | Actual: $ACTUAL"
+          fi
+
+      - name: Check topics drift
+        run: |
+          set -euo pipefail
+          COUNT=$(curl -fsSL "https://api.github.com/repos/${GITHUB_REPOSITORY}/topics" \
+            -H "Accept: application/vnd.github.mercy-preview+json" | jq '.names | length')
+          WANT=$(jq '.topics | length' .github/repo-metadata.json)
+          if [ "$COUNT" -ge 10 ]; then
+            echo "Topics OK ($COUNT)"
+          else
+            echo "::warning title=Topics missing::Found $COUNT topics, expected ~$WANT"
+          fi
+
+      - name: Sync About and topics (requires GH_METADATA_TOKEN secret)
+        if: ${{ secrets.GH_METADATA_TOKEN != '' }}
+        env:
+          GH_TOKEN: ${{ secrets.GH_METADATA_TOKEN }}
+        run: |
+          set -euo pipefail
+          DESC=$(jq -r '.description' .github/repo-metadata.json)
+          HOME=$(jq -r '.homepage' .github/repo-metadata.json)
+          WIKI=$(jq -r '.has_wiki' .github/repo-metadata.json)
+          DISC=$(jq -r '.has_discussions' .github/repo-metadata.json)
+          gh api --method PATCH "repos/${GITHUB_REPOSITORY}" \
+            -f description="$DESC" \
+            -f homepage="$HOME" \
+            -F has_wiki=$WIKI \
+            -F has_discussions=$DISC
+          jq '{names: .topics}' .github/repo-metadata.json > /tmp/topics.json
+          gh api --method PUT "repos/${GITHUB_REPOSITORY}/topics" --input /tmp/topics.json
+          echo "Metadata synced."
+
+      - name: Remind to add PAT secret
+        if: ${{ secrets.GH_METADATA_TOKEN == '' }}
+        run: |
+          echo "::notice::Add repository secret GH_METADATA_TOKEN to auto-apply .github/repo-metadata.json (see docs/setup-github-metadata.md)"

@@ -1,0 +1,35 @@
+name: Support request
+description: Questions about MLX setup, SDK, or documentation (not security)
+title: "[support]: "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        See [SUPPORT.md](../../SUPPORT.md) and [docs/getting-started.md](../../docs/getting-started.md).
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Multilogin X setup
+        - Python / API automation
+        - Playwright / Selenium
+        - Multilogin pricing / licensing
+        - Documentation on this profile repo
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: What do you need help with?
+    validations:
+      required: true
+  - type: textarea
+    id: tried
+    attributes:
+      label: What have you tried?
+      placeholder: Recipe path, error messages (redact tokens)
+    validations:
+      required: false
