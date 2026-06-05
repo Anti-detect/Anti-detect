@@ -17,7 +17,7 @@ jobs:
   branding-guard:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: Block legacy partner branding
         run: |
@@ -56,7 +56,7 @@ jobs:
     runs-on: ubuntu-latest
     continue-on-error: true
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: Check Markdown links
         uses: gaurav-nelson/github-action-markdown-link-check@v1
@@ -69,7 +69,7 @@ jobs:
   python-sdk-syntax:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: Compile Python SDK
         run: |
@@ -85,7 +85,7 @@ jobs:
   spec-integrity:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: Validate API spec archive integrity
         run: python scripts/check-spec-integrity.py
@@ -93,7 +93,7 @@ jobs:
   lint-markdown:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: Markdown lint
         uses: DavidAnson/markdownlint-cli2-action@v19
