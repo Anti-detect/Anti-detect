@@ -38,4 +38,4 @@ Guides: [docs/multilogin-api/cookbook/](../../docs/multilogin-api/cookbook/)
 
 Tests (no MLX agent needed): `python -m unittest sdk/python/tests/test_mlx_helpers.py`
 
-Production automation: [`multilogin-automation/templates`](https://github.com/multilogin-automation/multilogin-automation/tree/main/templates).
+More flows: [docs/multilogin-api/cookbook/](../../docs/multilogin-api/cookbook/).

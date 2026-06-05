@@ -24,12 +24,12 @@ Operational checklist before scaling **anti-detect browser** automation on **Mul
 
 - [ ] Profile launched via MLX API / launcher (not raw Chrome for production)
 - [ ] Playwright/Selenium connects to launcher CDP/WebSocket URL
-- [ ] [`playwright_stealth.py`](https://github.com/multilogin-automation/multilogin-automation/blob/main/templates/playwright_stealth.py) hooks applied where needed
+- [ ] Playwright attach via [Recipe 02](multilogin-api/cookbook/02-playwright-attach.md); human delays in [automation_patterns.py](../sdk/python/automation_patterns.py)
 
 ## Behavior (anti-bot)
 
 - [ ] Human-like delays between actions
-- [ ] Cookie warming completed for cold profiles ([cookie tools](open-source-catalog.md#cookie--proxy-utilities))
+- [ ] Cold profiles warmed with realistic browsing before high-risk flows ([mmo-automation-guide.md](mmo-automation-guide.md))
 - [ ] Rate limits respected per platform ToS
 
 ## Before go-live

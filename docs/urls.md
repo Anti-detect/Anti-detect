@@ -23,7 +23,7 @@ Markdown link label: **Multilogin pricing**
 |----------|-----|
 | Profile org/user | https://github.com/Anti-detect |
 | This profile repo | https://github.com/Anti-detect/Anti-detect |
-| MLX kits | https://github.com/multilogin-automation |
+| SDK & cookbook | https://github.com/Anti-detect/Anti-detect/tree/main/sdk |
 
 ## Do not reintroduce
 

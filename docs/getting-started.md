@@ -1,67 +1,63 @@
 # Getting started
 
-Onboarding for **anti-detect browser automation** and **Multilogin X** — with links to real repositories under [@multilogin-automation](https://github.com/multilogin-automation).
+Onboarding for **anti-detect browser automation** and **Multilogin X** — all paths use code and docs **in this repository**.
 
-## Path A — New to Multilogin X
+## Path A — First MLX profile
 
-1. Open [multilogin-x-getting-started](https://github.com/multilogin-automation/multilogin-x-getting-started) and follow install + first profile launch.
-2. Use [multilogin-x-id-token-retrieval-tools](https://github.com/multilogin-automation/multilogin-x-id-token-retrieval-tools) to obtain tokens, profile IDs, and workspace IDs.
-3. Clone [multilogin-automation](https://github.com/multilogin-automation/multilogin-automation) and copy from [`templates/`](https://github.com/multilogin-automation/multilogin-automation/tree/main/templates).
+1. Install [Multilogin X](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) and create a browser profile in the desktop app.
+2. Copy folder/profile UUIDs → [token-and-ids.md](token-and-ids.md).
+3. `cp sdk/config.example.env sdk/.env` and paste your IDs.
 
-## Path B — Python API automation
+## Path B — Launcher API (Python)
 
-1. Start with [`templates/mlx_config_template.py`](https://github.com/multilogin-automation/multilogin-automation/blob/main/templates/mlx_config_template.py).
-2. Store credentials in environment variables (never commit `.env` with secrets).
-3. Confirm Local API / MLX endpoint (commonly port **35000** — verify in your environment docs).
-4. Pilot one profile before scaling fleet size.
+```bash
+cd sdk/python
+pip install -r requirements.txt
+python recipes/01_saved_profile_lifecycle.py
+```
 
-## Path C — Playwright / Selenium UI automation
+Uses [`mlx_client.py`](../sdk/python/mlx_client.py) — start, read CDP port, stop safely.
 
-1. Launch a profile via MLX API (Path A or B).
-2. Integrate [`templates/playwright_stealth.py`](https://github.com/multilogin-automation/multilogin-automation/blob/main/templates/playwright_stealth.py) for stealth hooks.
-3. Attach Playwright or Selenium to the browser debugger endpoint returned by the launcher.
-4. Run against a staging URL first; watch for Cloudflare/Akamai challenge patterns.
+## Path C — Playwright / Selenium
 
-Detailed sequence: [playwright-mlx-integration.md](playwright-mlx-integration.md)
+| Stack | Recipe | Guide |
+|-------|--------|-------|
+| Playwright | [`02_playwright_attach.py`](../sdk/python/recipes/02_playwright_attach.py) | [cookbook/02](multilogin-api/cookbook/02-playwright-attach.md) |
+| Selenium | [`08_selenium_attach.py`](../sdk/python/recipes/08_selenium_attach.py) | [cookbook/08](multilogin-api/cookbook/08-selenium-attach.md) |
+| Login flow | [`07_login_flow.py`](../sdk/python/recipes/07_login_flow.py) | [cookbook/07](multilogin-api/cookbook/07-login-flow-template.md) |
 
-## Path D — Cookie warming
+Architecture: [playwright-mlx-integration.md](playwright-mlx-integration.md)
 
-1. [multilogin_x_auto_cookie_collector](https://github.com/multilogin-automation/multilogin_x_auto_cookie_collector) — visit configured sites per profile.
-2. [mlx_cookie_robot](https://github.com/multilogin-automation/mlx_cookie_robot) — MLX-focused cookie robot.
+## Path D — Quick profile + proxy
 
-## Fingerprint pre-flight
+Ephemeral sessions without saved cookies:
 
-Before scaling profiles, run through [fingerprint-checklist.md](fingerprint-checklist.md) (timezone, WebRTC, Canvas/WebGL, proxy alignment).
+[`03_quick_profile_proxy.py`](../sdk/python/recipes/03_quick_profile_proxy.py) · [cookbook/03](multilogin-api/cookbook/03-quick-profile-proxy.md)
 
-## Environment checklist
+## Path E — Multi-account rotation
 
-- [ ] Python 3.10+ or Node LTS (per target repo README)
-- [ ] API token / MLX credentials in env vars only
+[`04_batch_rotation.py`](../sdk/python/recipes/04_batch_rotation.py) + `profiles.json` · [mmo-automation-guide.md](mmo-automation-guide.md)
+
+## Pre-flight checklist
+
+- [ ] Python 3.10+ (for Python SDK)
+- [ ] MLX agent running; launcher host/port in `.env`
 - [ ] Proxy + timezone aligned with profile fingerprint
-- [ ] Firewall allows API and browser debug ports
-- [ ] One profile per account/tenant where isolation matters
-
-## Path E — MMO / multi-account fleets
-
-See [mmo-automation-guide.md](mmo-automation-guide.md) for isolation rules, cookie warming, and keyword-focused workflows.
-
-## Multilogin X plans
-
-Commercial **anti-detect browser** capacity: [Multilogin pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) — codes **`SAAS50`** / **`MIN50`** ([details](../README.md#multilogin-pricing-reference)).
+- [ ] [fingerprint-checklist.md](fingerprint-checklist.md) before scaling
 
 ## Troubleshooting
 
 | Symptom | Check |
 |---------|--------|
-| 401 / invalid token | Re-run id-token tools; rotate credentials |
-| Profile won't start | Proxy health, disk space, MLX agent logs |
-| Instant bot block | Fingerprint mismatch (Canvas/WebGL), IP reputation, rate limits |
-| Playwright can't connect | Correct CDP/WebSocket URL from launcher |
+| Connection refused | Multilogin X app / agent not running |
+| Wrong UUID | [token-and-ids.md](token-and-ids.md) |
+| Playwright can't connect | `automation_type=puppeteer`; wait for CDP port |
+| Selenium attach fails | `automation_type=selenium`; ChromeDriver version |
 
-More: [FAQ](faq.md) · [Glossary](glossary.md) · [Architecture](architecture.md)
+More: [faq.md](faq.md) · [cookbook/06](multilogin-api/cookbook/06-error-handling-retry.md)
 
 ## Next steps
 
-- [Open-source catalog](open-source-catalog.md) — full repo list
-- [Comparison: anti-detect vs Chrome](comparison-anti-detect-vs-chrome.md)
+- [repository-map.md](repository-map.md) — full repo layout
+- [multilogin-api/cookbook/](multilogin-api/cookbook/) — all recipes
 - [Main README](../README.md)

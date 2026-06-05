@@ -34,5 +34,5 @@ Never commit tokens. Prefer OS keychain or CI secrets.
 
 ## Related
 
-- [multilogin-x-id-token-retrieval-tools](https://github.com/multilogin-automation/multilogin-x-id-token-retrieval-tools)
+- [token-and-ids.md](../token-and-ids.md)
 - [launcher-endpoints.md](launcher-endpoints.md)

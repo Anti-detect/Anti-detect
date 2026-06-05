@@ -48,4 +48,4 @@ Replace `run_job()` with Playwright attach from [Recipe 02](02-playwright-attach
 
 ## Scaling up
 
-For parallel workers, run multiple machines or agents — each with its own launcher port and profile subset. See [@multilogin-automation](https://github.com/multilogin-automation) fleet kits.
+For parallel workers, run multiple machines or agents — each with its own launcher port and profile subset. Split `profiles.json` by worker ID.

@@ -1,8 +1,8 @@
 blank_issues_enabled: false
 contact_links:
-  - name: multilogin-automation kits
-    url: https://github.com/multilogin-automation
-    about: Bugs and features for Python/Playwright MLX kits
+  - name: SDK & cookbook docs
+    url: https://github.com/Anti-detect/Anti-detect/tree/main/docs/multilogin-api/cookbook
+    about: API recipes and automation guides in this repo
   - name: Multilogin pricing
     url: https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549
     about: Commercial Multilogin X plans and checkout

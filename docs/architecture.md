@@ -1,64 +1,54 @@
 # Architecture overview
 
-How **anti-detect browser automation** pieces fit together in the **Multilogin X** open-source ecosystem.
+How **anti-detect browser automation** fits together using **this repository** and **Multilogin X**.
 
 ## High-level flow
 
 ```mermaid
 flowchart LR
-  subgraph control["Control plane"]
-    API["Multilogin X API / Local API"]
-    Scripts["Python / Node scripts"]
+  subgraph repo["Anti-detect repo"]
+    SDK["sdk/ + recipes"]
+    DOC["docs/ + cookbook"]
   end
-  subgraph profiles["Profile plane"]
-    P1["Profile A\nfingerprint + proxy"]
-    P2["Profile B\nfingerprint + proxy"]
+  subgraph mlx["Multilogin X"]
+    API["Local Launcher API"]
+    P1["Profile A"]
+    P2["Profile B"]
   end
-  subgraph automation["Automation plane"]
+  subgraph auto["Your automation"]
     PW["Playwright"]
     SE["Selenium"]
   end
-  subgraph targets["Targets"]
-    WEB["Web apps / platforms"]
-  end
-  Scripts --> API
+  SDK --> API
+  DOC --> SDK
   API --> P1
   API --> P2
   P1 --> PW
   P2 --> SE
-  PW --> WEB
+  PW --> WEB["Target sites"]
   SE --> WEB
 ```
 
 ## Fingerprint coherence
 
-Each profile must keep these signals **internally consistent**:
-
 | Layer | Examples | Risk if mismatched |
 |-------|----------|-------------------|
-| Network | IP, DNS, timezone, WebRTC leak | Geo vs locale conflicts |
-| Browser | User-Agent, Client Hints, language | Obvious automation tells |
-| Graphics | Canvas, WebGL, fonts | Duplicate hashes across fleet |
-| Behavior | Mouse, scroll, typing timing | Bot scoring |
+| Network | IP, DNS, timezone, WebRTC | Geo vs locale conflicts |
+| Browser | User-Agent, language | Automation tells |
+| Graphics | Canvas, WebGL, fonts | Shared hashes across fleet |
+| Behavior | Mouse, typing timing | Bot scoring |
 
-**Anti-detect** stacks assign or generate per-profile values so automation does not share one detectable identity.
+## Components in this repo
 
-## Repository roles
-
-| Layer | GitHub examples |
-|-------|-----------------|
-| Onboarding | [multilogin-x-getting-started](https://github.com/multilogin-automation/multilogin-x-getting-started) |
-| Templates & MLX core | [multilogin-automation](https://github.com/multilogin-automation/multilogin-automation) |
-| Auth / IDs | [multilogin-x-id-token-retrieval-tools](https://github.com/multilogin-automation/multilogin-x-id-token-retrieval-tools) |
-| Cookie warming | [multilogin_x_auto_cookie_collector](https://github.com/multilogin-automation/multilogin_x_auto_cookie_collector) |
-| OSS fingerprint stack | [undetectable-fingerprint-browser](https://github.com/multilogin-automation/undetectable-fingerprint-browser) |
-
-## This profile repository
-
-`Anti-detect/Anti-detect` is a **discovery and documentation hub** — not the runtime. Executable code lives in [@multilogin-automation](https://github.com/multilogin-automation) repos above.
+| Component | Role |
+|-----------|------|
+| [`sdk/python/mlx_client.py`](../sdk/python/mlx_client.py) | HTTP client for Launcher API |
+| [`sdk/python/recipes/`](../sdk/python/recipes/) | End-to-end automation scenarios |
+| [`docs/multilogin-api/spec/`](../docs/multilogin-api/spec/) | Archived Postman code samples |
+| [`docs/multilogin-api/cookbook/`](../docs/multilogin-api/cookbook/) | Guides + when-to-use |
 
 ## Related
 
 - [Getting started](getting-started.md)
-- [Glossary](glossary.md)
-- [Comparison](comparison-anti-detect-vs-chrome.md)
+- [repository-map.md](repository-map.md)
+- [playwright-mlx-integration.md](playwright-mlx-integration.md)

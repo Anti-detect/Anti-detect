@@ -1,41 +1,38 @@
 # MMO & multi-account automation guide
 
-Technical patterns for **MMO account management**, **multi-account browser** workflows, and **profile isolation** on **Multilogin X**—documentation only; comply with each game/platform terms.
+Patterns for **MMO account management** and **multi-account browser** workflows on **Multilogin X** — using recipes in this repo.
 
-## Why MMO teams use anti-detect browsers
+> Comply with each platform's terms of service.
+
+## Why anti-detect browsers for MMO
 
 | Risk | Mitigation |
 |------|------------|
-| Linked fingerprints across accounts | One MLX profile per account/tenant |
-| Shared cookies/storage | Isolated profile storage |
+| Linked fingerprints | One MLX profile per account |
+| Shared cookies | Isolated profile storage |
 | IP/geo mismatch | Proxy per profile + timezone alignment |
-| Bot detection on launcher/web | Stealth Playwright + human-like timing |
+| Bot detection | Playwright attach + human-like delays |
 
-## Recommended stack
+## Recommended stack (this repo)
 
-1. **Onboarding** — [multilogin-x-getting-started](https://github.com/multilogin-automation/multilogin-x-getting-started)
-2. **API IDs** — [multilogin-x-id-token-retrieval-tools](https://github.com/multilogin-automation/multilogin-x-id-token-retrieval-tools)
-3. **Templates** — [`multilogin-automation/templates`](https://github.com/multilogin-automation/multilogin-automation/tree/main/templates)
-4. **Pre-flight** — [fingerprint-checklist.md](fingerprint-checklist.md)
-5. **Cookie warming** — [multilogin_x_auto_cookie_collector](https://github.com/multilogin-automation/multilogin_x_auto_cookie_collector) or [mlx_cookie_robot](https://github.com/multilogin-automation/mlx_cookie_robot)
+1. **Onboarding** — [getting-started.md](getting-started.md)
+2. **Profile UUIDs** — [token-and-ids.md](token-and-ids.md)
+3. **Rotation** — [Recipe 04](../sdk/python/recipes/04_batch_rotation.py) + [cookbook/04](multilogin-api/cookbook/04-multi-account-rotation.md)
+4. **Login flows** — [Recipe 07](../sdk/python/recipes/07_login_flow.py)
+5. **Pre-flight** — [fingerprint-checklist.md](fingerprint-checklist.md)
 
 ## Operational rules
 
 - Never share one profile across unrelated accounts.
-- Rotate proxies deliberately; avoid mid-session IP jumps on logged-in flows.
-- Pilot on staging before fleet scale.
-- Redact tokens in logs and screenshots.
-
-## Search keywords (SEO)
-
-**MMO automation**, **multi-account browser**, **anti-detect browser MMO**, **browser profile manager**, **Multilogin X MMO**, **fingerprint browser**, **account isolation**.
+- Rotate proxies deliberately; avoid mid-session IP jumps.
+- Pilot on 2–3 profiles before fleet scale.
+- Redact tokens in logs.
 
 ## Pricing
 
-Codes **`SAAS50`** / **`MIN50`** on [Multilogin pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) — see [urls.md](urls.md).
+**SAAS50** / **MIN50** on [Multilogin pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) — [urls.md](urls.md).
 
 ## Related
 
 - [browser-landscape.md](browser-landscape.md)
-- [getting-started.md](getting-started.md)
-- [FAQ](faq.md)
+- [faq.md](faq.md)

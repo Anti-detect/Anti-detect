@@ -52,8 +52,8 @@ account-management
 ## Internal linking
 
 - [ ] New doc linked from [docs/README.md](README.md)
-- [ ] Catalog lists only **existing** repos (verify via GitHub API)
-- [ ] Broken kit URLs removed or redirected to `multilogin-automation`
+- [ ] Internal links point to paths in this repo ([repository-map.md](repository-map.md))
+- [ ] No links to external third-party kit organizations (CI enforces self-contained docs)
 
 ## Freshness signals
 

@@ -41,8 +41,8 @@ Central index for **Multilogin X REST API** automation on the Anti-detect profil
 | Stack | Where |
 |-------|--------|
 | Playwright + MLX | [playwright-mlx-integration.md](../playwright-mlx-integration.md) |
-| Templates | [multilogin-automation/templates](https://github.com/multilogin-automation/multilogin-automation/tree/main/templates) |
-| Token tools | [multilogin-x-id-token-retrieval-tools](https://github.com/multilogin-automation/multilogin-x-id-token-retrieval-tools) |
+| Recipes | [cookbook/](cookbook/README.md) |
+| Profile UUIDs | [token-and-ids.md](../token-and-ids.md) |
 
 ## Full library map
 

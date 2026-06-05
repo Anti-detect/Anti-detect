@@ -1,38 +1,25 @@
 <!--
-title: เบราว์เซอร์ Anti-detect · Multilogin X
-description: เบราว์เซอร์ anti-detect, browser fingerprinting, Multilogin X, Playwright/Selenium — ศูนย์เอกสารเปิด
-keywords: เบราว์เซอร์ anti-detect, fingerprint browser, Multilogin X, MMO, Playwright, Selenium, GoLogin
+title: Anti-detect Browser & Multilogin X — ไทย
 homepage: https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549
 lang: th
 -->
 
-# เบราว์เซอร์ Anti-detect · Fingerprint · Multilogin X
+# Anti-detect Browser · Multilogin X
 
-**ศูนย์เอกสารเปิด** สำหรับ **เบราว์เซอร์ anti-detect**, **browser fingerprinting**, **Multilogin X** — [@multilogin-automation](https://github.com/multilogin-automation)
+**ศูนย์กลางครบในที่เดียว** — SDK, cookbook API และ Postman archive **ใน repo นี้**
 
-<p align="left">
-  <a href="README.md"><img src="https://img.shields.io/badge/English-README-blue?style=flat-square" alt="English"></a>
-  <a href="README.vi.md"><img src="https://img.shields.io/badge/Tiếng_Việt-README.vi-red?style=flat-square" alt="Vietnamese"></a>
-  <a href="README.zh-CN.md"><img src="https://img.shields.io/badge/中文-README.zh--CN-red?style=flat-square" alt="Chinese"></a>
-</p>
+<p align="left"><a href="README.md">English README</a></p>
 
-## เริ่มต้นอย่างรวดเร็ว
+## เริ่มต้น
 
-1. MLX มือใหม่ → [multilogin-x-getting-started](https://github.com/multilogin-automation/multilogin-x-getting-started)
-2. Token / ID → [multilogin-x-id-token-retrieval-tools](https://github.com/multilogin-automation/multilogin-x-id-token-retrieval-tools)
-3. เทมเพลต → [multilogin-automation/templates](https://github.com/multilogin-automation/multilogin-automation/tree/main/templates)
-4. ราคา → [Multilogin pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · **`SAAS50`** / **`MIN50`**
+1. ติดตั้ง Multilogin X สร้างโปรไฟล์
+2. UUID → [docs/token-and-ids.md](docs/token-and-ids.md)
+3. `cp sdk/config.example.env sdk/.env`
+4. `cd sdk/python && pip install -r requirements.txt`
+5. `python recipes/01_saved_profile_lifecycle.py`
 
-## MMO / หลายบัญชี
+## SDK & Cookbook
 
-[docs/mmo-automation-guide.md](docs/mmo-automation-guide.md) · [fingerprint-checklist.md](docs/fingerprint-checklist.md)
+[`sdk/`](sdk/) · [cookbook](docs/multilogin-api/cookbook/) · **`SAAS50`** / **`MIN50`** [pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549)
 
-## ภาพรวมตลาด
-
-[docs/browser-landscape.md](docs/browser-landscape.md)
-
-## เอกสาร
-
-[docs/README.md](docs/README.md) · [README.md](README.md)
-
-<p align="center"><sub>Anti-detect · Multilogin X · Browser fingerprinting</sub></p>
+[docs/getting-started.md](docs/getting-started.md) · [docs/faq.md](docs/faq.md)

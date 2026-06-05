@@ -1,150 +1,74 @@
 # FAQ
 
-Extended answers for **anti-detect browser**, **browser fingerprinting**, and **Multilogin X automation**.
+**Anti-detect browser**, **browser fingerprinting**, and **Multilogin X** — common questions.
 
 ---
 
 ## English
 
-### Is anti-detect automation legal?
+### Where is the code?
 
-Laws and site terms vary by jurisdiction and platform. You are responsible for compliance with applicable law and each website's terms of service. This documentation describes technical patterns for legitimate automation, QA, and account management use cases.
+In this repository: [`sdk/`](../sdk/), [cookbook recipes](multilogin-api/cookbook/), and [API spec](multilogin-api/spec/).
 
-### Which keywords describe this ecosystem?
+### How do I get profile IDs?
 
-Common search terms: **anti-detect browser**, **antidetect browser**, **fingerprint browser**, **browser fingerprinting**, **Multilogin X**, **GoLogin**, **Dolphin Anty**, **AdsPower**, **browser profile manager**, **stealth automation**, **Playwright anti-bot**, **Selenium fingerprint**, **profile isolation**, **MMO account management**, **undetectable browser**. See [browser-landscape.md](browser-landscape.md) for a neutral category overview.
+[token-and-ids.md](token-and-ids.md)
 
-### Why are kits split across multiple repositories?
+### Which recipe should I use?
 
-Smaller repos improve install size, versioning, and issue triage. This profile repo acts as the **discovery hub**; implementation lives under [@multilogin-automation](https://github.com/multilogin-automation).
+| Goal | Recipe |
+|------|--------|
+| Start/stop saved profile | [01](multilogin-api/cookbook/01-saved-profile-lifecycle.md) |
+| Playwright | [02](multilogin-api/cookbook/02-playwright-attach.md) |
+| Quick + proxy | [03](multilogin-api/cookbook/03-quick-profile-proxy.md) |
+| Many accounts | [04](multilogin-api/cookbook/04-multi-account-rotation.md) |
+| Login template | [07](multilogin-api/cookbook/07-login-flow-template.md) |
+| Selenium | [08](multilogin-api/cookbook/08-selenium-attach.md) |
 
-### How often is documentation updated?
+### Promo codes?
 
-We update when new kits ship or when API surfaces change. Star/watch individual kit repos for release notifications.
+**SAAS50** / **MIN50** on [Multilogin pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549).
 
-### Can I fork and modify templates?
+### Security reports?
 
-Yes, subject to each kit's license (typically permissive open source). Keep attribution where required.
-
-### Where are the Python SDK / Postman repos?
-
-The canonical hub is **[multilogin-automation](https://github.com/multilogin-automation/multilogin-automation)** with `/templates` (e.g. `mlx_config_template.py`, `playwright_stealth.py`). Older README links to separate `multilogin-x-python-automation-sdk` repos were removed—they are not published on GitHub.
-
-### Where is the Multilogin X API code in this repo?
-
-- **[sdk/](../sdk/)** — runnable Python, C#, Java examples (from Postman + `docs/multilogin-api/spec/`)
-- **[docs/multilogin-api/](multilogin-api/README.md)** — API reference
-- **[docs/libraries.md](libraries.md)** — full library map
-- Live collection: https://documenter.getpostman.com/view/28533318/2s946h9Cv9
-
-### What promo codes work?
-
-| Code | Typical use |
-|------|-------------|
-| `SAAS50` | First-time / SaaS partner discount on Multilogin X |
-| `MIN50` | Minimum-tier or follow-up offers at checkout |
-
-Apply on [Multilogin pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549).
-
-### How do I report security issues?
-
-Do not open public issues. See [SECURITY.md](../SECURITY.md).
+[SECURITY.md](../SECURITY.md) — no public issues for vulnerabilities.
 
 ---
 
 ## Tiếng Việt
 
-### Anti-detect browser là gì?
+### Code ở đâu?
 
-**Anti-detect browser** (trình duyệt chống nhận diện) tạo **profile** riêng: fingerprint (Canvas, WebGL, font…), cookie và proxy tách biệt.
+Trong repo này: [`sdk/`](../sdk/) và [cookbook](multilogin-api/cookbook/).
 
-### Bắt đầu từ đâu?
+### Lấy profile ID?
 
-1. Chọn kit trong [open-source-catalog.md](open-source-catalog.md).  
-2. Làm theo README repo tương ứng.  
-3. Gói MLX: [Multilogin pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549), mã **SAAS50** / **MIN50**.
+[token-and-ids.md](token-and-ids.md)
 
-### Báo lỗi bảo mật?
+### Mã giảm giá?
 
-Xem [SECURITY.md](../SECURITY.md).
+**SAAS50** / **MIN50** trên [Multilogin pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549).
 
 ---
 
 ## 中文
 
-### 什么是反检测浏览器？
+### 代码在哪里？
 
-为每个配置文件隔离指纹、Cookie 与代理，降低账号关联风险。
+本仓库 [`sdk/`](../sdk/) 与 [cookbook](multilogin-api/cookbook/)。
 
-### 从哪里开始？
+### 如何获取配置文件 ID？
 
-[open-source-catalog.md](open-source-catalog.md) → 对应仓库 README → [Multilogin 定价](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549)（**SAAS50** / **MIN50**）。
+[token-and-ids.md](token-and-ids.md)
 
 ---
 
 ## Русский
 
-### Что такое антидетект-браузер?
+### Где код?
 
-Изоляция отпечатка, хранилища и прокси на профиль — отдельная «машина» на сессию.
+В этом репозитории: [`sdk/`](../sdk/) и [cookbook](multilogin-api/cookbook/).
 
-### С чего начать?
+### ID профиля?
 
-[Каталог](open-source-catalog.md) → README kit → [Цены Multilogin](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549), коды **SAAS50** / **MIN50**.
-
----
-
-## Bahasa Indonesia
-
-### Apa itu browser anti-detect?
-
-Profil terpisah untuk fingerprint, cookie, dan proxy — mengurangi korelasi akun.
-
-### Mulai dari mana?
-
-[Katalog](open-source-catalog.md) → [Multilogin pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) (**SAAS50** / **MIN50**).
-
----
-
-## Português (BR)
-
-### O que é navegador anti-detect?
-
-Isolamento de fingerprint, armazenamento e proxy por perfil.
-
-### Por onde começar?
-
-[Catálogo](open-source-catalog.md) · códigos **SAAS50** / **MIN50** no checkout Multilogin.
-
----
-
-## Español
-
-### ¿Qué es un navegador anti-detect?
-
-Perfiles aislados de fingerprint, almacenamiento y proxy por cuenta.
-
-### ¿Por dónde empezar?
-
-[Guía MMO](mmo-automation-guide.md) · [Catálogo](open-source-catalog.md) · códigos **SAAS50** / **MIN50**.
-
----
-
-## ไทย
-
-### เบราว์เซอร์ anti-detect คืออะไร?
-
-แยก fingerprint และ proxy ต่อโปรไฟล์ — เหมาะกับ MMO / หลายบัญชี
-
-### เริ่มที่ไหน?
-
-[README.th.md](../README.th.md) · [browser-landscape.md](browser-landscape.md)
-
----
-
-## Related
-
-- [Getting started](getting-started.md)
-- [Fingerprint checklist](fingerprint-checklist.md)
-- [Locales index](locales.md)
-- [Main README](../README.md)
+[token-and-ids.md](token-and-ids.md)

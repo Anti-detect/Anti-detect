@@ -1,72 +1,25 @@
 <!--
-title: Navegador anti-detect · Impressão digital · Multilogin X
-description: Navegador anti-detect, browser fingerprinting, Multilogin X, automação stealth Playwright/Selenium — hub de documentação aberta.
-keywords: navegador anti-detect, fingerprint browser, Multilogin X, GoLogin, Dolphin Anty, perfis de navegador, Playwright, Selenium, MMO
+title: Anti-detect Browser & Multilogin X — Português
 homepage: https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549
 lang: pt-BR
 -->
 
-# Navegador anti-detect · Fingerprint · Automação Multilogin X
+# Anti-detect Browser · Multilogin X
 
-**Hub de documentação aberta** para **navegador anti-detect**, **browser fingerprinting**, **Multilogin X** e **automação stealth** — kits em [@multilogin-automation](https://github.com/multilogin-automation).
+**Hub autossuficiente** — SDK, cookbook de API e arquivo Postman **neste repositório**.
 
-<p align="left">
-  <a href="README.md"><img src="https://img.shields.io/badge/English-README-blue?style=flat-square" alt="English"></a>
-  <a href="README.vi.md"><img src="https://img.shields.io/badge/Tiếng_Việt-README.vi-red?style=flat-square" alt="Vietnamese"></a>
-  <a href="README.zh-CN.md"><img src="https://img.shields.io/badge/中文-README.zh--CN-red?style=flat-square" alt="Chinese"></a>
-  <a href="README.es.md"><img src="https://img.shields.io/badge/Español-README.es-lightgrey?style=flat-square" alt="Spanish"></a>
-</p>
-
-## Índice
-
-- [Sobre o repositório](#sobre-o-repositório)
-- [Início rápido](#início-rápido)
-- [Panorama do mercado](#panorama-do-mercado)
-- [Preços Multilogin](#preços-multilogin)
-
----
-
-## Sobre o repositório
-
-README oficial [@Anti-detect](https://github.com/Anti-detect): **somente documentação** (MIT). Ideal para **MMO**, marketing multi-conta e **gerenciador de perfis de navegador**.
+<p align="left"><a href="README.md">English README</a></p>
 
 ## Início rápido
 
-1. MLX iniciante → [multilogin-x-getting-started](https://github.com/multilogin-automation/multilogin-x-getting-started)
-2. Tokens → [multilogin-x-id-token-retrieval-tools](https://github.com/multilogin-automation/multilogin-x-id-token-retrieval-tools)
-3. Templates → [multilogin-automation/templates](https://github.com/multilogin-automation/multilogin-automation/tree/main/templates)
-4. Planos → [Multilogin pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · **`SAAS50`** / **`MIN50`**
+1. Instale Multilogin X e crie um perfil
+2. UUIDs → [docs/token-and-ids.md](docs/token-and-ids.md)
+3. `cp sdk/config.example.env sdk/.env`
+4. `cd sdk/python && pip install -r requirements.txt`
+5. `python recipes/01_saved_profile_lifecycle.py`
 
-Checklist de fingerprint: [docs/fingerprint-checklist.md](docs/fingerprint-checklist.md)
+## SDK & Cookbook
 
-## Kits open source
+[`sdk/`](sdk/) · [cookbook](docs/multilogin-api/cookbook/) · **`SAAS50`** / **`MIN50`** [pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549)
 
-| Repositório | Descrição |
-|-------------|-----------|
-| [multilogin-automation](https://github.com/multilogin-automation/multilogin-automation) | Hub + templates |
-| [undetectable-fingerprint-browser](https://github.com/multilogin-automation/undetectable-fingerprint-browser) | Anti-detect OSS |
-
-[Catálogo](docs/open-source-catalog.md) · [FAQ](docs/faq.md)
-
----
-
-## Panorama do mercado
-
-Visão neutra (Multilogin X, GoLogin, Dolphin Anty, AdsPower): [docs/browser-landscape.md](docs/browser-landscape.md)
-
-### MMO / multi-conta
-
-[docs/mmo-automation-guide.md](docs/mmo-automation-guide.md) · [docs/fingerprint-checklist.md](docs/fingerprint-checklist.md)
-
----
-
-## Preços Multilogin
-
-| Código | Uso |
-|--------|-----|
-| **`SAAS50`** | Desconto inicial / parceiro SaaS |
-| **`MIN50`** | Plano mínimo / promoções |
-
-[multilogin.com/pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549)
-
-<p align="center"><sub>Anti-detect · Multilogin X · Browser fingerprinting</sub></p>
+[docs/getting-started.md](docs/getting-started.md) · [docs/faq.md](docs/faq.md)

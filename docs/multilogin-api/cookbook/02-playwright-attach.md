@@ -43,6 +43,6 @@ Customize the `automate(page)` function for login flows, scraping, or form submi
 | Blank page | Wrong context — use `browser.contexts[0].pages[0]` |
 | Immediate block | Proxy/geo mismatch — [fingerprint-checklist.md](../../fingerprint-checklist.md) |
 
-## Production templates
+## Next steps
 
-For hardened stealth hooks see [@multilogin-automation/templates](https://github.com/multilogin-automation/multilogin-automation/tree/main/templates).
+Combine with [Recipe 07 — Login flow](07-login-flow-template.md) or [Recipe 04 — Rotation](04-multi-account-rotation.md).

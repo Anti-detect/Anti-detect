@@ -31,7 +31,7 @@ Scenarios: saved profile lifecycle, Playwright CDP attach, quick profile + proxy
 | **Local Launcher** | `https://{MLX_LAUNCHER_HOST}:{MLX_LAUNCHER_PORT}` | Start/stop profiles, quick profiles |
 | **Cloud API** | `https://api.multilogin.com` | Auth, workspaces, profile CRUD |
 
-Copy [`config.example.env`](config.example.env) → `.env` and fill IDs from [multilogin-x-id-token-retrieval-tools](https://github.com/multilogin-automation/multilogin-x-id-token-retrieval-tools).
+Copy [`config.example.env`](config.example.env) → `.env` and fill IDs — [docs/token-and-ids.md](../docs/token-and-ids.md).
 
 ## Launcher endpoints (from saved HTML)
 
@@ -69,16 +69,16 @@ python mlx_client.py
 
 | Language | Recipe |
 |----------|--------|
-| Python | [`python/recipes/`](python/recipes/) (5 scenarios) |
+| Python | [`python/recipes/`](python/recipes/) (8 scenarios) |
 | C# | [`csharp/recipes/ProfileLifecycle.cs`](csharp/recipes/ProfileLifecycle.cs) |
 | Java | [`java/recipes/ProfileLifecycle.java`](java/recipes/ProfileLifecycle.java) |
 | Node | [`nodejs/recipes/lifecycle.mjs`](nodejs/recipes/lifecycle.mjs) |
 
-## Related hubs
+## Related
 
 - [docs/multilogin-api/README.md](../docs/multilogin-api/README.md) — API index
-- [docs/libraries.md](../docs/libraries.md) — full “library sky” map
-- [@multilogin-automation](https://github.com/multilogin-automation) — production templates & bots
+- [docs/multilogin-api/cookbook/](../docs/multilogin-api/cookbook/) — recipes
+- [docs/libraries.md](../docs/libraries.md) — library map
 
 ## Regenerate from HTML
 

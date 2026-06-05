@@ -28,9 +28,8 @@ Improves click-through when the repo is shared on X, LinkedIn, Slack.
 
 On https://github.com/Anti-detect?tab=repositories → **Customize your pins**:
 
-1. [multilogin-automation/multilogin-automation](https://github.com/multilogin-automation/multilogin-automation)
-2. [multilogin-x-getting-started](https://github.com/multilogin-automation/multilogin-x-getting-started)
-3. This repo (Anti-detect/Anti-detect) if you want the hub visible
+1. **Anti-detect/Anti-detect** (this hub — SDK + cookbook)
+2. Other repos under your org that complement MLX workflows
 
 ## 4. Enable features
 

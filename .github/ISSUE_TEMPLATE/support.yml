@@ -1,13 +1,12 @@
 name: Support request
-description: Questions about kits, MLX setup, or documentation (not security)
+description: Questions about MLX setup, SDK, or documentation (not security)
 title: "[support]: "
 labels: ["question"]
 body:
   - type: markdown
     attributes:
       value: |
-        For **kit bugs**, prefer opening an issue on the specific [multilogin-automation](https://github.com/multilogin-automation) repo.
-        See [SUPPORT.md](../../SUPPORT.md).
+        See [SUPPORT.md](../../SUPPORT.md) and [docs/getting-started.md](../../docs/getting-started.md).
   - type: dropdown
     id: area
     attributes:
@@ -31,6 +30,6 @@ body:
     id: tried
     attributes:
       label: What have you tried?
-      placeholder: Links to repos/docs, error messages (redact tokens)
+      placeholder: Recipe path, error messages (redact tokens)
     validations:
       required: false

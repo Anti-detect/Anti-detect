@@ -23,9 +23,13 @@ jobs:
         run: |
           set -euo pipefail
           shopt -s nullglob
-          FILES=(README.md README.*.md docs/*.md)
+          FILES=(README.md README.*.md docs/*.md docs/**/*.md sdk/*.md sdk/**/*.md CONTRIBUTING.md SUPPORT.md SECURITY.md)
           if grep -riE 'adblogin\.com|toolskiemtrieudo|t\.me/|ADBNEW50|SAVE50|business@adblogin' "${FILES[@]}"; then
             echo "::error::Legacy branding or promo codes found. Use SAAS50/MIN50 and Multilogin pricing URL only."
+            exit 1
+          fi
+          if grep -ri 'multilogin-automation' "${FILES[@]}"; then
+            echo "::error::External multilogin-automation links are not allowed. Keep content in this repo."
             exit 1
           fi
           echo "Branding guard OK"
@@ -47,24 +51,6 @@ jobs:
           code=$(curl -sS -o /dev/null -w "%{http_code}" -L --max-time 30 "$URL")
           test "$code" = "200" -o "$code" = "403" || { echo "::error::Pricing URL returned $code"; exit 1; }
           echo "Pricing URL OK ($code)"
-
-  verify-github-repos:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Verify multilogin-automation repo links
-        run: |
-          set -euo pipefail
-          mapfile -t URLS < <(grep -rohE 'https://github.com/multilogin-automation/[A-Za-z0-9_.-]+' README.md README.*.md docs/ | sort -u)
-          for url in "${URLS[@]}"; do
-            code=$(curl -sS -o /dev/null -w "%{http_code}" -L --max-time 20 "$url")
-            if [ "$code" != "200" ]; then
-              echo "::error::Broken repo link ($code): $url"
-              exit 1
-            fi
-            echo "OK $url"
-          done
 
   markdown-link-check:
     runs-on: ubuntu-latest

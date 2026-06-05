@@ -14,23 +14,18 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Branding guard
+      - name: Branding and self-contained guard
         run: |
           set -euo pipefail
           shopt -s nullglob
-          FILES=(README.md README.*.md docs/*.md)
+          FILES=(README.md README.*.md docs/*.md docs/**/*.md)
           if grep -riE 'adblogin\.com|toolskiemtrieudo|t\.me/|ADBNEW50|SAVE50|business@adblogin' "${FILES[@]}"; then
             exit 1
           fi
-
-      - name: Verify multilogin-automation links
-        run: |
-          set -euo pipefail
-          mapfile -t URLS < <(grep -rohE 'https://github.com/multilogin-automation/[A-Za-z0-9_.-]+' README.md README.*.md docs/ | sort -u)
-          for url in "${URLS[@]}"; do
-            code=$(curl -sS -o /dev/null -w "%{http_code}" -L --max-time 25 "$url")
-            test "$code" = "200" || { echo "Broken $url ($code)"; exit 1; }
-          done
+          if grep -ri 'multilogin-automation' "${FILES[@]}"; then
+            echo "External multilogin-automation references found"
+            exit 1
+          fi
 
       - name: Python SDK syntax check
         run: |
@@ -49,4 +44,4 @@ jobs:
           python scripts/build-api-catalog.py
 
       - name: Check generated catalog drift
-        run: git diff --exit-code docs/multilogin-api/endpoints.generated.md || (echo "::warning::endpoints.generated.md out of date — run build-api-catalog.py locally" && exit 0)
+        run: git diff --exit-code docs/multilogin-api/endpoints.generated.md || (echo "::warning::endpoints.generated.md out of date" && exit 0)

@@ -5,7 +5,8 @@ Hub for **Anti-detect** profile repository documentation.
 | Guide | Description |
 |-------|-------------|
 | [getting-started.md](getting-started.md) | Onboarding paths (MLX, Python, Playwright) |
-| [open-source-catalog.md](open-source-catalog.md) | Verified @multilogin-automation repos |
+| [repository-map.md](repository-map.md) | What's inside this repo |
+| [token-and-ids.md](token-and-ids.md) | Profile UUIDs & tokens |
 | [architecture.md](architecture.md) | System diagram and layers |
 | [glossary.md](glossary.md) | Terms for SEO and learning (EN, VI, ZH, RU) |
 | [comparison-anti-detect-vs-chrome.md](comparison-anti-detect-vs-chrome.md) | Chrome vs anti-detect |

@@ -38,7 +38,7 @@ Need login automation?
 ## Prerequisites
 
 1. Multilogin X running locally (launcher reachable).
-2. `MLX_FOLDER_ID` + `MLX_PROFILE_ID` from [id-token tools](https://github.com/multilogin-automation/multilogin-x-id-token-retrieval-tools).
+2. `MLX_FOLDER_ID` + `MLX_PROFILE_ID` from [token-and-ids.md](../../token-and-ids.md).
 3. Copy [`sdk/config.example.env`](../../../sdk/config.example.env) → `sdk/.env`.
 
 ## Related

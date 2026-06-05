@@ -21,12 +21,12 @@ Postman also lists (live doc): Go, Dart — add under `sdk/` when you export tho
 | `spec/code-samples/csharp/HttpClient/` | C# HttpClient |
 | `spec/code-samples/java/OkHttp/` | Java OkHttp |
 
-## Related open-source kits
+## Runnable SDK in this repo
 
-| Repo | Role |
-|------|------|
-| [multilogin-automation](https://github.com/multilogin-automation/multilogin-automation) | Production bots + templates |
-| [laravel-multilogin-sdk](https://github.com/multilogin-automation/laravel-multilogin-sdk) | PHP/Laravel |
-| [MultiLogin](https://github.com/multilogin-automation/MultiLogin) | MLX API fork |
+| Language | Folder |
+|----------|--------|
+| Python | [sdk/python/](../../sdk/python/) |
+| C# | [sdk/csharp/](../../sdk/csharp/) |
+| Java | [sdk/java/](../../sdk/java/) |
 
-See [libraries.md](../libraries.md).
+See [libraries.md](../libraries.md) and [cookbook/](cookbook/README.md).

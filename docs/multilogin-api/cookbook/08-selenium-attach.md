@@ -46,4 +46,4 @@ driver.quit()  # detach only — MLX stop is in profile_session finally
 ## Related
 
 - [Recipe 02 — Playwright](02-playwright-attach.md)
-- [@multilogin-automation/templates](https://github.com/multilogin-automation/multilogin-automation/tree/main/templates)
+- [Recipe 07 — Login flow](07-login-flow-template.md)

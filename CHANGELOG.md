@@ -6,6 +6,13 @@ Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Changed
+
+- **Self-contained hub:** removed all external kit org links; SDK, cookbook, and guides live only in this repo
+- Replaced `open-source-catalog.md` with [repository-map.md](docs/repository-map.md)
+- Added [token-and-ids.md](docs/token-and-ids.md) for profile UUID setup
+- CI blocks external kit org references in docs/README/SDK markdown
+
 ### Added
 
 - Cookbook recipes **07** (login flow template) and **08** (Selenium attach)

@@ -45,4 +45,4 @@ Definitions for **SEO** and onboarding — search-friendly terms used across thi
 ## Related
 
 - [FAQ](faq.md)
-- [Catalog](open-source-catalog.md)
+- [Repository map](repository-map.md)

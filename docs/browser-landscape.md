@@ -20,7 +20,7 @@ Teams often evaluate several vendors in the same budget conversation:
 
 | Product (examples) | Notes |
 |--------------------|--------|
-| **Multilogin X** | Profiles, team workspaces, Local API — [official docs](https://multilogin.com/) · kits: [@multilogin-automation](https://github.com/multilogin-automation) |
+| **Multilogin X** | Profiles, team workspaces, Local API — [official docs](https://multilogin.com/) · SDK: [sdk/](../sdk/) |
 | **GoLogin** | Cloud + local profiles; common “multilogin alternative” search |
 | **Dolphin Anty** | Popular with affiliate / social ad workflows |
 | **AdsPower** | Strong in CN/TW/SEA multi-account marketing searches |
@@ -32,13 +32,13 @@ Teams often evaluate several vendors in the same budget conversation:
 
 **This repository does not ship or support those products.** If you use MLX, start at [getting-started.md](getting-started.md).
 
-## Open-source paths
+## Automation in this repo
 
 | Approach | Where to start |
 |----------|----------------|
-| MLX templates | [multilogin-automation/templates](https://github.com/multilogin-automation/multilogin-automation/tree/main/templates) |
-| OSS fingerprint patterns | [undetectable-fingerprint-browser](https://github.com/multilogin-automation/undetectable-fingerprint-browser) |
-| Self-hosted manager | [CloakBrowser-Manager](https://github.com/multilogin-automation/CloakBrowser-Manager) |
+| MLX Launcher API | [sdk/](../sdk/) + [cookbook](multilogin-api/cookbook/) |
+| Playwright attach | [playwright-mlx-integration.md](playwright-mlx-integration.md) |
+| Multi-account | [mmo-automation-guide.md](mmo-automation-guide.md) |
 
 ## MLX pricing reference
 

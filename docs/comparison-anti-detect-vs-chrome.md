@@ -25,13 +25,12 @@ Quick comparison for teams evaluating **browser fingerprinting** and **profile i
 - Long-running sessions needing consistent device story
 - Multilogin X or equivalent already in budget
 
-## Open-source vs commercial
+## Commercial MLX + this repo
 
-| Approach | Example in ecosystem |
-|----------|----------------------|
-| Commercial MLX | [Multilogin pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549), codes `SAAS50` / `MIN50` |
-| OSS fingerprint browser | [undetectable-fingerprint-browser](https://github.com/multilogin-automation/undetectable-fingerprint-browser) |
-| Self-hosted manager | [CloakBrowser-Manager](https://github.com/multilogin-automation/CloakBrowser-Manager) |
+| Approach | Where |
+|----------|--------|
+| Multilogin X plans | [Multilogin pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) — `SAAS50` / `MIN50` |
+| API automation | [sdk/](../sdk/) + [cookbook](multilogin-api/cookbook/) |
 
 ## Related
 

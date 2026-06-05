@@ -1,26 +1,27 @@
 # Security Policy
 
-## Supported versions
+## Scope
 
-This repository contains documentation and links to external automation kits. Security fixes apply to content hosted **in this repo** (documentation, issue responses).
+This repository contains documentation, SDK examples, and API archives under **Anti-detect/Anti-detect**.
 
-For vulnerabilities in code under [@multilogin-automation](https://github.com/multilogin-automation), report to the **specific kit repository** when possible.
+Report vulnerabilities in **this repo's content** (docs, scripts, example code) here.
 
-## Reporting a vulnerability
+## Reporting
 
-**Do not** open a public GitHub issue for security-sensitive reports.
+**Do not** open public issues for security-sensitive reports.
 
-1. Use [GitHub private vulnerability reporting](https://github.com/Anti-detect/Anti-detect/security/advisories/new) on this repository when available, **or**
-2. Open a **private** security advisory via repository **Security → Advisories** (maintainers only).
-3. Include: affected file/URL, steps to reproduce, impact, and suggested fix (if any).
+1. [GitHub private vulnerability reporting](https://github.com/Anti-detect/Anti-detect/security/advisories/new), or
+2. Repository **Security → Advisories** (private).
 
-Allow up to **5 business days** for an initial response. We coordinate disclosure and credit researchers when appropriate.
+Include: affected path, reproduction steps, impact, suggested fix.
+
+Allow up to **5 business days** for an initial response.
 
 ## Safe disclosure
 
-- Avoid testing against third-party sites without authorization.
-- Do not access data belonging to other users.
+- Do not test against third-party sites without authorization.
+- Never commit API tokens, proxy passwords, or profile credentials.
 
-## Multilogin product accounts
+## Multilogin product
 
-Billing or account issues for [Multilogin](https://multilogin.com/) should go through official Multilogin support channels—not this documentation hub.
+Account or billing issues for [Multilogin](https://multilogin.com/) → official Multilogin support.

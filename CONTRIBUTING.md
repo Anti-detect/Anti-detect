@@ -1,18 +1,16 @@
 # Contributing
 
-Thank you for helping improve the Anti-detect GitHub presence.
+Thank you for improving the Anti-detect documentation and SDK hub.
 
 ## What belongs here
 
-This profile repository welcomes:
-
 - README and `docs/` improvements (clarity, SEO, accuracy)
-- Fixed or new links to [@multilogin-automation](https://github.com/multilogin-automation) kits
-- FAQ additions in any supported locale (see below)
-- Typos, broken badges, and accessibility (`alt` text on images)
-- Neutral updates to [docs/browser-landscape.md](docs/browser-landscape.md) (factual, no disparagement)
+- SDK examples in [`sdk/`](sdk/) and [cookbook](docs/multilogin-api/cookbook/)
+- FAQ in any supported locale
+- API spec updates via `scripts/archive-postman-html.py`
+- Typos, broken links, accessibility
 
-Executable automation code should go to the appropriate kit repo under **multilogin-automation**, not here.
+Keep all content **self-contained in this repo** — do not add links to external kit organizations.
 
 ## Supported README locales
 
@@ -29,40 +27,27 @@ Executable automation code should go to the appropriate kit repo under **multilo
 | [README.th.md](README.th.md) | ไทย |
 | [README.es.md](README.es.md) | Español |
 
-Keep promo codes **`SAAS50`** / **`MIN50`** and the Multilogin pricing URL in sync across locales ([docs/urls.md](docs/urls.md)).
+Sync promo codes **`SAAS50`** / **`MIN50`** and pricing URL across locales ([docs/urls.md](docs/urls.md)).
 
 ## How to contribute
 
-1. Fork the repository and create a branch from `main`.
-2. Make focused changes; one topic per pull request when possible.
-3. Use clear commit messages (e.g. `docs: add Playwright quickstart link`).
-4. Open a pull request with:
-   - What changed and why
-   - Screenshots if UI/markdown layout changed
-
-## SEO / docs maintainers
-
-After catalog changes:
-
-1. Follow [docs/seo-checklist.md](docs/seo-checklist.md)
-2. Update [CHANGELOG.md](CHANGELOG.md)
-3. Verify links (CI runs on push)
-4. Keep GitHub topics ≤ **20** in [`.github/repo-metadata.json`](.github/repo-metadata.json)
+1. Fork and branch from `main`.
+2. One topic per pull request when possible.
+3. Run locally: `python scripts/check-spec-integrity.py` and `.\scripts\verify-docs.ps1`
+4. Update [CHANGELOG.md](CHANGELOG.md) for notable changes.
 
 ## Pull request checklist
 
-- [ ] Links use `https://` and point to live destinations (catalog: existing repos only)
-- [ ] Headings follow logical order (one H1 in README; H2 for sections)
-- [ ] New images include descriptive `alt` text
-- [ ] No secrets, API keys, or personal data in commits
+- [ ] Links point to paths inside this repo or official Multilogin/Postman URLs
+- [ ] No secrets in commits
 - [ ] No legacy partner branding (`adblogin`, old promo codes, Telegram funnels)
+- [ ] No external kit org links (CI enforces this)
 
 ## Issues
 
-- **Documentation / links:** use a general issue or the support template.
-- **Bugs in SDKs/templates:** open an issue on the specific [multilogin-automation](https://github.com/multilogin-automation) repository.
-- **Security:** see [SECURITY.md](SECURITY.md).
+- **Docs / SDK:** use issue templates in this repo.
+- **Security:** [SECURITY.md](SECURITY.md).
 
 ## Code of conduct
 
-By participating, you agree to abide by [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
+[CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
