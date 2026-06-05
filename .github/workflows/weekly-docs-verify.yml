@@ -33,7 +33,10 @@ jobs:
           done
 
       - name: Python SDK syntax check
-        run: python -m py_compile sdk/python/mlx_client.py sdk/python/mlx_env.py sdk/python/requests/*.py sdk/python/http_client/*.py
+        run: python -m py_compile sdk/python/mlx_client.py sdk/python/mlx_env.py sdk/python/requests/*.py sdk/python/http_client/*.py scripts/*.py
+
+      - name: Validate API spec archive integrity
+        run: python scripts/check-spec-integrity.py
 
       - name: Regenerate API catalog
         run: |

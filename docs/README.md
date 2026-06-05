@@ -18,6 +18,7 @@ Hub for **Anti-detect** profile repository documentation.
 | [multilogin-api/README.md](multilogin-api/README.md) | MLX REST API reference |
 | [libraries.md](libraries.md) | Full library sky map |
 | [disclaimer.md](disclaimer.md) | Legal / affiliation disclaimer |
+| [maintenance.md](maintenance.md) | Ongoing maintenance and CI guardrails |
 | [faq.md](faq.md) | FAQ (EN, VI, ZH, RU) |
 | [github-profile-setup.md](github-profile-setup.md) | Pin repos, social preview, metadata |
 | [setup-github-metadata.md](setup-github-metadata.md) | PAT secret / auto-sync About & topics |

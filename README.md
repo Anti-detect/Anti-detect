@@ -274,6 +274,7 @@ Target keywords: `anti-detect`, `browser-fingerprinting`, `multilogin-x`, `finge
 | [sdk/README.md](sdk/README.md) | Python / C# / Java SDK |
 | [docs/multilogin-api/spec/README.md](docs/multilogin-api/spec/README.md) | Postman API archive (JSON + code samples) |
 | [docs/locales.md](docs/locales.md) | Localized README index |
+| [docs/maintenance.md](docs/maintenance.md) | Maintainer workflow & CI guardrails |
 | [docs/urls.md](docs/urls.md) | Canonical pricing URL & codes |
 | [docs/seo-checklist.md](docs/seo-checklist.md) | Maintainer SEO |
 | [SUPPORT.md](SUPPORT.md) | Support routing |
