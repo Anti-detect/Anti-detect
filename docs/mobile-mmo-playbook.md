@@ -2,8 +2,7 @@
 
 Operational patterns for **multi-account mobile** workflows with **Multilogin Cloud Real Phone** and desktop MLX in parallel.
 
-> **Cloud Real Phone:** [Multilogin pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) — **`MIN50`**
-
+> **Cloud Real Phone:** [Multilogin pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) — **`MIN50`**  
 > Comply with platform terms of service. Technical guide only.
 
 ---

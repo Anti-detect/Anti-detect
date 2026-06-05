@@ -41,7 +41,7 @@ python scripts/check-spec-integrity.py
 python scripts/build-api-catalog.py
 ```
 
-3. Delete `API-HTML/` again (only `docs/multilogin-api/spec/` is long-term source of truth).
+1. Delete `API-HTML/` again (only `docs/multilogin-api/spec/` is long-term source of truth).
 
 ## CI guardrails
 

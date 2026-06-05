@@ -2,8 +2,7 @@
 
 Practical guides for **Multilogin X Local Launcher API**. Each recipe explains *when* to use it, *what can go wrong*, and links to runnable code.
 
-> **Multilogin X:** [Pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · **`SAAS50`** (Multilogin promo code) · **`MIN50`** (Multilogin Cloud Real Phone)
-
+> **Multilogin X:** [Pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · **`SAAS50`** (Multilogin promo code) · **`MIN50`** (Multilogin Cloud Real Phone)  
 > Not affiliated with Multilogin Inc. Test on staging before production fleets.
 
 ## Recipe index
@@ -60,5 +59,6 @@ Building profiles.json from cloud?
 ---
 
 **Ready to run recipes in production?** [Get Multilogin X](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) — codes **`SAAS50`** · **`MIN50`**
+
 - [playwright-mlx-integration.md](../../playwright-mlx-integration.md) — architecture
 - [mmo-automation-guide.md](../../mmo-automation-guide.md) — operational rules

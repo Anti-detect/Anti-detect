@@ -2,8 +2,7 @@
 
 **The largest open Multilogin X code hub on this profile** — curated from official [Postman API docs](https://documenter.getpostman.com/view/28533318/2s946h9Cv9) and the archived spec in [`docs/multilogin-api/spec/`](../docs/multilogin-api/spec/).
 
-> **Multilogin X:** [Pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · **`SAAS50`** (Multilogin promo code) · **`MIN50`** (Multilogin Cloud Real Phone)
-
+> **Multilogin X:** [Pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · **`SAAS50`** (Multilogin promo code) · **`MIN50`** (Multilogin Cloud Real Phone)  
 > Unofficial community documentation. For authoritative API behavior, use Multilogin support and the live Postman collection.
 
 ## Cookbook — real-world recipes
