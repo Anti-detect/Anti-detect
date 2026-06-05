@@ -86,7 +86,15 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Compile Python SDK
-        run: python -m py_compile sdk/python/mlx_client.py sdk/python/mlx_env.py sdk/python/requests/*.py sdk/python/http_client/*.py scripts/*.py
+        run: |
+          python -m py_compile \
+            sdk/python/mlx_client.py sdk/python/mlx_env.py sdk/python/mlx_helpers.py \
+            sdk/python/automation_patterns.py \
+            sdk/python/requests/*.py sdk/python/http_client/*.py \
+            sdk/python/recipes/*.py scripts/*.py
+
+      - name: Unit test mlx_helpers
+        run: python -m unittest sdk/python/tests/test_mlx_helpers.py -v
 
   spec-integrity:
     runs-on: ubuntu-latest

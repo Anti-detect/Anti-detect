@@ -33,7 +33,12 @@ jobs:
           done
 
       - name: Python SDK syntax check
-        run: python -m py_compile sdk/python/mlx_client.py sdk/python/mlx_env.py sdk/python/requests/*.py sdk/python/http_client/*.py scripts/*.py
+        run: |
+          python -m py_compile \
+            sdk/python/mlx_client.py sdk/python/mlx_env.py sdk/python/mlx_helpers.py \
+            sdk/python/automation_patterns.py sdk/python/recipes/*.py \
+            sdk/python/requests/*.py sdk/python/http_client/*.py scripts/*.py
+          python -m unittest sdk/python/tests/test_mlx_helpers.py -v
 
       - name: Validate API spec archive integrity
         run: python scripts/check-spec-integrity.py

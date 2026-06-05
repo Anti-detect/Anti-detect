@@ -26,6 +26,14 @@ def extract_cdp_url(response: dict[str, Any], host: str = "127.0.0.1") -> str:
     return f"http://{host}:{port}"
 
 
+def extract_selenium_address(response: dict[str, Any], host: str = "127.0.0.1") -> str:
+    """Chrome debuggerAddress for Selenium attach (host:port)."""
+    port = extract_debug_port(response)
+    if port is None:
+        raise ValueError(f"No debug port in launcher response: {response}")
+    return f"{host}:{port}"
+
+
 def build_quick_v3_payload(
     *,
     browser_type: str = "mimic",

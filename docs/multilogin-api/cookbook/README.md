@@ -14,6 +14,8 @@ Practical guides for **Multilogin X Local Launcher API**. Each recipe explains *
 | 04 | [Multi-account rotation](04-multi-account-rotation.md) | MMO / multi-shop isolation | Python [`04_batch_rotation.py`](../../../sdk/python/recipes/04_batch_rotation.py) |
 | 05 | [Headless smoke test](05-headless-smoke-test.md) | CI / pre-flight checks | Python [`05_headless_smoke.py`](../../../sdk/python/recipes/05_headless_smoke.py) |
 | 06 | [Error handling & retry](06-error-handling-retry.md) | Launcher warming, busy profiles | [`mlx_helpers.retry`](../../../sdk/python/mlx_helpers.py) |
+| 07 | [Login flow template](07-login-flow-template.md) | Account warm-up, re-login QA | [`07_login_flow.py`](../../../sdk/python/recipes/07_login_flow.py) |
+| 08 | [Selenium attach](08-selenium-attach.md) | WebDriver teams | [`08_selenium_attach.py`](../../../sdk/python/recipes/08_selenium_attach.py) |
 
 ## Decision tree
 
@@ -27,6 +29,10 @@ Many accounts, same script?
 
 Shipping to production?
   └─ Recipe 05 smoke → then scale
+
+Need login automation?
+  ├─ Playwright → Recipe 07
+  └─ Selenium → Recipe 08
 ```
 
 ## Prerequisites

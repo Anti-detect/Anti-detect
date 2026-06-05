@@ -12,14 +12,15 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
+from automation_patterns import playwright_page_from_cdp
 from mlx_client import MlxLauncherClient
 from mlx_env import load_env
 from mlx_helpers import extract_cdp_url
 
 
-def automate(page) -> None:
+def automate(page, target_url: str) -> None:
     """Replace with your flow (login, form fill, scrape, etc.)."""
-    page.goto("https://example.com", wait_until="domcontentloaded")
+    page.goto(target_url, wait_until="domcontentloaded")
     print(f"Title: {page.title()}")
 
 
@@ -43,11 +44,8 @@ def main() -> None:
         print(f"Connecting Playwright to {cdp_url}")
 
         with sync_playwright() as playwright:
-            browser = playwright.chromium.connect_over_cdp(cdp_url)
-            context = browser.contexts[0] if browser.contexts else browser.new_context()
-            page = context.pages[0] if context.pages else context.new_page()
-            page.goto(target_url, wait_until="domcontentloaded")
-            automate(page)
+            _, page = playwright_page_from_cdp(playwright, cdp_url)
+            automate(page, target_url)
 
     print("Profile stopped cleanly.")
 

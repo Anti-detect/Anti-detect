@@ -12,7 +12,7 @@
 |-------|---------------|
 | [docs/multilogin-api/cookbook/](../docs/multilogin-api/cookbook/) | [`python/recipes/`](python/recipes/) |
 
-Scenarios: saved profile lifecycle, Playwright CDP attach, quick profile + proxy, multi-account rotation, headless smoke.
+Scenarios: saved profile lifecycle, Playwright CDP attach, quick profile + proxy, multi-account rotation, headless smoke, login template, Selenium attach.
 
 ## What is inside
 

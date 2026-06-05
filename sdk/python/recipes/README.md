@@ -9,6 +9,8 @@ Runnable scenarios built on [`mlx_client.py`](../mlx_client.py) and [`mlx_helper
 | [`03_quick_profile_proxy.py`](03_quick_profile_proxy.py) | One-off ephemeral profile + proxy | [03-quick-profile-proxy.md](../../../docs/multilogin-api/cookbook/03-quick-profile-proxy.md) |
 | [`04_batch_rotation.py`](04_batch_rotation.py) | Rotate many saved profiles | [04-multi-account-rotation.md](../../../docs/multilogin-api/cookbook/04-multi-account-rotation.md) |
 | [`05_headless_smoke.py`](05_headless_smoke.py) | Headless smoke test before fleet runs | [05-headless-smoke-test.md](../../../docs/multilogin-api/cookbook/05-headless-smoke-test.md) |
+| [`07_login_flow.py`](07_login_flow.py) | Configurable login (selectors JSON + env) | [07-login-flow-template.md](../../../docs/multilogin-api/cookbook/07-login-flow-template.md) |
+| [`08_selenium_attach.py`](08_selenium_attach.py) | Selenium WebDriver attach | [08-selenium-attach.md](../../../docs/multilogin-api/cookbook/08-selenium-attach.md) |
 
 ## Setup
 

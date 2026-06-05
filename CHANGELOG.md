@@ -8,6 +8,13 @@ Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 
+- Cookbook recipes **07** (login flow template) and **08** (Selenium attach)
+- [`sdk/python/automation_patterns.py`](sdk/python/automation_patterns.py) — shared login + attach helpers
+- [`sdk/python/tests/test_mlx_helpers.py`](sdk/python/tests/test_mlx_helpers.py) — CI unit tests (no MLX agent)
+- `extract_selenium_address()` for WebDriver `debuggerAddress`
+
+### Added
+
 - [`docs/multilogin-api/cookbook/`](docs/multilogin-api/cookbook/) — real-world API recipes (lifecycle, Playwright, proxy, rotation, smoke)
 - [`sdk/python/recipes/`](sdk/python/recipes/) — runnable Python scenarios + `mlx_helpers.py`
 - Cross-language lifecycle recipes: C#, Java, Node under `sdk/*/recipes/`
