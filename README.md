@@ -42,7 +42,7 @@ Everything you need — SDK, API cookbook, guides, and Postman archive — lives
 
 ## Table of contents
 
-- [Why #1 on GitHub](#why-1-on-github-for-multilogin-automation)
+- [Why #1 on GitHub](#why-1-on-github-for-multilogin-x)
 - [What is this repository?](#what-is-this-repository)
 - [Cloud Real Phone (MIN50)](#multilogin-cloud-real-phone)
 - [Quick start](#quick-start)
@@ -55,7 +55,7 @@ Everything you need — SDK, API cookbook, guides, and Postman archive — lives
 
 ---
 
-## Why #1 on GitHub for Multilogin automation
+## Why #1 on GitHub for Multilogin X
 
 | | This hub |
 |---|----------|

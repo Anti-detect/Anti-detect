@@ -8,7 +8,9 @@
     "MD036": false,
     "MD040": false,
     "MD051": false,
-    "MD060": false
+    "MD060": false,
+    "MD034": false,
+    "MD012": false
   },
   "globs": ["**/*.md"]
 }

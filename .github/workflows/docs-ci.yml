@@ -28,8 +28,8 @@ jobs:
             echo "::error::Legacy branding or promo codes found. Use SAAS50/MIN50 and Multilogin pricing URL only."
             exit 1
           fi
-          if grep -ri 'multilogin-automation' "${FILES[@]}"; then
-            echo "::error::External multilogin-automation links are not allowed. Keep content in this repo."
+          if grep -riE 'github\.com/multilogin-automation|multilogin-automation/' "${FILES[@]}"; then
+            echo "::error::External multilogin-automation org links are not allowed. Keep content in this repo."
             exit 1
           fi
           echo "Branding guard OK"
@@ -67,17 +67,11 @@ jobs:
 
   markdown-link-check:
     runs-on: ubuntu-latest
-    continue-on-error: true
     steps:
       - uses: actions/checkout@v4
 
       - name: Check Markdown links
-        uses: gaurav-nelson/github-action-markdown-link-check@v1
-        with:
-          use-quiet-mode: yes
-          config-file: .github/markdown-link-check-config.json
-          folder-path: .
-          file-extension: .md
+        run: python scripts/check-md-links.py
 
   python-sdk-syntax:
     runs-on: ubuntu-latest

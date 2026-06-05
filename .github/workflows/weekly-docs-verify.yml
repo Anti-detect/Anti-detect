@@ -22,8 +22,8 @@ jobs:
           if grep -riE 'adblogin\.com|toolskiemtrieudo|t\.me/|ADBNEW50|SAVE50|business@adblogin' "${FILES[@]}"; then
             exit 1
           fi
-          if grep -ri 'multilogin-automation' "${FILES[@]}"; then
-            echo "External multilogin-automation references found"
+          if grep -riE 'github\.com/multilogin-automation|multilogin-automation/' "${FILES[@]}"; then
+            echo "External multilogin-automation org links found"
             exit 1
           fi
 

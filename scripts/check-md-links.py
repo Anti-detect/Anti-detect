@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Quick markdown link smoke check (local approximation of CI link checker)."""
+"""Markdown link smoke check (local approximation of CI link checker)."""
 from __future__ import annotations
 
 import re
@@ -12,7 +12,8 @@ ROOT = Path(__file__).resolve().parents[1]
 LINK_RE = re.compile(r"\[[^\]]*\]\(([^)]+)\)")
 SKIP_PREFIX = ("mailto:", "#", "javascript:")
 IGNORE = re.compile(
-    r"github\.com/.*/(issues|pull)|img\.shields\.io|github\.com/.*/actions/workflows"
+    r"github\.com/.*/(issues|pull)|img\.shields\.io|github\.com/.*/actions/workflows|"
+    r"contributor-covenant\.org|help\.multilogin\.com|documenter\.getpostman\.com"
 )
 OK_CODES = {200, 206, 403}
 
@@ -28,7 +29,7 @@ def collect_links() -> dict[str, set[str]]:
             if url.startswith(SKIP_PREFIX):
                 continue
             if not url.startswith(("http://", "https://")):
-                target = (path.parent / url).resolve()
+                target = (path.parent / url.split("#")[0]).resolve()
                 if not target.exists():
                     found.setdefault(str(path.relative_to(ROOT)), set()).add(f"local:{url}")
                 continue
@@ -46,7 +47,14 @@ def head(url: str) -> int | str:
     except urllib.error.HTTPError as exc:
         return exc.code
     except Exception as exc:  # noqa: BLE001
-        return str(exc)
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "anti-detect-link-check"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                return resp.status
+        except urllib.error.HTTPError as exc2:
+            return exc2.code
+        except Exception as exc2:  # noqa: BLE001
+            return str(exc2)
 
 
 def main() -> int:

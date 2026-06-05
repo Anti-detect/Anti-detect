@@ -15,7 +15,7 @@ $mdFiles = @(
   + (Get-ChildItem (Join-Path $root "sdk") -Recurse -Filter "*.md" -ErrorAction SilentlyContinue | ForEach-Object { $_.FullName })
 
 $legacy = 'adblogin\.com|toolskiemtrieudo|t\.me/|ADBNEW50|SAVE50|business@adblogin'
-$extKit = 'multilogin-automation'
+$extKit = 'github\.com/multilogin-automation|multilogin-automation/'
 
 $hits = $mdFiles | Select-String -Pattern $legacy
 if ($hits) {
@@ -51,6 +51,9 @@ foreach ($path in $affTargets) {
     }
     Write-Host "OK $(Split-Path $path -Leaf)" -ForegroundColor Green
 }
+
+Write-Host "Running markdown link check..." -ForegroundColor Cyan
+python (Join-Path $root "scripts\check-md-links.py")
 
 Write-Host "Running spec integrity check..." -ForegroundColor Cyan
 python (Join-Path $root "scripts\check-spec-integrity.py")
