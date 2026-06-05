@@ -84,6 +84,10 @@ lang: zh-CN
 
 [docs/browser-landscape.md](docs/browser-landscape.md)
 
+### Multilogin X SDK 代码库
+
+[`sdk/`](../sdk/)（Python / C# / Java / Node / cURL）· [docs/multilogin-api/](docs/multilogin-api/) · [docs/libraries.md](docs/libraries.md)
+
 ### MMO / 多账号
 
 [docs/mmo-automation-guide.md](docs/mmo-automation-guide.md) · [docs/fingerprint-checklist.md](docs/fingerprint-checklist.md)

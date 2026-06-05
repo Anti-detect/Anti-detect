@@ -44,6 +44,7 @@ author: Anti-detect
 - [Why browser fingerprinting matters](#why-browser-fingerprinting-matters)
 - [Anti-detect browser landscape](#anti-detect-browser-landscape)
 - [MMO & multi-account guide](#mmo--multi-account-guide)
+- [Multilogin X SDK library](#multilogin-x-sdk-library)
 - [FAQ](#frequently-asked-questions)
 - [Multilogin pricing reference](#multilogin-pricing-reference)
 - [Languages](#languages)
@@ -159,6 +160,33 @@ Playbook for **MMO automation** and **multi-account browser** isolation on MLX:
 
 ---
 
+## Multilogin X SDK library
+
+**Multi-language API examples** (Python, C#, Java) built from official Postman docs + archived [`docs/multilogin-api/spec/`](docs/multilogin-api/spec/):
+
+| Layer | Link |
+|-------|------|
+| **SDK code** | [`sdk/`](sdk/) — start/stop/quick profile |
+| **API reference** | [docs/multilogin-api/](docs/multilogin-api/) |
+| **Full map** | [docs/libraries.md](docs/libraries.md) — entire ecosystem |
+
+```text
+sdk/
+├── python/mlx_client.py # reusable Launcher client
+├── python/requests/     # start, stop, quick v2/v3
+├── python/http_client/  # stdlib variant
+├── csharp/examples/     # HttpClient
+├── java/examples/       # OkHttp
+├── nodejs/              # fetch (Node 18+)
+└── curl/                # shell scripts
+```
+
+Disclaimer: [docs/disclaimer.md](docs/disclaimer.md) · Cheat sheet: [docs/multilogin-api/quick-reference.md](docs/multilogin-api/quick-reference.md)
+
+Live Postman: https://documenter.getpostman.com/view/28533318/2s946h9Cv9
+
+---
+
 ## Frequently asked questions
 
 ### What is an anti-detect browser?
@@ -241,6 +269,10 @@ Target keywords: `anti-detect`, `browser-fingerprinting`, `multilogin-x`, `finge
 | [docs/fingerprint-checklist.md](docs/fingerprint-checklist.md) | Pre-flight fingerprint QA |
 | [docs/mmo-automation-guide.md](docs/mmo-automation-guide.md) | MMO / multi-account patterns |
 | [docs/playwright-mlx-integration.md](docs/playwright-mlx-integration.md) | Playwright + MLX attach |
+| [docs/multilogin-api/README.md](docs/multilogin-api/README.md) | MLX REST API hub |
+| [docs/libraries.md](docs/libraries.md) | Full library ecosystem map |
+| [sdk/README.md](sdk/README.md) | Python / C# / Java SDK |
+| [docs/multilogin-api/spec/README.md](docs/multilogin-api/spec/README.md) | Postman API archive (JSON + code samples) |
 | [docs/locales.md](docs/locales.md) | Localized README index |
 | [docs/urls.md](docs/urls.md) | Canonical pricing URL & codes |
 | [docs/seo-checklist.md](docs/seo-checklist.md) | Maintainer SEO |
@@ -248,6 +280,7 @@ Target keywords: `anti-detect`, `browser-fingerprinting`, `multilogin-x`, `finge
 | [CHANGELOG.md](CHANGELOG.md) | Change history |
 | [CONTRIBUTING.md](CONTRIBUTING.md) | Contribute |
 | [SECURITY.md](SECURITY.md) | Security |
+| [docs/disclaimer.md](docs/disclaimer.md) | Legal / affiliation disclaimer |
 
 ---
 

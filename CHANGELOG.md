@@ -8,6 +8,33 @@ Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 
+- [`docs/multilogin-api/spec/`](docs/multilogin-api/spec/) — professional Postman archive (JSON metadata, launcher endpoints, code samples)
+- `scripts/archive-postman-html.py` — migrate temporary `API-HTML/*.html` into `spec/`
+
+### Removed
+
+- `API-HTML/` bulky Save-Page exports (content lives in `docs/multilogin-api/spec/`)
+
+### Added
+
+- [`sdk/python/mlx_client.py`](sdk/python/mlx_client.py) — reusable Launcher HTTP client
+- [`sdk/nodejs/`](sdk/nodejs/), [`sdk/curl/`](sdk/curl/) — Node fetch + shell cURL examples
+- [`sdk/python/requests/quick_profile_v2.py`](sdk/python/requests/quick_profile_v2.py)
+- [docs/disclaimer.md](docs/disclaimer.md), [docs/multilogin-api/quick-reference.md](docs/multilogin-api/quick-reference.md)
+- `scripts/build-api-catalog.py` → `endpoints.generated.md`
+- Weekly workflow [weekly-docs-verify.yml](.github/workflows/weekly-docs-verify.yml)
+- Docs CI: Python SDK `py_compile` check
+
+### Changed
+
+- Removed duplicate raw `snippet_*` exports from `sdk/` (regenerate via `extract-api-snippets.py` → `_generated/`)
+
+### Added (prior in unreleased)
+
+- **Multilogin X SDK library:** [`sdk/`](sdk/) — Python (requests + http.client), C# (HttpClient), Java (OkHttp)
+- [docs/multilogin-api/](docs/multilogin-api/) — API reference hub (auth, launcher endpoints, SDK matrix)
+- [docs/libraries.md](docs/libraries.md) — full ecosystem “library sky” map
+- `scripts/parse-api-html.py`, `scripts/extract-api-snippets.py` (read from `spec/` by default)
 - [README.es.md](README.es.md) (Español / LATAM SEO)
 - [docs/mmo-automation-guide.md](docs/mmo-automation-guide.md), [docs/playwright-mlx-integration.md](docs/playwright-mlx-integration.md)
 - Issue template: [broken-link.yml](.github/ISSUE_TEMPLATE/broken-link.yml)

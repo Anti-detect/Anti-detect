@@ -30,6 +30,13 @@ Yes, subject to each kit's license (typically permissive open source). Keep attr
 
 The canonical hub is **[multilogin-automation](https://github.com/multilogin-automation/multilogin-automation)** with `/templates` (e.g. `mlx_config_template.py`, `playwright_stealth.py`). Older README links to separate `multilogin-x-python-automation-sdk` repos were removed—they are not published on GitHub.
 
+### Where is the Multilogin X API code in this repo?
+
+- **[sdk/](../sdk/)** — runnable Python, C#, Java examples (from Postman + `docs/multilogin-api/spec/`)
+- **[docs/multilogin-api/](multilogin-api/README.md)** — API reference
+- **[docs/libraries.md](libraries.md)** — full library map
+- Live collection: https://documenter.getpostman.com/view/28533318/2s946h9Cv9
+
 ### What promo codes work?
 
 | Code | Typical use |

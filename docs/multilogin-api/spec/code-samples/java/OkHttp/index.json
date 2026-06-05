@@ -1,0 +1,60 @@
+{
+  "html_file": "Multilogin X API-JAVA.html",
+  "language": "java",
+  "variant": "OkHttp",
+  "api_paths_extracted": [],
+  "samples": [
+    {
+      "file": "block_01.java",
+      "chars": 103
+    },
+    {
+      "file": "block_02.java",
+      "chars": 490
+    },
+    {
+      "file": "block_03.java",
+      "chars": 275
+    },
+    {
+      "file": "block_04.java",
+      "chars": 909
+    },
+    {
+      "file": "block_05.java",
+      "chars": 2798
+    },
+    {
+      "file": "block_06.java",
+      "chars": 4151
+    },
+    {
+      "file": "block_07.java",
+      "chars": 280
+    },
+    {
+      "file": "block_08.java",
+      "chars": 706
+    },
+    {
+      "file": "block_09.java",
+      "chars": 2739
+    },
+    {
+      "file": "block_10.java",
+      "chars": 3797
+    },
+    {
+      "file": "block_11.java",
+      "chars": 280
+    },
+    {
+      "file": "block_12.java",
+      "chars": 404
+    },
+    {
+      "file": "block_13.java",
+      "chars": 83
+    }
+  ]
+}

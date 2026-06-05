@@ -1,0 +1,328 @@
+{
+  "schema_version": 1,
+  "archived_at": "2026-06-04",
+  "source": {
+    "type": "postman-documenter-save-page",
+    "live_url": "https://documenter.getpostman.com/view/28533318/2s946h9Cv9",
+    "html_files": [
+      "Multilogin X API-Python-Request.html",
+      "Multilogin X API-Python-Client.html",
+      "Multilogin X API-C#.html",
+      "Multilogin X API-JAVA.html"
+    ]
+  },
+  "bases": {
+    "cloud": "https://api.multilogin.com",
+    "launcher_example": "https://launcher.mlx.yt:45001"
+  },
+  "auth": {
+    "type": "Bearer",
+    "token_lifetime_minutes": 30,
+    "refresh_path": "/user/refresh_token",
+    "refresh_method": "POST"
+  },
+  "categories": [
+    {
+      "id": "launcher",
+      "title": "Launcher",
+      "summary": "Start, stop, quick browser profiles (local agent)"
+    },
+    {
+      "id": "profile-management",
+      "title": "Profile Management",
+      "summary": "Create, update, delete profiles (cloud)"
+    },
+    {
+      "id": "profile-access",
+      "title": "Profile Access Management",
+      "summary": "Sign-in, tokens, workspaces"
+    },
+    {
+      "id": "profile-data",
+      "title": "Browser Profile Data",
+      "summary": "Unlock encrypted profile data"
+    }
+  ],
+  "endpoints": [
+    {
+      "id": "start-profile",
+      "method": "GET",
+      "path": "/api/v2/profile/f/{folder_id}/p/{profile_id}/start",
+      "name": "Start Browser Profile",
+      "query": {
+        "automation_type": "puppeteer|selenium|...",
+        "headless_mode": "true|false"
+      },
+      "surface": "launcher"
+    },
+    {
+      "id": "stop-profile",
+      "method": "GET",
+      "path": "/api/v1/profile/stop/p/{profile_id}",
+      "name": "Stop Browser Profile",
+      "surface": "launcher"
+    },
+    {
+      "id": "quick-profile-v2",
+      "method": "POST",
+      "path": "/api/v2/profile/quick",
+      "name": "Start Quick Profile",
+      "surface": "launcher"
+    },
+    {
+      "id": "quick-profile-v3",
+      "method": "POST",
+      "path": "/api/v3/profile/quick",
+      "name": "Start Quick Profile v3",
+      "surface": "launcher",
+      "notes": "proxy at root body; fingerprint under parameters"
+    }
+  ],
+  "exports": [
+    {
+      "html_file": "Multilogin X API-Python-Request.html",
+      "language": "python",
+      "variant": "requests",
+      "api_paths_extracted": [],
+      "samples": [
+        {
+          "file": "block_01.py",
+          "chars": 103
+        },
+        {
+          "file": "block_02.py",
+          "chars": 350
+        },
+        {
+          "file": "block_03.py",
+          "chars": 275
+        },
+        {
+          "file": "block_04.py",
+          "chars": 909
+        },
+        {
+          "file": "block_05.py",
+          "chars": 2798
+        },
+        {
+          "file": "block_06.py",
+          "chars": 3981
+        },
+        {
+          "file": "block_07.py",
+          "chars": 280
+        },
+        {
+          "file": "block_08.py",
+          "chars": 706
+        },
+        {
+          "file": "block_09.py",
+          "chars": 2739
+        },
+        {
+          "file": "block_10.py",
+          "chars": 3627
+        },
+        {
+          "file": "block_11.py",
+          "chars": 280
+        },
+        {
+          "file": "block_12.py",
+          "chars": 264
+        },
+        {
+          "file": "block_13.py",
+          "chars": 83
+        }
+      ]
+    },
+    {
+      "html_file": "Multilogin X API-Python-Client.html",
+      "language": "python",
+      "variant": "http.client",
+      "api_paths_extracted": [
+        "/api/v1/profile/stop/p/{uuid}",
+        "/api/v2/profile/f/{uuid}/p/{uuid}/start?automation_type=puppeteer&headless_mode=false",
+        "/api/v2/profile/quick",
+        "/api/v3/profile/quick"
+      ],
+      "samples": [
+        {
+          "file": "block_01.py",
+          "chars": 103
+        },
+        {
+          "file": "block_02.py",
+          "chars": 396
+        },
+        {
+          "file": "block_03.py",
+          "chars": 275
+        },
+        {
+          "file": "block_04.py",
+          "chars": 909
+        },
+        {
+          "file": "block_05.py",
+          "chars": 2798
+        },
+        {
+          "file": "block_06.py",
+          "chars": 4025
+        },
+        {
+          "file": "block_07.py",
+          "chars": 280
+        },
+        {
+          "file": "block_08.py",
+          "chars": 706
+        },
+        {
+          "file": "block_09.py",
+          "chars": 2739
+        },
+        {
+          "file": "block_10.py",
+          "chars": 3671
+        },
+        {
+          "file": "block_11.py",
+          "chars": 280
+        },
+        {
+          "file": "block_12.py",
+          "chars": 310
+        },
+        {
+          "file": "block_13.py",
+          "chars": 83
+        }
+      ]
+    },
+    {
+      "html_file": "Multilogin X API-C#.html",
+      "language": "csharp",
+      "variant": "HttpClient",
+      "api_paths_extracted": [],
+      "samples": [
+        {
+          "file": "block_01.cs",
+          "chars": 103
+        },
+        {
+          "file": "block_02.cs",
+          "chars": 460
+        },
+        {
+          "file": "block_03.cs",
+          "chars": 275
+        },
+        {
+          "file": "block_04.cs",
+          "chars": 909
+        },
+        {
+          "file": "block_05.cs",
+          "chars": 2798
+        },
+        {
+          "file": "block_06.cs",
+          "chars": 4129
+        },
+        {
+          "file": "block_07.cs",
+          "chars": 280
+        },
+        {
+          "file": "block_08.cs",
+          "chars": 706
+        },
+        {
+          "file": "block_09.cs",
+          "chars": 2739
+        },
+        {
+          "file": "block_10.cs",
+          "chars": 3775
+        },
+        {
+          "file": "block_11.cs",
+          "chars": 280
+        },
+        {
+          "file": "block_12.cs",
+          "chars": 374
+        },
+        {
+          "file": "block_13.cs",
+          "chars": 83
+        }
+      ]
+    },
+    {
+      "html_file": "Multilogin X API-JAVA.html",
+      "language": "java",
+      "variant": "OkHttp",
+      "api_paths_extracted": [],
+      "samples": [
+        {
+          "file": "block_01.java",
+          "chars": 103
+        },
+        {
+          "file": "block_02.java",
+          "chars": 490
+        },
+        {
+          "file": "block_03.java",
+          "chars": 275
+        },
+        {
+          "file": "block_04.java",
+          "chars": 909
+        },
+        {
+          "file": "block_05.java",
+          "chars": 2798
+        },
+        {
+          "file": "block_06.java",
+          "chars": 4151
+        },
+        {
+          "file": "block_07.java",
+          "chars": 280
+        },
+        {
+          "file": "block_08.java",
+          "chars": 706
+        },
+        {
+          "file": "block_09.java",
+          "chars": 2739
+        },
+        {
+          "file": "block_10.java",
+          "chars": 3797
+        },
+        {
+          "file": "block_11.java",
+          "chars": 280
+        },
+        {
+          "file": "block_12.java",
+          "chars": 404
+        },
+        {
+          "file": "block_13.java",
+          "chars": 83
+        }
+      ]
+    }
+  ]
+}

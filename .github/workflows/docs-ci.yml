@@ -80,6 +80,14 @@ jobs:
           folder-path: .
           file-extension: .md
 
+  python-sdk-syntax:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Compile Python SDK
+        run: python -m py_compile sdk/python/mlx_client.py sdk/python/mlx_env.py sdk/python/requests/*.py sdk/python/http_client/*.py
+
   lint-markdown:
     runs-on: ubuntu-latest
     steps:

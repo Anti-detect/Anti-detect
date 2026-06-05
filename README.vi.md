@@ -56,6 +56,14 @@ Chi tiết: [docs/getting-started.md](docs/getting-started.md) · [docs/faq.md](
 
 ---
 
+## Thư viện SDK Multilogin X
+
+Ví dụ API đa ngôn ngữ (Python, C#, Java) từ Postman + archive [`docs/multilogin-api/spec/`](docs/multilogin-api/spec/):
+
+- [`sdk/`](sdk/) · [docs/multilogin-api/](docs/multilogin-api/) · [docs/libraries.md](docs/libraries.md)
+
+---
+
 ## Kho mã nguồn mở
 
 | Repo | Mô tả |
