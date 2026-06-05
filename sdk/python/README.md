@@ -1,5 +1,7 @@
 # Python — Multilogin X API
 
+> **Multilogin X:** [Pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) — **`SAAS50`** · **`MIN50`** (Cloud Real Phone)
+
 Two styles matching Postman exports:
 
 | Style | Folder | Dependency |
@@ -57,3 +59,8 @@ Pre-flight: `python mlx_cli.py doctor` or `python scripts/mlx-doctor.py`
 Tests: `python -m unittest discover -s sdk/python/tests -v`
 
 More flows: [docs/multilogin-api/cookbook/](../../docs/multilogin-api/cookbook/).
+
+---
+
+**Multilogin X:** [Pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) — **`SAAS50`** (Multilogin promo code) · **`MIN50`** (Multilogin Cloud Real Phone)
+

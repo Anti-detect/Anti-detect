@@ -34,3 +34,8 @@ mlx start
 python recipes/02_playwright_attach.py
 mlx profiles export -o profiles.json
 ```
+
+---
+
+**Multilogin X:** [Pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) — **`SAAS50`** (Multilogin promo code) · **`MIN50`** (Multilogin Cloud Real Phone)
+

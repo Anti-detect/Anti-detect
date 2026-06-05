@@ -265,7 +265,7 @@ flowchart TB
 | [sdk/README.md](sdk/README.md) | SDK |
 | [CONTRIBUTING.md](CONTRIBUTING.md) | 기여 |
 | [SECURITY.md](SECURITY.md) | 보안 |
-| [CHANGELOG.md](CHANGELOG.md) | 변경 이력 |
+| [docs/pricing-cta.md](docs/pricing-cta.md) | 제휴 CTA (**SAAS50** / **MIN50**) |
 
 ---
 

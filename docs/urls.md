@@ -30,7 +30,7 @@ Display both codes wherever pricing is mentioned. Placement guide: [pricing-cta.
 ## Do not reintroduce
 
 - Legacy partner domains or Telegram funnels (see Docs CI branding guard)
-- Retired promo codes listed under **Removed** in [CHANGELOG.md](../CHANGELOG.md)
+- Retired promo codes (`ADBNEW50`, `SAVE50`, etc.) — never reintroduce
 
 ## Related
 

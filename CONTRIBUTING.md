@@ -34,7 +34,7 @@ Sync promo codes **`SAAS50`** / **`MIN50`** and pricing URL across locales ([doc
 1. Fork and branch from `main`.
 2. One topic per pull request when possible.
 3. Run locally: `python scripts/check-spec-integrity.py` and `.\scripts\verify-docs.ps1`
-4. Update [CHANGELOG.md](CHANGELOG.md) for notable changes.
+4. Keep **`SAAS50`** / **`MIN50`** and the [pricing URL](docs/urls.md) on every doc you touch ([pricing-cta.md](docs/pricing-cta.md)).
 
 ## Pull request checklist
 
@@ -51,3 +51,8 @@ Sync promo codes **`SAAS50`** / **`MIN50`** and pricing URL across locales ([doc
 ## Code of conduct
 
 [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
+
+---
+
+**Multilogin X:** [Pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) — **`SAAS50`** (Multilogin promo code) · **`MIN50`** (Multilogin Cloud Real Phone)
+

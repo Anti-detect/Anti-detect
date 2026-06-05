@@ -52,3 +52,8 @@ flowchart LR
 - [Getting started](getting-started.md)
 - [repository-map.md](repository-map.md)
 - [playwright-mlx-integration.md](playwright-mlx-integration.md)
+
+---
+
+**Multilogin X:** [Pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) — **`SAAS50`** (Multilogin promo code) · **`MIN50`** (Multilogin Cloud Real Phone)
+

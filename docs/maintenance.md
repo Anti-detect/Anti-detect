@@ -18,13 +18,17 @@ python -m py_compile sdk/python/mlx_client.py sdk/python/mlx_cli.py sdk/python/p
 
 ## Locale README sync
 
-After editing [README.md](../README.md), regenerate shorter locales from the English template:
+After editing [README.md](../README.md), sync promo blocks manually across `README.*.md` (fully translated locales). `expand-locale-readme.py` only regenerates English shells — prefer hand edits for VI, ZH, RU, KO, TH, ID, PT-BR, ES, JA.
+
+## Affiliate CTAs
+
+Every `docs/**/*.md` and `sdk/**/*.md` must include **`SAAS50`**, **`MIN50`**, and the [pricing URL](urls.md). CI enforces this.
 
 ```powershell
-python scripts/expand-locale-readme.py
+python scripts/inject-affiliate-cta.py
 ```
 
-Fully translated locales (VI, ZH, RU, KO) are maintained manually. Re-run the script only for `th`, `id`, `pt-BR`, `es`, `ja` unless you merge manual translations back.
+Placement guide: [pricing-cta.md](pricing-cta.md). No changelog — this hub does not track commit history.
 
 ## Updating API archive safely
 
@@ -49,3 +53,8 @@ python scripts/build-api-catalog.py
 - Compare `docs/multilogin-api/spec/postman-collection-meta.json` and `launcher-endpoints.json`.
 - Ensure every exported sample listed in metadata exists under `spec/code-samples/<language>/<variant>/`.
 - Re-run `archive-postman-html.py` if metadata and sample folders diverged.
+
+---
+
+**Multilogin X:** [Pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) — **`SAAS50`** (Multilogin promo code) · **`MIN50`** (Multilogin Cloud Real Phone)
+

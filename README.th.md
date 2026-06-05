@@ -268,7 +268,7 @@ flowchart TB
 | [docs/disclaimer.md](docs/disclaimer.md) | Disclaimer |
 | [CONTRIBUTING.md](CONTRIBUTING.md) | มีส่วนร่วม |
 | [SECURITY.md](SECURITY.md) | ความปลอดภัย |
-| [CHANGELOG.md](CHANGELOG.md) | ประวัติ |
+| [docs/pricing-cta.md](docs/pricing-cta.md) | CTA พันธมิตร (**SAAS50** / **MIN50**) |
 
 ---
 

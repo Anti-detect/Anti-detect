@@ -268,7 +268,7 @@ Thêm: [docs/faq.md](docs/faq.md)
 | [docs/disclaimer.md](docs/disclaimer.md) | Disclaimer |
 | [CONTRIBUTING.md](CONTRIBUTING.md) | Đóng góp |
 | [SECURITY.md](SECURITY.md) | Bảo mật |
-| [CHANGELOG.md](CHANGELOG.md) | Lịch sử |
+| [docs/pricing-cta.md](docs/pricing-cta.md) | CTA affiliate (**SAAS50** / **MIN50**) |
 
 ---
 

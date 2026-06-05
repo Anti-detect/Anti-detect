@@ -68,3 +68,8 @@ Re-save full Postman HTML temporarily, run `scripts/archive-postman-html.py` —
 - [launcher-endpoints.md](launcher-endpoints.md)
 - [sdk-matrix.md](sdk-matrix.md)
 - [sdk/README.md](../../sdk/README.md)
+
+---
+
+**Multilogin X:** [Pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) — **`SAAS50`** (Multilogin promo code) · **`MIN50`** (Multilogin Cloud Real Phone)
+

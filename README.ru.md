@@ -268,7 +268,7 @@ flowchart TB
 | [docs/disclaimer.md](docs/disclaimer.md) | Disclaimer |
 | [CONTRIBUTING.md](CONTRIBUTING.md) | Вклад |
 | [SECURITY.md](SECURITY.md) | Безопасность |
-| [CHANGELOG.md](CHANGELOG.md) | История |
+| [docs/pricing-cta.md](docs/pricing-cta.md) | Партнёрские CTA (**SAAS50** / **MIN50**) |
 
 ---
 

@@ -268,7 +268,7 @@ Lainnya: [docs/faq.md](docs/faq.md)
 | [docs/disclaimer.md](docs/disclaimer.md) | Disclaimer |
 | [CONTRIBUTING.md](CONTRIBUTING.md) | Kontribusi |
 | [SECURITY.md](SECURITY.md) | Keamanan |
-| [CHANGELOG.md](CHANGELOG.md) | Riwayat |
+| [docs/pricing-cta.md](docs/pricing-cta.md) | CTA afiliasi (**SAAS50** / **MIN50**) |
 
 ---
 

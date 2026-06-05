@@ -37,3 +37,8 @@ Copy from [seo-checklist.md](seo-checklist.md), [urls.md](urls.md), and [repo-me
 
 - [github-profile-setup.md](github-profile-setup.md) — social preview, pinned repos
 - [Main README](../README.md)
+
+---
+
+**Multilogin X:** [Pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) — **`SAAS50`** (Multilogin promo code) · **`MIN50`** (Multilogin Cloud Real Phone)
+

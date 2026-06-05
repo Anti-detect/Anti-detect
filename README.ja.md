@@ -268,7 +268,7 @@ flowchart TB
 | [docs/disclaimer.md](docs/disclaimer.md) | 免責事項 |
 | [CONTRIBUTING.md](CONTRIBUTING.md) | 貢献 |
 | [SECURITY.md](SECURITY.md) | セキュリティ |
-| [CHANGELOG.md](CHANGELOG.md) | 変更履歴 |
+| [docs/pricing-cta.md](docs/pricing-cta.md) | アフィリエイト CTA（**SAAS50** / **MIN50**） |
 
 ---
 

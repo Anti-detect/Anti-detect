@@ -268,7 +268,7 @@ flowchart TB
 | [docs/disclaimer.md](docs/disclaimer.md) | 免责声明 |
 | [CONTRIBUTING.md](CONTRIBUTING.md) | 贡献 |
 | [SECURITY.md](SECURITY.md) | 安全 |
-| [CHANGELOG.md](CHANGELOG.md) | 更新历史 |
+| [docs/pricing-cta.md](docs/pricing-cta.md) | 联盟 CTA（**SAAS50** / **MIN50**） |
 
 ---
 

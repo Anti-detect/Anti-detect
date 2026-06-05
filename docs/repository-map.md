@@ -57,4 +57,4 @@ Anti-detect/
 
 - [Multilogin X API — Postman](https://documenter.getpostman.com/view/28533318/2s946h9Cv9)
 - [Multilogin help center](https://help.multilogin.com/en_US/multilogin-x)
-- [Multilogin pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549)
+- [Multilogin pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) — **`SAAS50`** · **`MIN50`**

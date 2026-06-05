@@ -58,7 +58,7 @@ account-management
 
 ## Freshness signals
 
-- [ ] Update [CHANGELOG.md](../CHANGELOG.md) on meaningful doc changes
+- [ ] Add or refresh **`SAAS50`** / **`MIN50`** CTAs per [pricing-cta.md](pricing-cta.md)
 - [ ] Bump "Last reviewed" in catalog when verifying links
 
 ## Off-GitHub promotion (optional)
@@ -70,3 +70,8 @@ account-management
 
 - [github-profile-setup.md](github-profile-setup.md)
 - [Main README](../README.md)
+
+---
+
+**Multilogin X:** [Pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) — **`SAAS50`** (Multilogin promo code) · **`MIN50`** (Multilogin Cloud Real Phone)
+

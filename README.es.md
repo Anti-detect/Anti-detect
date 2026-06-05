@@ -268,7 +268,7 @@ Más: [docs/faq.md](docs/faq.md)
 | [docs/disclaimer.md](docs/disclaimer.md) | Disclaimer |
 | [CONTRIBUTING.md](CONTRIBUTING.md) | Contribuir |
 | [SECURITY.md](SECURITY.md) | Seguridad |
-| [CHANGELOG.md](CHANGELOG.md) | Historial |
+| [docs/pricing-cta.md](docs/pricing-cta.md) | CTAs de afiliado (**SAAS50** / **MIN50**) |
 
 ---
 

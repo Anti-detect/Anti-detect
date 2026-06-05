@@ -30,3 +30,8 @@ Postman also lists (live doc): Go, Dart — add under `sdk/` when you export tho
 | Java | [sdk/java/](../../sdk/java/) |
 
 See [libraries.md](../libraries.md) and [cookbook/](cookbook/README.md).
+
+---
+
+**Multilogin X:** [Pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) — **`SAAS50`** (Multilogin promo code) · **`MIN50`** (Multilogin Cloud Real Phone)
+

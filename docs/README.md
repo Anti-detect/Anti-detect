@@ -1,5 +1,7 @@
 # Documentation index
 
+> **Multilogin X:** [Pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) — **`SAAS50`** · **`MIN50`** (Cloud Real Phone)
+
 Hub for **Anti-detect** profile repository documentation.
 
 | Guide | Description |
@@ -52,3 +54,8 @@ Hub for **Anti-detect** profile repository documentation.
 | Español | [README.es.md](../README.es.md) |
 
 [← Back to main README](../README.md)
+
+---
+
+**Multilogin X:** [Pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) — **`SAAS50`** (Multilogin promo code) · **`MIN50`** (Multilogin Cloud Real Phone)
+

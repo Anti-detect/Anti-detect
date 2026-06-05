@@ -1,5 +1,7 @@
 # cURL — Multilogin X Launcher
 
+> **Multilogin X:** [Pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) — **`SAAS50`** · **`MIN50`** (Cloud Real Phone)
+
 Shell examples matching Postman **cURL** tab.
 
 | Script | Operation |
@@ -14,3 +16,8 @@ export MLX_FOLDER_ID=...
 export MLX_PROFILE_ID=...
 bash start_profile.sh
 ```
+
+---
+
+**Multilogin X:** [Pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) — **`SAAS50`** (Multilogin promo code) · **`MIN50`** (Multilogin Cloud Real Phone)
+

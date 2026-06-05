@@ -64,3 +64,7 @@ Run [scripts/set-github-about.ps1](../scripts/set-github-about.ps1) with a `GITH
 
 - [seo-checklist.md](seo-checklist.md)
 - [Main README](../README.md)
+
+---
+
+**Multilogin X:** [Pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) — **`SAAS50`** (Multilogin promo code) · **`MIN50`** (Multilogin Cloud Real Phone)

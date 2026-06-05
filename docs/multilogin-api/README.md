@@ -1,5 +1,7 @@
 # Multilogin X API — documentation hub
 
+> **Multilogin X:** [Pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) — **`SAAS50`** · **`MIN50`** (Cloud Real Phone)
+
 Central index for **Multilogin X REST API** automation on the Anti-detect profile. Built from:
 
 - Live collection: [Postman Documenter](https://documenter.getpostman.com/view/28533318/2s946h9Cv9)
@@ -48,3 +50,8 @@ Central index for **Multilogin X REST API** automation on the Anti-detect profil
 ## Full library map
 
 [docs/libraries.md](../libraries.md)
+
+---
+
+**Multilogin X:** [Pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) — **`SAAS50`** (Multilogin promo code) · **`MIN50`** (Multilogin Cloud Real Phone)
+

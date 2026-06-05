@@ -28,3 +28,8 @@ python scripts/build-api-catalog.py
 ## Runnable SDK
 
 Curated scripts (not raw blocks): [`sdk/`](../../../sdk/)
+
+---
+
+**Multilogin X:** [Pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) — **`SAAS50`** (Multilogin promo code) · **`MIN50`** (Multilogin Cloud Real Phone)
+
