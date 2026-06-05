@@ -148,7 +148,7 @@ sdk/python/
 | 09–11 | Cookie | warm, export, import |
 | 12 | Cloud + workers | `profiles.json` + sharding |
 
-Postman: https://documenter.getpostman.com/view/28533318/2s946h9Cv9
+Postman: [Postman コレクション](https://documenter.getpostman.com/view/28533318/2s946h9Cv9)
 
 ---
 

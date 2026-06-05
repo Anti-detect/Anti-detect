@@ -13,7 +13,7 @@
 
 - [ ] Links tested (no 404s)
 - [ ] No secrets or tokens in diff
-- [ ] No legacy branding (`adblogin`, `ADBNEW50`, `SAVE50`, Telegram funnels)
+- [ ] No legacy partner branding (see Docs CI guard in `docs-ci.yml`)
 - [ ] Promo codes remain `SAAS50` / `MIN50` with correct Multilogin pricing URL
 - [ ] Images have `alt` text where applicable
 - [ ] Read [CONTRIBUTING.md](../CONTRIBUTING.md)

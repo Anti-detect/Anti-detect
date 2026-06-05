@@ -47,15 +47,15 @@ jobs:
       - name: Require affiliate CTAs in docs and SDK markdown
         run: |
           set -euo pipefail
-          shopt -s globstar nullglob
-          SKIP='pricing-footer.md|pricing-cta.md'
-          for f in docs/**/*.md sdk/**/*.md; do
+          while IFS= read -r -d '' f; do
             base=$(basename "$f")
-            echo "$base" | grep -qE "$SKIP" && continue
+            case "$base" in
+              pricing-footer.md|pricing-cta.md) continue ;;
+            esac
             grep -q 'SAAS50' "$f" && grep -q 'MIN50' "$f" && grep -q 'multilogin.com/pricing' "$f" \
               || { echo "::error::Missing affiliate CTA in $f"; exit 1; }
             echo "OK $f"
-          done
+          done < <(find docs sdk -name '*.md' -print0 2>/dev/null)
 
       - name: Verify Multilogin pricing URL
         run: |

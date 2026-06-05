@@ -148,7 +148,7 @@ sdk/python/
 | 09–11 | Cookie | 预热、导出、导入 |
 | 12 | Cloud + workers | `profiles.json` + 分片 |
 
-Postman：https://documenter.getpostman.com/view/28533318/2s946h9Cv9
+Postman：[Postman 文档](https://documenter.getpostman.com/view/28533318/2s946h9Cv9)
 
 ---
 

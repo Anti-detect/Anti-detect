@@ -40,7 +40,7 @@ Sync promo codes **`SAAS50`** / **`MIN50`** and pricing URL across locales ([doc
 
 - [ ] Links point to paths inside this repo or official Multilogin/Postman URLs
 - [ ] No secrets in commits
-- [ ] No legacy partner branding (`adblogin`, old promo codes, Telegram funnels)
+- [ ] No legacy partner branding (see Docs CI branding guard)
 - [ ] No external kit org links (CI enforces this)
 
 ## Issues
@@ -55,4 +55,3 @@ Sync promo codes **`SAAS50`** / **`MIN50`** and pricing URL across locales ([doc
 ---
 
 **Multilogin X:** [Pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) — **`SAAS50`** (Multilogin promo code) · **`MIN50`** (Multilogin Cloud Real Phone)
-

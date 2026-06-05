@@ -41,7 +41,7 @@ def main() -> int:
             text = path.read_text(encoding="utf-8")
             if PRICING in text:
                 continue
-            path.write_text(text.rstrip() + FOOTER + "\n", encoding="utf-8")
+            path.write_text(text.rstrip() + FOOTER.rstrip() + "\n", encoding="utf-8")
             updated.append(path.relative_to(ROOT).as_posix())
     for name in sorted(updated):
         print(f"injected: {name}")
