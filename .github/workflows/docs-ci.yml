@@ -24,7 +24,7 @@ jobs:
           set -euo pipefail
           shopt -s nullglob
           FILES=(README.md README.*.md docs/*.md docs/**/*.md sdk/*.md sdk/**/*.md CONTRIBUTING.md SUPPORT.md SECURITY.md)
-          if grep -riE 'adblogin\.com|toolskiemtrieudo|t\.me/|ADBNEW50|SAVE50|business@adblogin' "${FILES[@]}"; then
+          if grep -riE '|' "${FILES[@]}"; then
             echo "::error::Legacy branding or promo codes found. Use SAAS50/MIN50 and Multilogin pricing URL only."
             exit 1
           fi

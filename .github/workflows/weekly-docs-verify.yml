@@ -19,7 +19,7 @@ jobs:
           set -euo pipefail
           shopt -s nullglob
           FILES=(README.md README.*.md docs/*.md docs/**/*.md)
-          if grep -riE 'adblogin\.com|toolskiemtrieudo|t\.me/|ADBNEW50|SAVE50|business@adblogin' "${FILES[@]}"; then
+          if grep -riE '|' "${FILES[@]}"; then
             exit 1
           fi
           if grep -riE 'github\.com/multilogin-automation|multilogin-automation/' "${FILES[@]}"; then

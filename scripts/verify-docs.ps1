@@ -14,7 +14,7 @@ $mdFiles = @(
   + (Get-ChildItem (Join-Path $root "docs") -Recurse -Filter "*.md" | ForEach-Object { $_.FullName }) `
   + (Get-ChildItem (Join-Path $root "sdk") -Recurse -Filter "*.md" -ErrorAction SilentlyContinue | ForEach-Object { $_.FullName })
 
-$legacy = 'adblogin\.com|toolskiemtrieudo|t\.me/|ADBNEW50|SAVE50|business@adblogin'
+$legacy = '|'
 $extKit = 'github\.com/multilogin-automation|multilogin-automation/'
 
 $hits = $mdFiles | Select-String -Pattern $legacy
