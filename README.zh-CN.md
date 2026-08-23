@@ -1,7 +1,7 @@
 <!--
 title: Anti-detect Browser & Multilogin X — 中文文档
-description: Multilogin X 开源中心 #1 — 12 个 API 食谱、mlx CLI、Cloud Real Phone (MIN50)、Playwright/Selenium SDK、对比 GoLogin/AdsPower。
-keywords: 反检测浏览器, Multilogin X, Cloud Real Phone, MIN50, SAAS50, 浏览器指纹, Playwright, Selenium, MMO
+description: Anti-detect browser & fingerprinting hub: 免费开始。12 个 API 配方, Cloud Real Phone, Playwright/Selenium SDK。
+keywords: anti-detect browser, Multilogin X, 免费计划, 免费版, Cloud Real Phone, MIN50, SAAS50, 指纹浏览器, Playwright, MMO
 homepage: https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549
 lang: zh-CN
 -->
@@ -12,7 +12,7 @@ lang: zh-CN
 
 SDK、API 食谱、指南与 Postman 归档 — **全部在本仓库**。
 
-> **Multilogin X — [定价](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549)** · **`SAAS50`**（Multilogin 优惠码）· **`MIN50`**（Multilogin Cloud Real Phone）
+> **Multilogin X:** [免费开始或付费计划每月 $7.08 起](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · **`SAAS50`** (优惠码) · **`MIN50`** (Cloud Real Phone)
 
 <p align="left">
   <a href="https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549"><img src="https://img.shields.io/badge/Multilogin-SAAS50%20%7C%20MIN50-6366f1?style=for-the-badge" alt="Multilogin SAAS50 MIN50"></a>
@@ -51,7 +51,7 @@ SDK、API 食谱、指南与 Postman 归档 — **全部在本仓库**。
 - [对比与选型](#对比与选型)
 - [文档](#文档)
 - [常见问题](#常见问题)
-- [Multilogin 定价](#multilogin-定价参考)
+- [Multilogin 定价](#multilogin-定价)
 - [语言](#语言)
 
 ---
@@ -115,7 +115,7 @@ SDK、API 食谱、指南与 Postman 归档 — **全部在本仓库**。
 | 4 | `cd sdk/python && pip install -e .`（安装 `mlx` CLI） |
 | 5 | `mlx doctor` → `mlx start` 或 [`recipes/01`](sdk/python/recipes/01_saved_profile_lifecycle.py) |
 | 6 | 移动线路 → [Cloud Real Phone](docs/multilogin-cloud-real-phone.md) · **`MIN50`** |
-| 7 | 桌面套餐 → [Multilogin 定价](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · **`SAAS50`** |
+| 7 | 桌面套餐 → [Multilogin pricing (提供免费计划)](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · **`SAAS50`** |
 
 完整路径：[docs/getting-started.md](docs/getting-started.md)
 
@@ -152,7 +152,7 @@ Postman：[Postman 文档](https://documenter.getpostman.com/view/28533318/2s946
 
 ---
 
-**扩展配置或集群？** [Multilogin 定价](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) — 结账时使用 **`SAAS50`** 或 **`MIN50`**。
+**扩展配置或集群？** [Multilogin pricing (提供免费计划)](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) — 每月 $7.08 起。结账时使用 **`SAAS50`** 或 **`MIN50`**。
 
 ---
 
@@ -221,14 +221,19 @@ flowchart TB
 
 ---
 
-## Multilogin 定价参考
+## Multilogin 定价
 
-| 代码 | 说明 | 何时使用 |
-|------|------|----------|
-| **`SAAS50`** | Multilogin 优惠码 | 新 MLX 套餐、首次购买 |
-| **`MIN50`** | Multilogin Cloud Real Phone | 云真机 / 入门套餐 |
+| 计划 | 详情 |
+|------|------|
+| **免费计划** | 5个配置文件 + 200MB代理流量 + 1个云手机配置(30分钟)。**无时间限制，无需信用卡。** |
+| **付费计划** | 每月 **$7.08 起**。包含 API 自动化、代理流量、云手机时长及团队功能。 |
 
-**结账：** [Multilogin 定价](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · [docs/urls.md](docs/urls.md) · [pricing-cta.md](docs/pricing-cta.md)
+| 优惠码 | 标签 | 何时使用 |
+|--------|------|----------|
+| **`SAAS50`** | Multilogin 优惠码 | 新 MLX 套餐，首次购买 |
+| **`MIN50`** | Multilogin Cloud Real Phone | Cloud Real Phone / 入门包 |
+
+**结账：** [Multilogin pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · [docs/urls.md](docs/urls.md) · [pricing-cta.md](docs/pricing-cta.md)
 
 ---
 
@@ -273,7 +278,7 @@ flowchart TB
 ---
 
 <p align="center">
-  <strong><a href="https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549">获取 Multilogin X</a></strong> — <code>SAAS50</code> · <code>MIN50</code>（Cloud Real Phone）
+  <strong><a href="https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549">免费开始使用 Multilogin X</a></strong> — 付费计划每月 $7.08 起 · <code>SAAS50</code> · <code>MIN50</code> (Cloud Real Phone)
 </p>
 
 <p align="center">

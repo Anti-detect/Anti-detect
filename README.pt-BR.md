@@ -1,7 +1,7 @@
 <!--
 title: Anti-detect Browser & Multilogin X — Português (Brasil)
-description: Hub Multilogin X #1 — 12 receitas API, CLI mlx, Cloud Real Phone (MIN50), SDK Playwright/Selenium, comparação GoLogin/AdsPower
-keywords: navegador anti-detect, Multilogin X, Cloud Real Phone, MIN50, SAAS50, fingerprint, Playwright, Selenium, MMO
+description: Anti-detect browser & fingerprinting hub: Comece grátis. 12 receitas API, Cloud Real Phone, Playwright/Selenium SDK.
+keywords: navegador anti-detect, Multilogin X, plano gratuito Multilogin, Cloud Real Phone, MIN50, SAAS50, fingerprint, Playwright, MMO
 homepage: https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549
 lang: pt-BR
 -->
@@ -12,7 +12,7 @@ lang: pt-BR
 
 Tudo o que você precisa — SDK, cookbook API, guias e arquivo Postman — está **neste repositório**.
 
-> **Multilogin X — [Preços](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549)** · **`SAAS50`** (código promo Multilogin) · **`MIN50`** (Multilogin Cloud Real Phone)
+> **Multilogin X:** [Comece grátis ou com planos pagos a partir de $7.08/mês](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · **`SAAS50`** (código promo) · **`MIN50`** (Cloud Real Phone)
 
 <p align="left">
   <a href="https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549"><img src="https://img.shields.io/badge/Multilogin-SAAS50%20%7C%20MIN50-6366f1?style=for-the-badge" alt="Multilogin SAAS50 MIN50"></a>
@@ -115,7 +115,7 @@ Automação desktop usa Launcher API ([cookbook](docs/multilogin-api/cookbook/))
 | 4 | `cd sdk/python && pip install -e .` (instala CLI `mlx`) |
 | 5 | `mlx doctor` → `mlx start` ou [`recipes/01`](sdk/python/recipes/01_saved_profile_lifecycle.py) |
 | 6 | Linha mobile → [Cloud Real Phone](docs/multilogin-cloud-real-phone.md) · **`MIN50`** |
-| 7 | Plano desktop → [Multilogin pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · **`SAAS50`** |
+| 7 | Plano desktop → [Multilogin pricing (Plano gratuito disponível)](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · **`SAAS50`** |
 
 Completo: [docs/getting-started.md](docs/getting-started.md)
 
@@ -152,7 +152,7 @@ Postman: [coleção Postman](https://documenter.getpostman.com/view/28533318/2s9
 
 ---
 
-**Precisa de mais perfis?** [Multilogin pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) — **`SAAS50`** ou **`MIN50`** no checkout.
+**Precisa de mais perfis?** [Multilogin pricing (Plano gratuito disponível)](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) — planos a partir de $7.08/mês. Use **`SAAS50`** ou **`MIN50`** no checkout.
 
 ---
 
@@ -223,10 +223,15 @@ Mais: [docs/faq.md](docs/faq.md)
 
 ## Preços Multilogin
 
-| Código | Rótulo | Quando usar |
-|--------|--------|-------------|
-| **`SAAS50`** | Promo Multilogin | Plano MLX novo, primeira compra |
-| **`MIN50`** | Multilogin Cloud Real Phone | Cloud Real Phone / pacote entry |
+| Plano | Detalhes |
+|-------|----------|
+| **Plano Gratuito** | 5 perfis + 200MB proxy + 1 perfil móvel cloud (30m). **Sem limite de tempo, sem cartão.** |
+| **Planos pagos** | A partir de **$7.08/mês**. Inclui API automation, tráfego proxy, minutos móveis e workspaces de equipe. |
+
+| Promo | O que é |
+|-------|---------|
+| **`SAAS50`** | Promo Multilogin |
+| **`MIN50`** | Multilogin Cloud Real Phone |
 
 **Checkout:** [Multilogin pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · [docs/urls.md](docs/urls.md) · [pricing-cta.md](docs/pricing-cta.md)
 
@@ -273,7 +278,7 @@ Mais: [docs/faq.md](docs/faq.md)
 ---
 
 <p align="center">
-  <strong><a href="https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549">Obter Multilogin X</a></strong> — <code>SAAS50</code> · <code>MIN50</code> (Cloud Real Phone)
+  <strong><a href="https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549">Comece com Multilogin X grátis</a></strong> — planos pagos a partir de $7.08/mês · <code>SAAS50</code> · <code>MIN50</code> (Cloud Real Phone)
 </p>
 
 <p align="center">

@@ -1,7 +1,7 @@
 <!--
 title: Anti-detect Browser & Multilogin X — 한국어 문서
-description: Multilogin X 오픈 허브 #1 — 12개 API 레시피, mlx CLI, Cloud Real Phone (MIN50), Playwright/Selenium SDK, GoLogin/AdsPower 비교.
-homepage: https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549
+description: Anti-detect browser & fingerprinting hub: 무료로 시작하세요. 12개의 API 레시피, Cloud Real Phone, Playwright/Selenium SDK.
+keywords: 안티디텍트 브라우저, Multilogin X, 무료 플랜, Cloud Real Phone, MIN50, SAAS50, 브라우저 지문, Playwright, MMO=partner&a_aid=saas&a_bid=f5fad549
 lang: ko
 -->
 
@@ -11,7 +11,7 @@ lang: ko
 
 SDK, API cookbook, 가이드, Postman 아카이브 — **이 저장소에 모두 포함**.
 
-> **Multilogin X — [요금](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549)** · **`SAAS50`** (Multilogin 프로모 코드) · **`MIN50`** (Multilogin Cloud Real Phone)
+> **Multilogin X:** [무료로 시작하거나 월 $7.08부터 시작하는 유료 플랜](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · **`SAAS50`** (프로모 코드) · **`MIN50`** (Cloud Real Phone)
 
 <p align="left">
   <a href="https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549"><img src="https://img.shields.io/badge/Multilogin-SAAS50%20%7C%20MIN50-6366f1?style=for-the-badge" alt="Multilogin SAAS50 MIN50"></a>
@@ -50,7 +50,7 @@ SDK, API cookbook, 가이드, Postman 아카이브 — **이 저장소에 모두
 - [비교 & 선택](#비교--선택)
 - [문서](#문서)
 - [FAQ](#자주-묻는-질문)
-- [요금](#multilogin-요금-안내)
+- [요금](#multilogin-요금)
 - [언어](#언어)
 
 ---
@@ -114,7 +114,7 @@ SDK, API cookbook, 가이드, Postman 아카이브 — **이 저장소에 모두
 | 4 | `cd sdk/python && pip install -e .` (`mlx` CLI) |
 | 5 | `mlx doctor` → `mlx start` 또는 [`recipes/01`](sdk/python/recipes/01_saved_profile_lifecycle.py) |
 | 6 | Mobile → [Cloud Real Phone](docs/multilogin-cloud-real-phone.md) · **`MIN50`** |
-| 7 | Desktop → [Multilogin 요금](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · **`SAAS50`** |
+| 7 | 데스크톱 플랜 → [Multilogin pricing (무료 플랜 제공)](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · **`SAAS50`** |
 
 전체: [docs/getting-started.md](docs/getting-started.md)
 
@@ -151,7 +151,7 @@ Postman: [Postman 컬렉션](https://documenter.getpostman.com/view/28533318/2s9
 
 ---
 
-**프로필 확장?** [Multilogin 요금](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) — **`SAAS50`** · **`MIN50`**
+**프로필이 더 필요하신가요?** [Multilogin pricing (무료 플랜 제공)](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) — 월 $7.08부터. 결제 시 **`SAAS50`** 또는 **`MIN50`** 사용.
 
 ---
 
@@ -220,14 +220,19 @@ flowchart TB
 
 ---
 
-## Multilogin 요금 안내
+## Multilogin 요금
 
-| 코드 | 설명 | 사용 시점 |
+| 플랜 | 세부 정보 |
+|------|-----------|
+| **무료 플랜** | 5개의 프로필 + 200MB 프록시 + 1개의 클라우드 모바일 프로필(30분). **시간 제한 없음, 카드 불필요.** |
+| **유료 플랜** | 월 **$7.08부터**. API 자동화, 프록시 트래픽, 모바일 시간 및 팀 워크스페이스 포함. |
+
+| 코드 | 설명 | 언제 사용 |
 |------|------|-----------|
-| **`SAAS50`** | Multilogin 프로모 | 신규 MLX 플랜 |
-| **`MIN50`** | Cloud Real Phone | 클라우드 실기 / entry |
+| **`SAAS50`** | Multilogin 프로모 코드 | 새로운 MLX 플랜, 첫 구매 |
+| **`MIN50`** | Multilogin Cloud Real Phone | Cloud Real Phone / 엔트리 패키지 |
 
-**결제:** [Multilogin 요금](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · [docs/urls.md](docs/urls.md)
+**결제:** [Multilogin pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · [docs/urls.md](docs/urls.md) · [pricing-cta.md](docs/pricing-cta.md)
 
 ---
 
@@ -270,7 +275,7 @@ flowchart TB
 ---
 
 <p align="center">
-  <strong><a href="https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549">Multilogin X 구매</a></strong> — <code>SAAS50</code> · <code>MIN50</code>
+  <strong><a href="https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549">Multilogin X 무료로 시작하기</a></strong> — 월 $7.08부터 시작하는 유료 플랜 · <code>SAAS50</code> · <code>MIN50</code> (Cloud Real Phone)
 </p>
 
 <p align="center">

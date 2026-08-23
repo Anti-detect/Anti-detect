@@ -1,7 +1,7 @@
 <!--
 title: Anti-detect Browser & Multilogin X — 日本語ドキュメント
-description: Multilogin X オープンハブ #1 — 12 API レシピ、mlx CLI、Cloud Real Phone (MIN50)、Playwright/Selenium SDK、GoLogin/AdsPower 比較
-keywords: アンチディテクトブラウザ, Multilogin X, Cloud Real Phone, MIN50, SAAS50, フィンガープリント, Playwright, Selenium, MMO
+description: Anti-detect browser & fingerprinting hub: 無料で始める。12のAPIレシピ、Cloud Real Phone、Playwright/Selenium SDK。
+keywords: アンチディテクトブラウザ, Multilogin X, 無料プラン, Cloud Real Phone, MIN50, SAAS50, ブラウザフィンガープリント, Playwright, MMO
 homepage: https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549
 lang: ja
 -->
@@ -12,7 +12,7 @@ lang: ja
 
 SDK、API cookbook、ガイド、Postman アーカイブ — **すべてこのリポジトリに**。
 
-> **Multilogin X — [料金](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549)** · **`SAAS50`**（Multilogin プロモコード）· **`MIN50`**（Multilogin Cloud Real Phone）
+> **Multilogin X:** [無料で始める、または月額$7.08からの有料プラン](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · **`SAAS50`** (プロモコード) · **`MIN50`** (Cloud Real Phone)）
 
 <p align="left">
   <a href="https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549"><img src="https://img.shields.io/badge/Multilogin-SAAS50%20%7C%20MIN50-6366f1?style=for-the-badge" alt="Multilogin SAAS50 MIN50"></a>
@@ -152,7 +152,7 @@ Postman: [Postman コレクション](https://documenter.getpostman.com/view/285
 
 ---
 
-**プロファイルを増やす？** [Multilogin 料金](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) — **`SAAS50`** · **`MIN50`**
+**さらにプロファイルが必要ですか？** [Multilogin pricing (無料プランあり)](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) — 月額$7.08から。チェックアウト時に **`SAAS50`** または **`MIN50`** を使用。
 
 ---
 
@@ -223,12 +223,17 @@ flowchart TB
 
 ## Multilogin 料金
 
-| コード | 説明 | 使用タイミング |
-|--------|------|----------------|
-| **`SAAS50`** | Multilogin プロモ | 新規 MLX プラン |
-| **`MIN50`** | Cloud Real Phone | クラウド実機 / entry |
+| プラン | 詳細 |
+|--------|------|
+| **無料プラン** | 5プロファイル + 200MBプロキシ + 1クラウドモバイルプロファイル(30分)。**時間制限なし、クレジットカード不要。** |
+| **有料プラン** | 月額 **$7.08から**。API自動化、プロキシトラフィック、モバイル分数、チーム機能が含まれます。 |
 
-**決済:** [Multilogin 料金](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · [docs/urls.md](docs/urls.md) · [pricing-cta.md](docs/pricing-cta.md)
+| コード | 内容 | いつ使うか |
+|--------|------|------------|
+| **`SAAS50`** | Multilogin プロモコード | 新しいMLXプラン、初回購入 |
+| **`MIN50`** | Multilogin Cloud Real Phone | Cloud Real Phone / エントリー |
+
+**チェックアウト:** [Multilogin pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · [docs/urls.md](docs/urls.md) · [pricing-cta.md](docs/pricing-cta.md)
 
 ---
 
@@ -273,7 +278,7 @@ flowchart TB
 ---
 
 <p align="center">
-  <strong><a href="https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549">Multilogin X を入手</a></strong> — <code>SAAS50</code> · <code>MIN50</code> (Cloud Real Phone)
+  <strong><a href="https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549">Multilogin X を無料で始める</a></strong> — 有料プランは月額$7.08から · <code>SAAS50</code> · <code>MIN50</code> (Cloud Real Phone)
 </p>
 
 <p align="center">

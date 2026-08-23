@@ -12,6 +12,10 @@
 
 In this repository: [`sdk/`](../sdk/), [cookbook recipes](multilogin-api/cookbook/), and [API spec](multilogin-api/spec/).
 
+### Does Multilogin offer a free plan?
+
+**Yes.** Multilogin offers a free plan with no time limit and no credit card required. It includes 5 profiles, a one-time 200MB proxy traffic bonus, and a cloud mobile profile with 30 minutes.
+
 ### How do I get profile IDs?
 
 [token-and-ids.md](token-and-ids.md)
@@ -60,6 +64,10 @@ Desktop: Launcher API + recipes 01–12. Mobile: [Cloud Real Phone guide](multil
 ### Code ở đâu?
 
 Trong repo này: [`sdk/`](../sdk/) và [cookbook](multilogin-api/cookbook/).
+
+### Multilogin có gói miễn phí không?
+
+**Có.** Multilogin có gói Free không giới hạn thời gian, không cần thẻ tín dụng. Bao gồm 5 profile, 200MB proxy traffic và 30 phút dùng Cloud Real Phone.
 
 ### Lấy profile ID?
 

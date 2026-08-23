@@ -1,7 +1,7 @@
 <!--
 title: Anti-detect Browser & Multilogin X — Tài liệu tiếng Việt
-description: Hub Multilogin X #1 — 12 recipe API, CLI mlx, Cloud Real Phone (MIN50), SDK Playwright/Selenium, so sánh GoLogin/AdsPower.
-keywords: trình duyệt anti-detect, Multilogin X, Cloud Real Phone, MIN50, SAAS50, fingerprint, Playwright, Selenium, MMO
+description: Hub Multilogin X #1 — Bắt đầu miễn phí (không cần thẻ). 12 recipe API, CLI mlx, Cloud Real Phone, SDK Playwright/Selenium.
+keywords: trình duyệt anti-detect, Multilogin X, Multilogin free plan, gói miễn phí Multilogin, Cloud Real Phone, MIN50, SAAS50, fingerprint, Playwright, MMO
 homepage: https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549
 lang: vi
 -->
@@ -12,7 +12,7 @@ lang: vi
 
 Mọi thứ bạn cần — SDK, cookbook API, hướng dẫn và archive Postman — nằm **trong repo này**.
 
-> **Multilogin X — [Bảng giá](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549)** · **`SAAS50`** (mã promo Multilogin) · **`MIN50`** (Multilogin Cloud Real Phone)
+> **Multilogin X:** [Bắt đầu miễn phí hoặc gói trả phí từ $7.08/tháng](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · **`SAAS50`** (mã promo) · **`MIN50`** (Cloud Real Phone)
 
 <p align="left">
   <a href="https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549"><img src="https://img.shields.io/badge/Multilogin-SAAS50%20%7C%20MIN50-6366f1?style=for-the-badge" alt="Multilogin SAAS50 MIN50"></a>
@@ -115,7 +115,7 @@ Automation desktop dùng Launcher API ([cookbook](docs/multilogin-api/cookbook/)
 | 4 | `cd sdk/python && pip install -e .` (cài CLI `mlx`) |
 | 5 | `mlx doctor` → `mlx start` hoặc [`recipes/01`](sdk/python/recipes/01_saved_profile_lifecycle.py) |
 | 6 | Lane mobile → [Cloud Real Phone](docs/multilogin-cloud-real-phone.md) · **`MIN50`** |
-| 7 | Gói desktop → [Multilogin pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · **`SAAS50`** |
+| 7 | Gói desktop → [Multilogin pricing (Có gói Free)](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · **`SAAS50`** |
 
 Đầy đủ: [docs/getting-started.md](docs/getting-started.md)
 
@@ -152,7 +152,7 @@ Postman: [bộ sưu tập Postman](https://documenter.getpostman.com/view/285333
 
 ---
 
-**Cần thêm profile?** [Multilogin pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) — **`SAAS50`** hoặc **`MIN50`** khi thanh toán.
+**Cần thêm profile?** [Multilogin pricing (Có gói Free)](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) — gói trả phí từ $7.08/tháng. Nhập **`SAAS50`** hoặc **`MIN50`** khi thanh toán.
 
 ---
 
@@ -223,6 +223,11 @@ Thêm: [docs/faq.md](docs/faq.md)
 
 ## Bảng giá Multilogin
 
+| Gói | Chi tiết |
+|-----|----------|
+| **Gói Free** | 5 profile + 200MB proxy + 1 profile cloud di động (30 phút). **Không giới hạn thời gian, không cần thẻ.** |
+| **Trả phí** | Bắt đầu từ **$7.08/tháng**. Bao gồm API automation, proxy traffic, mobile phút gọi, và tính năng team. |
+
 | Mã | Nhãn | Khi nào dùng |
 |----|------|--------------|
 | **`SAAS50`** | Mã promo Multilogin | Gói MLX mới, lần mua đầu |
@@ -273,7 +278,7 @@ Thêm: [docs/faq.md](docs/faq.md)
 ---
 
 <p align="center">
-  <strong><a href="https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549">Đăng ký Multilogin X</a></strong> — <code>SAAS50</code> · <code>MIN50</code> (Cloud Real Phone)
+  <strong><a href="https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549">Bắt đầu dùng thử Multilogin X miễn phí</a></strong> — gói trả phí từ $7.08/tháng · <code>SAAS50</code> · <code>MIN50</code> (Cloud Real Phone)
 </p>
 
 <p align="center">

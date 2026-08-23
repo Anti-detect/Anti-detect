@@ -1,7 +1,7 @@
 <!--
 title: Anti-detect Browser & Multilogin X — Dokumentasi Bahasa Indonesia
-description: Hub Multilogin X #1 — 12 resep API, CLI mlx, Cloud Real Phone (MIN50), SDK Playwright/Selenium, perbandingan GoLogin/AdsPower
-keywords: browser anti-detect, Multilogin X, Cloud Real Phone, MIN50, SAAS50, fingerprint, Playwright, Selenium, MMO
+description: Anti-detect browser & fingerprinting hub: Mulai gratis. 12 resep API, Cloud Real Phone, Playwright/Selenium SDK.
+keywords: browser anti-detect, Multilogin X, paket gratis Multilogin, Cloud Real Phone, MIN50, SAAS50, fingerprint, Playwright, MMO
 homepage: https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549
 lang: id
 -->
@@ -12,7 +12,7 @@ lang: id
 
 Semua yang Anda butuhkan — SDK, cookbook API, panduan, dan arsip Postman — ada **di repo ini**.
 
-> **Multilogin X — [Harga](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549)** · **`SAAS50`** (kode promo Multilogin) · **`MIN50`** (Multilogin Cloud Real Phone)
+> **Multilogin X:** [Mulai gratis atau paket berbayar dari $7.08/bulan](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · **`SAAS50`** (kode promo) · **`MIN50`** (Cloud Real Phone)
 
 <p align="left">
   <a href="https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549"><img src="https://img.shields.io/badge/Multilogin-SAAS50%20%7C%20MIN50-6366f1?style=for-the-badge" alt="Multilogin SAAS50 MIN50"></a>
@@ -115,7 +115,7 @@ Otomasi desktop memakai Launcher API ([cookbook](docs/multilogin-api/cookbook/))
 | 4 | `cd sdk/python && pip install -e .` (pasang CLI `mlx`) |
 | 5 | `mlx doctor` → `mlx start` atau [`recipes/01`](sdk/python/recipes/01_saved_profile_lifecycle.py) |
 | 6 | Jalur mobile → [Cloud Real Phone](docs/multilogin-cloud-real-phone.md) · **`MIN50`** |
-| 7 | Paket desktop → [Multilogin pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · **`SAAS50`** |
+| 7 | Paket desktop → [Multilogin pricing (Tersedia paket Gratis)](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · **`SAAS50`** |
 
 Lengkap: [docs/getting-started.md](docs/getting-started.md)
 
@@ -152,7 +152,7 @@ Postman: [koleksi Postman](https://documenter.getpostman.com/view/28533318/2s946
 
 ---
 
-**Butuh lebih banyak profil?** [Multilogin pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) — **`SAAS50`** atau **`MIN50`** saat checkout.
+**Butuh lebih banyak profil?** [Multilogin pricing (Tersedia paket Gratis)](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) — paket dari $7.08/bulan. Gunakan **`SAAS50`** atau **`MIN50`** saat checkout.
 
 ---
 
@@ -223,8 +223,13 @@ Lainnya: [docs/faq.md](docs/faq.md)
 
 ## Harga Multilogin
 
-| Kode | Label | Kapan dipakai |
-|------|-------|---------------|
+| Paket | Detail |
+|-------|--------|
+| **Paket Gratis** | 5 profil + proxy 200MB + 1 profil mobile cloud (30m). **Tanpa batas waktu, tanpa kartu kredit.** |
+| **Paket Berbayar** | Mulai dari **$7.08/bulan**. Termasuk API automation, trafik proxy, menit mobile, dan workspace tim. |
+
+| Kode | Label | Kapan digunakan |
+|------|-------|-----------------|
 | **`SAAS50`** | Promo Multilogin | Paket MLX baru, pembelian pertama |
 | **`MIN50`** | Multilogin Cloud Real Phone | Cloud Real Phone / paket entry |
 
@@ -273,7 +278,7 @@ Lainnya: [docs/faq.md](docs/faq.md)
 ---
 
 <p align="center">
-  <strong><a href="https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549">Dapatkan Multilogin X</a></strong> — <code>SAAS50</code> · <code>MIN50</code> (Cloud Real Phone)
+  <strong><a href="https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549">Mulai dengan Multilogin X gratis</a></strong> — paket berbayar dari $7.08/bulan · <code>SAAS50</code> · <code>MIN50</code> (Cloud Real Phone)
 </p>
 
 <p align="center">

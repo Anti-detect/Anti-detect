@@ -10,7 +10,7 @@ FOOTER = """
 
 ---
 
-**Multilogin X:** [Pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) — **`SAAS50`** (Multilogin promo code) · **`MIN50`** (Multilogin Cloud Real Phone)
+**Start with Multilogin X for free:** [multilogin.com/pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · paid plans from $7.08/mo · codes **`SAAS50`** · **`MIN50`**
 """
 SKIP = {
     "CHANGELOG.md",
@@ -39,12 +39,21 @@ def main() -> int:
             if not should_scan(path):
                 continue
             text = path.read_text(encoding="utf-8")
-            if PRICING in text:
+            
+            old_footer = "**Multilogin X:** [Pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) — **`SAAS50`** (Multilogin promo code) · **`MIN50`** (Multilogin Cloud Real Phone)"
+            if old_footer in text:
+                new_text = text.replace(old_footer, "**Start with Multilogin X for free:** [multilogin.com/pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · paid plans from $7.08/mo · codes **`SAAS50`** · **`MIN50`**")
+                path.write_text(new_text, encoding="utf-8")
+                updated.append(path.relative_to(ROOT).as_posix())
                 continue
+            
+            if "multilogin.com/pricing" in text:
+                continue
+            
             path.write_text(text.rstrip() + FOOTER.rstrip() + "\n", encoding="utf-8")
             updated.append(path.relative_to(ROOT).as_posix())
     for name in sorted(updated):
-        print(f"injected: {name}")
+        print(f"injected/updated: {name}")
     print(f"done: {len(updated)} file(s)")
     return 0
 

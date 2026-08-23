@@ -1,7 +1,7 @@
 <!--
 title: Anti-detect Browser & Multilogin X — เอกสารภาษาไทย
-description: ฮับ Multilogin X อันดับ 1 — 12 สูตร API, CLI mlx, Cloud Real Phone (MIN50), SDK Playwright/Selenium, เปรียบเทียบ GoLogin/AdsPower
-keywords: เบราว์เซอร์ anti-detect, Multilogin X, Cloud Real Phone, MIN50, SAAS50, fingerprint, Playwright, Selenium, MMO
+description: Anti-detect browser & fingerprinting hub: เริ่มต้นใช้งานฟรี 12 สูตร API, Cloud Real Phone, Playwright/Selenium SDK
+keywords: เบราว์เซอร์ anti-detect, Multilogin X, แพ็กเกจฟรี Multilogin, Cloud Real Phone, MIN50, SAAS50, fingerprint, Playwright, MMO
 homepage: https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549
 lang: th
 -->
@@ -12,7 +12,7 @@ lang: th
 
 ทุกอย่างที่ต้องการ — SDK, cookbook API, คู่มือ และ archive Postman — อยู่ **ใน repo นี้**
 
-> **Multilogin X — [ราคา](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549)** · **`SAAS50`** (รหัสโปรโม Multilogin) · **`MIN50`** (Multilogin Cloud Real Phone)
+> **Multilogin X:** [เริ่มต้นใช้งานฟรีหรือแพ็กเกจแบบชำระเงินเริ่มต้นที่ $7.08/เดือน](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · **`SAAS50`** (รหัสโปรโมชัน) · **`MIN50`** (Cloud Real Phone)
 
 <p align="left">
   <a href="https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549"><img src="https://img.shields.io/badge/Multilogin-SAAS50%20%7C%20MIN50-6366f1?style=for-the-badge" alt="Multilogin SAAS50 MIN50"></a>
@@ -115,7 +115,7 @@ Desktop ใช้ Launcher API ([cookbook](docs/multilogin-api/cookbook/)); mobi
 | 4 | `cd sdk/python && pip install -e .` (ติดตั้ง CLI `mlx`) |
 | 5 | `mlx doctor` → `mlx start` หรือ [`recipes/01`](sdk/python/recipes/01_saved_profile_lifecycle.py) |
 | 6 | Mobile → [Cloud Real Phone](docs/multilogin-cloud-real-phone.md) · **`MIN50`** |
-| 7 | Desktop → [Multilogin pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · **`SAAS50`** |
+| 7 | Desktop → [Multilogin pricing (มีแพ็กเกจฟรี)](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · **`SAAS50`** |
 
 เต็มรูปแบบ: [docs/getting-started.md](docs/getting-started.md)
 
@@ -152,7 +152,7 @@ Postman: [คอลเลกชัน Postman](https://documenter.getpostman.com
 
 ---
 
-**ต้องการ profile เพิ่ม?** [Multilogin pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) — **`SAAS50`** หรือ **`MIN50`** ตอนชำระเงิน
+**ต้องการ profile เพิ่ม?** [Multilogin pricing (มีแพ็กเกจฟรี)](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) — แพ็กเกจเริ่มต้นที่ $7.08/เดือน ใช้ **`SAAS50`** หรือ **`MIN50`** ตอนชำระเงิน
 
 ---
 
@@ -223,10 +223,15 @@ flowchart TB
 
 ## ราคา Multilogin
 
-| รหัส | ชื่อ | เมื่อไหร่ใช้ |
-|------|------|--------------|
-| **`SAAS50`** | โปรโม Multilogin | แพ็ก MLX ใหม่, ซื้อครั้งแรก |
-| **`MIN50`** | Multilogin Cloud Real Phone | Cloud Real Phone / แพ็ก entry |
+| แพ็กเกจ | รายละเอียด |
+|---------|------------|
+| **แพ็กเกจฟรี** | 5 โปรไฟล์ + 200MB พร็อกซี + 1 โปรไฟล์คลาวด์มือถือ (30 นาที) **ไม่จำกัดเวลา ไม่ต้องใช้บัตร** |
+| **แพ็กเกจแบบชำระเงิน** | เริ่มต้นที่ **$7.08/เดือน** รวม API automation, ทราฟฟิกพร็อกซี, นาทีมือถือ, และ workspace สำหรับทีม |
+
+| โปรโม | ป้ายกำกับ | ใช้เมื่อไหร่ |
+|-------|-----------|-------------|
+| **`SAAS50`** | โปรโม Multilogin | แพ็กเกจ MLX ใหม่, ซื้อครั้งแรก |
+| **`MIN50`** | Multilogin Cloud Real Phone | Cloud Real Phone / แพ็กเกจ entry |
 
 **ชำระเงิน:** [Multilogin pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · [docs/urls.md](docs/urls.md) · [pricing-cta.md](docs/pricing-cta.md)
 
@@ -273,7 +278,7 @@ flowchart TB
 ---
 
 <p align="center">
-  <strong><a href="https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549">สมัคร Multilogin X</a></strong> — <code>SAAS50</code> · <code>MIN50</code> (Cloud Real Phone)
+  <strong><a href="https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549">เริ่มต้นใช้ Multilogin X ฟรี</a></strong> — แพ็กเกจแบบชำระเงินเริ่มต้นที่ $7.08/เดือน · <code>SAAS50</code> · <code>MIN50</code> (Cloud Real Phone)
 </p>
 
 <p align="center">

@@ -42,12 +42,17 @@ Teams often evaluate several vendors in the same budget conversation:
 
 ## MLX pricing reference
 
+| Plan | Details |
+|------|---------|
+| **Free plan** | 5 profiles + 200MB proxy + 1 cloud mobile profile with 30m. **No time limit, no credit card.** |
+| **Paid plans** | From **$7.08/month**. Includes API access, proxy traffic, mobile minutes, and team features. |
+
 | Code | Label |
 |------|-------|
 | **`SAAS50`** | Multilogin promo code |
 | **`MIN50`** | Multilogin Cloud Real Phone |
 
-[Multilogin pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) — compare MLX plans, then automate with [sdk/](../sdk/).
+[Multilogin pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) — start for free or compare MLX paid plans, then automate with [sdk/](../sdk/).
 
 ## Compliance reminder
 

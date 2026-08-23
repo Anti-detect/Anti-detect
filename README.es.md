@@ -1,7 +1,7 @@
 <!--
 title: Anti-detect Browser & Multilogin X — Documentación en Español
-description: Hub Multilogin X #1 — 12 recetas API, CLI mlx, Cloud Real Phone (MIN50), SDK Playwright/Selenium, comparación GoLogin/AdsPower
-keywords: navegador anti-detect, Multilogin X, Cloud Real Phone, MIN50, SAAS50, fingerprint, Playwright, Selenium, MMO
+description: Anti-detect browser & fingerprinting hub: Empieza gratis. 12 recetas API, Cloud Real Phone, Playwright/Selenium SDK.
+keywords: navegador anti-detect, Multilogin X, plan gratuito Multilogin, Cloud Real Phone, MIN50, SAAS50, fingerprint, Playwright, MMO
 homepage: https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549
 lang: es
 -->
@@ -12,7 +12,7 @@ lang: es
 
 Todo lo que necesitas — SDK, cookbook API, guías y archivo Postman — está **en este repositorio**.
 
-> **Multilogin X — [Precios](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549)** · **`SAAS50`** (código promo Multilogin) · **`MIN50`** (Multilogin Cloud Real Phone)
+> **Multilogin X:** [Empieza gratis o con planes de pago desde $7.08/mes](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · **`SAAS50`** (código promo) · **`MIN50`** (Cloud Real Phone)
 
 <p align="left">
   <a href="https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549"><img src="https://img.shields.io/badge/Multilogin-SAAS50%20%7C%20MIN50-6366f1?style=for-the-badge" alt="Multilogin SAAS50 MIN50"></a>
@@ -115,7 +115,7 @@ La automatización desktop usa Launcher API ([cookbook](docs/multilogin-api/cook
 | 4 | `cd sdk/python && pip install -e .` (instala CLI `mlx`) |
 | 5 | `mlx doctor` → `mlx start` o [`recipes/01`](sdk/python/recipes/01_saved_profile_lifecycle.py) |
 | 6 | Línea móvil → [Cloud Real Phone](docs/multilogin-cloud-real-phone.md) · **`MIN50`** |
-| 7 | Plan desktop → [Multilogin pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · **`SAAS50`** |
+| 7 | Plan desktop → [Multilogin pricing (Plan gratuito disponible)](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · **`SAAS50`** |
 
 Completo: [docs/getting-started.md](docs/getting-started.md)
 
@@ -152,7 +152,7 @@ Postman: [colección Postman](https://documenter.getpostman.com/view/28533318/2s
 
 ---
 
-**¿Más perfiles?** [Multilogin pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) — **`SAAS50`** o **`MIN50`** al pagar.
+**¿Más perfiles?** [Multilogin pricing (Plan gratuito disponible)](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) — planes desde $7.08/mes. Usa **`SAAS50`** o **`MIN50`** al pagar.
 
 ---
 
@@ -223,6 +223,11 @@ Más: [docs/faq.md](docs/faq.md)
 
 ## Precios Multilogin
 
+| Plan | Detalles |
+|------|----------|
+| **Plan Gratuito** | 5 perfiles + 200MB proxy + 1 perfil móvil cloud (30m). **Sin límite de tiempo, sin tarjeta.** |
+| **Planes de pago** | Desde **$7.08/mes**. Incluye API automation, tráfico proxy, minutos móviles y workspaces de equipo. |
+
 | Código | Etiqueta | Cuándo usar |
 |--------|----------|-------------|
 | **`SAAS50`** | Promo Multilogin | Plan MLX nuevo, primera compra |
@@ -273,7 +278,7 @@ Más: [docs/faq.md](docs/faq.md)
 ---
 
 <p align="center">
-  <strong><a href="https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549">Obtener Multilogin X</a></strong> — <code>SAAS50</code> · <code>MIN50</code> (Cloud Real Phone)
+  <strong><a href="https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549">Empieza con Multilogin X gratis</a></strong> — planes de pago desde $7.08/mes · <code>SAAS50</code> · <code>MIN50</code> (Cloud Real Phone)
 </p>
 
 <p align="center">

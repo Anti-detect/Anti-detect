@@ -1,7 +1,7 @@
 <!--
 title: Anti-detect Browser & Multilogin X — Русская документация
-description: Хаб Multilogin X №1 — 12 рецептов API, CLI mlx, Cloud Real Phone (MIN50), SDK Playwright/Selenium, сравнение с GoLogin/AdsPower.
-keywords: anti-detect браузер, Multilogin X, Cloud Real Phone, MIN50, SAAS50, отпечаток браузера, Playwright, Selenium, MMO
+description: Anti-detect browser & fingerprinting hub: Начните бесплатно. 12 рецептов API, Cloud Real Phone, Playwright/Selenium SDK.
+keywords: антидетект браузер, Multilogin X, бесплатный тариф Multilogin, Cloud Real Phone, MIN50, SAAS50, fingerprint, Playwright, MMO
 homepage: https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549
 lang: ru
 -->
@@ -12,7 +12,7 @@ lang: ru
 
 SDK, cookbook API, руководства и архив Postman — **всё в этом репозитории**.
 
-> **Multilogin X — [Тарифы](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549)** · **`SAAS50`** (промокод Multilogin) · **`MIN50`** (Multilogin Cloud Real Phone)
+> **Multilogin X:** [Начните бесплатно или с платных тарифов от $7.08/мес](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · **`SAAS50`** (промокод) · **`MIN50`** (Cloud Real Phone)
 
 <p align="left">
   <a href="https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549"><img src="https://img.shields.io/badge/Multilogin-SAAS50%20%7C%20MIN50-6366f1?style=for-the-badge" alt="Multilogin SAAS50 MIN50"></a>
@@ -115,7 +115,7 @@ Desktop — Launcher API ([cookbook](docs/multilogin-api/cookbook/)); mobile —
 | 4 | `cd sdk/python && pip install -e .` (CLI `mlx`) |
 | 5 | `mlx doctor` → `mlx start` или [`recipes/01`](sdk/python/recipes/01_saved_profile_lifecycle.py) |
 | 6 | Mobile → [Cloud Real Phone](docs/multilogin-cloud-real-phone.md) · **`MIN50`** |
-| 7 | Desktop → [Multilogin pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · **`SAAS50`** |
+| 7 | Desktop → [Multilogin pricing (Доступен бесплатный тариф)](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · **`SAAS50`** |
 
 Полный путь: [docs/getting-started.md](docs/getting-started.md)
 
@@ -152,7 +152,7 @@ Postman: [коллекция Postman](https://documenter.getpostman.com/view/285
 
 ---
 
-**Масштабируете флот?** [Multilogin pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) — **`SAAS50`** или **`MIN50`**.
+**Масштабируете флот?** [Multilogin pricing (Доступен бесплатный тариф)](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) — тарифы от $7.08/мес. Используйте **`SAAS50`** или **`MIN50`**.
 
 ---
 
@@ -223,10 +223,15 @@ flowchart TB
 
 ## Тарифы Multilogin
 
-| Код | Название | Когда |
-|-----|----------|-------|
-| **`SAAS50`** | Промокод Multilogin | Новый план MLX |
-| **`MIN50`** | Multilogin Cloud Real Phone | Cloud Real Phone / entry |
+| Тариф | Подробности |
+|-------|-------------|
+| **Бесплатный тариф** | 5 профилей + 200МБ прокси + 1 мобильный cloud профиль (30м). **Без ограничений по времени, без карты.** |
+| **Платные тарифы** | От **$7.08/мес**. Включает API автоматизацию, прокси-трафик, мобильные минуты и командные воркспейсы. |
+
+| Промо | Описание |
+|-------|----------|
+| **`SAAS50`** | Промокод Multilogin |
+| **`MIN50`** | Multilogin Cloud Real Phone |
 
 **Оплата:** [Multilogin pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · [docs/urls.md](docs/urls.md) · [pricing-cta.md](docs/pricing-cta.md)
 
@@ -273,7 +278,7 @@ flowchart TB
 ---
 
 <p align="center">
-  <strong><a href="https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549">Multilogin X</a></strong> — <code>SAAS50</code> · <code>MIN50</code> (Cloud Real Phone)
+  <strong><a href="https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549">Начните с Multilogin X бесплатно</a></strong> — платные тарифы от $7.08/мес · <code>SAAS50</code> · <code>MIN50</code> (Cloud Real Phone)
 </p>
 
 <p align="center">

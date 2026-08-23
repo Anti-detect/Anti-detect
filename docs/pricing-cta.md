@@ -18,21 +18,21 @@ Canonical affiliate URL and promo codes for **maximum conversion** across the hu
 ### Head (above the fold)
 
 ```markdown
-> **Multilogin X:** [Get pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · **`SAAS50`** (Multilogin promo code) · **`MIN50`** (Multilogin Cloud Real Phone)
+> **Multilogin X:** [Start for free or get paid plans from $7.08/mo](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · **`SAAS50`** (promo code) · **`MIN50`** (Cloud Real Phone)
 ```
 
 ### Mid (after SDK / technical value)
 
 ```markdown
 ---
-**Need more profiles?** [Multilogin pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) — enter **`SAAS50`** or **`MIN50`** at checkout.
+**Need more profiles?** [Multilogin pricing (Free plan available)](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) — plans from $7.08/month. Enter **`SAAS50`** or **`MIN50`** at checkout.
 ---
 ```
 
 ### Footer (last scroll)
 
 ```markdown
-**Start with Multilogin X:** [multilogin.com/pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · codes **`SAAS50`** · **`MIN50`**
+**Start with Multilogin X for free:** [multilogin.com/pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · paid plans from $7.08/mo · codes **`SAAS50`** · **`MIN50`**
 ```
 
 ## Where CTAs live
